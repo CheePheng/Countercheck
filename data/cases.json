@@ -1,0 +1,226 @@
+[
+  {
+    "id": "inv-01",
+    "split": "dev",
+    "layout": "ledger",
+    "pdf": "cases/inv-01.pdf",
+    "image": "cases/inv-01.webp",
+    "page": "cases/inv-01.page.json"
+  },
+  {
+    "id": "inv-02",
+    "split": "test",
+    "layout": "receipt",
+    "pdf": "cases/inv-02.pdf",
+    "image": "cases/inv-02.webp",
+    "page": "cases/inv-02.page.json"
+  },
+  {
+    "id": "inv-03",
+    "split": "test",
+    "layout": "receipt",
+    "pdf": "cases/inv-03.pdf",
+    "image": "cases/inv-03.webp",
+    "page": "cases/inv-03.page.json"
+  },
+  {
+    "id": "inv-04",
+    "split": "dev",
+    "layout": "malay",
+    "pdf": "cases/inv-04.pdf",
+    "image": "cases/inv-04.webp",
+    "page": "cases/inv-04.page.json"
+  },
+  {
+    "id": "inv-05",
+    "split": "dev",
+    "layout": "banner",
+    "pdf": "cases/inv-05.pdf",
+    "image": "cases/inv-05.webp",
+    "page": "cases/inv-05.page.json"
+  },
+  {
+    "id": "inv-06",
+    "split": "dev",
+    "layout": "malay",
+    "pdf": "cases/inv-06.pdf",
+    "image": "cases/inv-06.webp",
+    "page": "cases/inv-06.page.json"
+  },
+  {
+    "id": "inv-07",
+    "split": "test",
+    "layout": "banner",
+    "pdf": "cases/inv-07.pdf",
+    "image": "cases/inv-07.webp",
+    "page": "cases/inv-07.page.json"
+  },
+  {
+    "id": "inv-08",
+    "split": "test",
+    "layout": "banner",
+    "pdf": "cases/inv-08.pdf",
+    "image": "cases/inv-08.webp",
+    "page": "cases/inv-08.page.json"
+  },
+  {
+    "id": "inv-09",
+    "split": "dev",
+    "layout": "ledger",
+    "pdf": "cases/inv-09.pdf",
+    "image": "cases/inv-09.webp",
+    "page": "cases/inv-09.page.json"
+  },
+  {
+    "id": "inv-10",
+    "split": "test",
+    "layout": "receipt",
+    "pdf": "cases/inv-10.pdf",
+    "image": "cases/inv-10.webp",
+    "page": "cases/inv-10.page.json"
+  },
+  {
+    "id": "inv-11",
+    "split": "test",
+    "layout": "ledger",
+    "pdf": "cases/inv-11.pdf",
+    "image": "cases/inv-11.webp",
+    "page": "cases/inv-11.page.json"
+  },
+  {
+    "id": "inv-12",
+    "split": "test",
+    "layout": "banner",
+    "pdf": "cases/inv-12.pdf",
+    "image": "cases/inv-12.webp",
+    "page": "cases/inv-12.page.json"
+  },
+  {
+    "id": "inv-13",
+    "split": "dev",
+    "layout": "malay",
+    "pdf": "cases/inv-13.pdf",
+    "image": "cases/inv-13.webp",
+    "page": "cases/inv-13.page.json"
+  },
+  {
+    "id": "inv-14",
+    "split": "dev",
+    "layout": "ledger",
+    "pdf": "cases/inv-14.pdf",
+    "image": "cases/inv-14.webp",
+    "page": "cases/inv-14.page.json"
+  },
+  {
+    "id": "inv-15",
+    "split": "dev",
+    "layout": "malay",
+    "pdf": "cases/inv-15.pdf",
+    "image": "cases/inv-15.webp",
+    "page": "cases/inv-15.page.json"
+  },
+  {
+    "id": "inv-16",
+    "split": "test",
+    "layout": "ledger",
+    "pdf": "cases/inv-16.pdf",
+    "image": "cases/inv-16.webp",
+    "page": "cases/inv-16.page.json"
+  },
+  {
+    "id": "inv-17",
+    "split": "dev",
+    "layout": "banner",
+    "pdf": "cases/inv-17.pdf",
+    "image": "cases/inv-17.webp",
+    "page": "cases/inv-17.page.json"
+  },
+  {
+    "id": "inv-18",
+    "split": "test",
+    "layout": "ledger",
+    "pdf": "cases/inv-18.pdf",
+    "image": "cases/inv-18.webp",
+    "page": "cases/inv-18.page.json"
+  },
+  {
+    "id": "inv-19",
+    "split": "test",
+    "layout": "receipt",
+    "pdf": "cases/inv-19.pdf",
+    "image": "cases/inv-19.webp",
+    "page": "cases/inv-19.page.json"
+  },
+  {
+    "id": "inv-20",
+    "split": "dev",
+    "layout": "malay",
+    "pdf": "cases/inv-20.pdf",
+    "image": "cases/inv-20.webp",
+    "page": "cases/inv-20.page.json"
+  },
+  {
+    "id": "inv-21",
+    "split": "dev",
+    "layout": "banner",
+    "pdf": "cases/inv-21.pdf",
+    "image": "cases/inv-21.webp",
+    "page": "cases/inv-21.page.json"
+  },
+  {
+    "id": "inv-22",
+    "split": "test",
+    "layout": "banner",
+    "pdf": "cases/inv-22.pdf",
+    "image": "cases/inv-22.webp",
+    "page": "cases/inv-22.page.json"
+  },
+  {
+    "id": "inv-23",
+    "split": "dev",
+    "layout": "malay",
+    "pdf": "cases/inv-23.pdf",
+    "image": "cases/inv-23.webp",
+    "page": "cases/inv-23.page.json"
+  },
+  {
+    "id": "inv-24",
+    "split": "test",
+    "layout": "receipt",
+    "pdf": "cases/inv-24.pdf",
+    "image": "cases/inv-24.webp",
+    "page": "cases/inv-24.page.json"
+  },
+  {
+    "id": "inv-25",
+    "split": "test",
+    "layout": "receipt",
+    "pdf": "cases/inv-25.pdf",
+    "image": "cases/inv-25.webp",
+    "page": "cases/inv-25.page.json"
+  },
+  {
+    "id": "inv-26",
+    "split": "dev",
+    "layout": "malay",
+    "pdf": "cases/inv-26.pdf",
+    "image": "cases/inv-26.webp",
+    "page": "cases/inv-26.page.json"
+  },
+  {
+    "id": "inv-27",
+    "split": "dev",
+    "layout": "ledger",
+    "pdf": "cases/inv-27.pdf",
+    "image": "cases/inv-27.webp",
+    "page": "cases/inv-27.page.json"
+  },
+  {
+    "id": "inv-28",
+    "split": "test",
+    "layout": "receipt",
+    "pdf": "cases/inv-28.pdf",
+    "image": "cases/inv-28.webp",
+    "page": "cases/inv-28.page.json"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "id": "inv-22",
+  "situation": "clean_zero_tax",
+  "invoice": {
+    "vendorName": "Serai Fresh Produce Sdn Bhd",
+    "vendorRegistrationNo": "201701034521 (1239876-W)",
+    "invoiceNumber": "SFP/06166",
+    "invoiceDate": "2026-10-02",
+    "poNumber": "PO-264251",
+    "currency": "MYR",
+    "lines": [
+      {
+        "description": "Pandan leaves, bundle of 20",
+        "sku": "HB-PAN",
+        "quantity": 20.0,
+        "unit": "pack",
+        "unitPrice": 3.5,
+        "amount": 70.0
+      },
+      {
+        "description": "Calamansi limes",
+        "sku": "FR-CAL",
+        "quantity": 28.0,
+        "unit": "kg",
+        "unitPrice": 9.6,
+        "amount": 268.8
+      }
+    ],
+    "subtotal": 338.8,
+    "taxRate": 0.0,
+    "tax": 0.0,
+    "total": 338.8,
+    "bank": {
+      "bankName": "Bank Rekaan Berhad",
+      "accountName": "Serai Fresh Produce Sdn Bhd",
+      "accountNumber": "2207-114-50331"
+    }
+  },
+  "decision": "approve",
+  "reasons": []
+}

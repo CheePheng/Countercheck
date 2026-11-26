@@ -1,0 +1,41 @@
+{
+  "id": "inv-17",
+  "situation": "clean_sg",
+  "invoice": {
+    "vendorName": "Quayline Office Supply Pte Ltd",
+    "vendorRegistrationNo": "200912876M",
+    "invoiceNumber": "QOS03397",
+    "invoiceDate": "2026-09-25",
+    "poNumber": "PO-264227",
+    "currency": "SGD",
+    "lines": [
+      {
+        "description": "Thermal receipt roll 80mm, box of 50",
+        "sku": "OF-RCP-80",
+        "quantity": 7.0,
+        "unit": "box",
+        "unitPrice": 39.0,
+        "amount": 273.0
+      },
+      {
+        "description": "A4 copy paper 80gsm, ream of 500",
+        "sku": "OF-A4-500",
+        "quantity": 16.0,
+        "unit": "pack",
+        "unitPrice": 6.9,
+        "amount": 110.4
+      }
+    ],
+    "subtotal": 383.4,
+    "taxRate": 0.09,
+    "tax": 34.51,
+    "total": 417.91,
+    "bank": {
+      "bankName": "Straits Harbour Bank",
+      "accountName": "Quayline Office Supply Pte Ltd",
+      "accountNumber": "771-558120-3"
+    }
+  },
+  "decision": "approve",
+  "reasons": []
+}

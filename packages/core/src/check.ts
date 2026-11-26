@@ -281,8 +281,16 @@ export function checkInvoice({
       .flatMap((r) => r.lines)
       .filter((l) => normalizeId(l.sku) === sku)
       .reduce((sum, l) => sum + l.quantity, 0);
+    // A re-sent copy of a posted invoice is a duplicate; it doesn't also use up its own deliveries.
+    const isThisInvoice = (e: World["ledger"][number]) =>
+      vendor !== null &&
+      e.vendorId === vendor.id &&
+      normalizeId(e.invoiceNumber) === normalizeId(invoice.invoiceNumber);
     const alreadyInvoiced = world.ledger
-      .filter((e) => e.poNumber && normalizeId(e.poNumber) === normalizeId(po!.number))
+      .filter(
+        (e) =>
+          e.poNumber && normalizeId(e.poNumber) === normalizeId(po!.number) && !isThisInvoice(e),
+      )
       .flatMap((e) => e.lines)
       .filter((l) => normalizeId(l.sku) === sku)
       .reduce((sum, l) => sum + l.quantity, 0);

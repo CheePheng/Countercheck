@@ -1,0 +1,35 @@
+{
+  "id": "inv-18",
+  "situation": "bank_changed",
+  "invoice": {
+    "vendorName": "Orchidfold Packaging Sdn Bhd",
+    "vendorRegistrationNo": "201901012345 (1312345-A)",
+    "invoiceNumber": "OF-01278",
+    "invoiceDate": "2026-10-24",
+    "poNumber": "PO-264369",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Kraft takeaway bag medium, pack of 250",
+        "sku": null,
+        "quantity": 9.0,
+        "unit": "pack",
+        "unitPrice": 64.5,
+        "amount": 580.5
+      }
+    ],
+    "subtotal": 580.5,
+    "taxRate": 0.1,
+    "tax": 58.05,
+    "total": 638.55,
+    "bank": {
+      "bankName": "Bank Rekaan Berhad",
+      "accountName": "Orchidfold Packaging Sdn Bhd",
+      "accountNumber": "3004-7145-8917"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "BANK_DETAILS_CHANGED"
+  ]
+}

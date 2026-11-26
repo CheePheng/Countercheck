@@ -1,0 +1,51 @@
+{
+  "id": "inv-02",
+  "situation": "currency_mismatch",
+  "invoice": {
+    "vendorName": "Jalinan Textile Works Sdn Bhd",
+    "vendorRegistrationNo": "201601029911 (1188450-K)",
+    "invoiceNumber": "JTW-01721",
+    "invoiceDate": "2026-09-20",
+    "poNumber": "PO-264354",
+    "currency": "SGD",
+    "lines": [
+      {
+        "description": "Barista apron, olive canvas",
+        "sku": null,
+        "quantity": 3.0,
+        "unit": "pcs",
+        "unitPrice": 45.0,
+        "amount": 135.0
+      },
+      {
+        "description": "Oven mitts, heat resistant pair",
+        "sku": null,
+        "quantity": 22.0,
+        "unit": "set",
+        "unitPrice": 22.0,
+        "amount": 484.0
+      },
+      {
+        "description": "Chef hat, white cotton",
+        "sku": null,
+        "quantity": 24.0,
+        "unit": "pcs",
+        "unitPrice": 12.5,
+        "amount": 300.0
+      }
+    ],
+    "subtotal": 919.0,
+    "taxRate": 0.1,
+    "tax": 91.9,
+    "total": 1010.9,
+    "bank": {
+      "bankName": "Bank Rekaan Berhad",
+      "accountName": "Jalinan Textile Works Sdn Bhd",
+      "accountNumber": "2207-305-88140"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "CURRENCY_MISMATCH"
+  ]
+}

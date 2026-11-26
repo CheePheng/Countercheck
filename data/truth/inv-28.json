@@ -1,0 +1,33 @@
+{
+  "id": "inv-28",
+  "situation": "clean",
+  "invoice": {
+    "vendorName": "Brightmoor Cleaning Supplies Sdn Bhd",
+    "vendorRegistrationNo": "201301045566 (1056677-D)",
+    "invoiceNumber": "BM09000",
+    "invoiceDate": "2026-11-01",
+    "poNumber": "PO-264226",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Microfibre cloth, pack of 12",
+        "sku": null,
+        "quantity": 20.0,
+        "unit": "pack",
+        "unitPrice": 18.0,
+        "amount": 360.0
+      }
+    ],
+    "subtotal": 360.0,
+    "taxRate": 0.1,
+    "tax": 36.0,
+    "total": 396.0,
+    "bank": {
+      "bankName": "Teluk Mutual Bank",
+      "accountName": "Brightmoor Cleaning Supplies Sdn Bhd",
+      "accountNumber": "3381-0045-7720"
+    }
+  },
+  "decision": "approve",
+  "reasons": []
+}

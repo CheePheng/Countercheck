@@ -1,0 +1,43 @@
+{
+  "id": "inv-04",
+  "situation": "currency_mismatch",
+  "invoice": {
+    "vendorName": "Orchidfold Packaging Sdn Bhd",
+    "vendorRegistrationNo": "201901012345 (1312345-A)",
+    "invoiceNumber": "OF-01270",
+    "invoiceDate": "2026-10-27",
+    "poNumber": "PO-264345",
+    "currency": "SGD",
+    "lines": [
+      {
+        "description": "Kraft takeaway bag medium, pack of 250",
+        "sku": null,
+        "quantity": 7.0,
+        "unit": "pack",
+        "unitPrice": 64.5,
+        "amount": 451.5
+      },
+      {
+        "description": "Cup lid 12oz, carton of 1000",
+        "sku": null,
+        "quantity": 17.0,
+        "unit": "carton",
+        "unitPrice": 92.0,
+        "amount": 1564.0
+      }
+    ],
+    "subtotal": 2015.5,
+    "taxRate": 0.1,
+    "tax": 201.55,
+    "total": 2217.05,
+    "bank": {
+      "bankName": "Selatan Commercial Bank",
+      "accountName": "Orchidfold Packaging Sdn Bhd",
+      "accountNumber": "5140-2231-0098"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "CURRENCY_MISMATCH"
+  ]
+}

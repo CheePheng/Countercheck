@@ -1,0 +1,35 @@
+{
+  "id": "inv-16",
+  "situation": "uom_mismatch",
+  "invoice": {
+    "vendorName": "Tanjung Ferro Hardware Sdn Bhd",
+    "vendorRegistrationNo": "200801023987 (812233-T)",
+    "invoiceNumber": "TFH-06611",
+    "invoiceDate": "2026-11-08",
+    "poNumber": "PO-264337",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Wall anchor M8, box of 100",
+        "sku": null,
+        "quantity": 400.0,
+        "unit": "pcs",
+        "unitPrice": 0.26,
+        "amount": 104.0
+      }
+    ],
+    "subtotal": 104.0,
+    "taxRate": 0.1,
+    "tax": 10.4,
+    "total": 114.4,
+    "bank": {
+      "bankName": "Selatan Commercial Bank",
+      "accountName": "Tanjung Ferro Hardware Sdn Bhd",
+      "accountNumber": "5140-8820-1173"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "UOM_MISMATCH"
+  ]
+}

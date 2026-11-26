@@ -1,0 +1,43 @@
+{
+  "id": "inv-27",
+  "situation": "no_po",
+  "invoice": {
+    "vendorName": "Serai Fresh Produce Sdn Bhd",
+    "vendorRegistrationNo": "201701034521 (1239876-W)",
+    "invoiceNumber": "SFP/06237",
+    "invoiceDate": "2026-10-22",
+    "poNumber": null,
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Bananas, Cavendish",
+        "sku": null,
+        "quantity": 10.0,
+        "unit": "kg",
+        "unitPrice": 4.2,
+        "amount": 42.0
+      },
+      {
+        "description": "Lemons, imported",
+        "sku": null,
+        "quantity": 11.0,
+        "unit": "kg",
+        "unitPrice": 7.8,
+        "amount": 85.8
+      }
+    ],
+    "subtotal": 127.8,
+    "taxRate": 0.0,
+    "tax": 0.0,
+    "total": 127.8,
+    "bank": {
+      "bankName": "Bank Rekaan Berhad",
+      "accountName": "Serai Fresh Produce Sdn Bhd",
+      "accountNumber": "2207-114-50331"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "NO_PO"
+  ]
+}

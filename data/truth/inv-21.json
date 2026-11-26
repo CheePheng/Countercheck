@@ -1,0 +1,43 @@
+{
+  "id": "inv-21",
+  "situation": "bank_changed",
+  "invoice": {
+    "vendorName": "Sutera Bean Roasters Sdn Bhd",
+    "vendorRegistrationNo": "201401038804 (1098812-P)",
+    "invoiceNumber": "SB-03779",
+    "invoiceDate": "2026-10-25",
+    "poNumber": "PO-264361",
+    "currency": "MYR",
+    "lines": [
+      {
+        "description": "Decaf coffee beans 1kg",
+        "sku": "CF-DCF-1K",
+        "quantity": 16.0,
+        "unit": "kg",
+        "unitPrice": 88.0,
+        "amount": 1408.0
+      },
+      {
+        "description": "Single origin coffee beans 1kg",
+        "sku": "CF-SGL-1K",
+        "quantity": 26.0,
+        "unit": "kg",
+        "unitPrice": 96.0,
+        "amount": 2496.0
+      }
+    ],
+    "subtotal": 3904.0,
+    "taxRate": 0.1,
+    "tax": 390.4,
+    "total": 4294.4,
+    "bank": {
+      "bankName": "Harbourline Savings Bank",
+      "accountName": "Sutera Bean Roasters Sdn Bhd",
+      "accountNumber": "4118-1878-8553"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "BANK_DETAILS_CHANGED"
+  ]
+}

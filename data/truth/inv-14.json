@@ -1,0 +1,41 @@
+{
+  "id": "inv-14",
+  "situation": "clean",
+  "invoice": {
+    "vendorName": "Tanjung Ferro Hardware Sdn Bhd",
+    "vendorRegistrationNo": "200801023987 (812233-T)",
+    "invoiceNumber": "TFH-06524",
+    "invoiceDate": "2026-10-15",
+    "poNumber": "PO-264224",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "LED tube 18W cool white",
+        "sku": null,
+        "quantity": 19.0,
+        "unit": "pcs",
+        "unitPrice": 14.9,
+        "amount": 283.1
+      },
+      {
+        "description": "Stainless shelf bracket 30cm",
+        "sku": null,
+        "quantity": 22.0,
+        "unit": "pcs",
+        "unitPrice": 18.4,
+        "amount": 404.8
+      }
+    ],
+    "subtotal": 687.9,
+    "taxRate": 0.1,
+    "tax": 68.79,
+    "total": 756.69,
+    "bank": {
+      "bankName": "Selatan Commercial Bank",
+      "accountName": "Tanjung Ferro Hardware Sdn Bhd",
+      "accountNumber": "5140-8820-1173"
+    }
+  },
+  "decision": "approve",
+  "reasons": []
+}

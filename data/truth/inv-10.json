@@ -1,0 +1,35 @@
+{
+  "id": "inv-10",
+  "situation": "duplicate_number",
+  "invoice": {
+    "vendorName": "Serai Fresh Produce Sdn Bhd",
+    "vendorRegistrationNo": "201701034521 (1239876-W)",
+    "invoiceNumber": "SFP/06215",
+    "invoiceDate": "2026-11-04",
+    "poNumber": "PO-264292",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Lemons, imported",
+        "sku": null,
+        "quantity": 14.0,
+        "unit": "kg",
+        "unitPrice": 7.8,
+        "amount": 109.2
+      }
+    ],
+    "subtotal": 109.2,
+    "taxRate": 0.0,
+    "tax": 0.0,
+    "total": 109.2,
+    "bank": {
+      "bankName": "Bank Rekaan Berhad",
+      "accountName": "Serai Fresh Produce Sdn Bhd",
+      "accountNumber": "2207-114-50331"
+    }
+  },
+  "decision": "reject",
+  "reasons": [
+    "DUPLICATE_INVOICE"
+  ]
+}

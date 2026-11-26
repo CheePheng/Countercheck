@@ -1,0 +1,43 @@
+{
+  "id": "inv-19",
+  "situation": "price_variance",
+  "invoice": {
+    "vendorName": "Serai Fresh Produce Sdn Bhd",
+    "vendorRegistrationNo": "201701034521 (1239876-W)",
+    "invoiceNumber": "SFP/06194",
+    "invoiceDate": "2026-10-27",
+    "poNumber": "PO-264266",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Calamansi limes",
+        "sku": null,
+        "quantity": 25.0,
+        "unit": "kg",
+        "unitPrice": 10.56,
+        "amount": 264.0
+      },
+      {
+        "description": "Lemons, imported",
+        "sku": null,
+        "quantity": 18.0,
+        "unit": "kg",
+        "unitPrice": 7.8,
+        "amount": 140.4
+      }
+    ],
+    "subtotal": 404.4,
+    "taxRate": 0.0,
+    "tax": 0.0,
+    "total": 404.4,
+    "bank": {
+      "bankName": "Bank Rekaan Berhad",
+      "accountName": "Serai Fresh Produce Sdn Bhd",
+      "accountNumber": "2207-114-50331"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "PRICE_VARIANCE"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "inv-25",
+  "situation": "short_delivery",
+  "invoice": {
+    "vendorName": "Quayline Office Supply Pte Ltd",
+    "vendorRegistrationNo": "200912876M",
+    "invoiceNumber": "QOS03416",
+    "invoiceDate": "2026-09-15",
+    "poNumber": "PO-264273",
+    "currency": "S$",
+    "lines": [
+      {
+        "description": "Thermal receipt roll 80mm, box of 50",
+        "sku": null,
+        "quantity": 7.0,
+        "unit": "box",
+        "unitPrice": 39.0,
+        "amount": 273.0
+      }
+    ],
+    "subtotal": 273.0,
+    "taxRate": 0.09,
+    "tax": 24.57,
+    "total": 297.57,
+    "bank": {
+      "bankName": "Straits Harbour Bank",
+      "accountName": "Quayline Office Supply Pte Ltd",
+      "accountNumber": "771-558120-3"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "SHORT_DELIVERY"
+  ]
+}

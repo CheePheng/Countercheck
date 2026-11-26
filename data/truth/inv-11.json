@@ -1,0 +1,49 @@
+{
+  "id": "inv-11",
+  "situation": "clean_sg",
+  "invoice": {
+    "vendorName": "Lumora Kitchenware Pte Ltd",
+    "vendorRegistrationNo": "201812345K",
+    "invoiceNumber": "LK-08044",
+    "invoiceDate": "2026-10-04",
+    "poNumber": "PO-264235",
+    "currency": "SGD",
+    "lines": [
+      {
+        "description": "Coffee tamper 58mm",
+        "sku": null,
+        "quantity": 15.0,
+        "unit": "pcs",
+        "unitPrice": 36.0,
+        "amount": 540.0
+      },
+      {
+        "description": "Milk pitcher 600ml, steel",
+        "sku": null,
+        "quantity": 4.0,
+        "unit": "pcs",
+        "unitPrice": 18.9,
+        "amount": 75.6
+      },
+      {
+        "description": "Knock box, large",
+        "sku": null,
+        "quantity": 15.0,
+        "unit": "pcs",
+        "unitPrice": 29.9,
+        "amount": 448.5
+      }
+    ],
+    "subtotal": 1064.1,
+    "taxRate": 0.09,
+    "tax": 95.77,
+    "total": 1159.87,
+    "bank": {
+      "bankName": "Straits Harbour Bank",
+      "accountName": "Lumora Kitchenware Pte Ltd",
+      "accountNumber": "771-203344-1"
+    }
+  },
+  "decision": "approve",
+  "reasons": []
+}

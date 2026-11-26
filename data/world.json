@@ -1,0 +1,1557 @@
+{
+  "buyer": {
+    "name": "Lantern Street Cafés Sdn Bhd",
+    "registrationNo": "202001017311 (1375512-K)",
+    "address": "Lot 7, Jalan Contoh 9, Taman Rekaan, 81200 Johor Bahru, Johor"
+  },
+  "vendors": [
+    {
+      "id": "V01",
+      "name": "Orchidfold Packaging Sdn Bhd",
+      "registrationNo": "201901012345 (1312345-A)",
+      "country": "MY",
+      "currency": "MYR",
+      "address": "Lot 12, Jalan Contoh 3, Taman Rekaan Industri, 81100 Johor Bahru, Johor",
+      "bank": {
+        "bankName": "Selatan Commercial Bank",
+        "accountName": "Orchidfold Packaging Sdn Bhd",
+        "accountNumber": "5140-2231-0098"
+      }
+    },
+    {
+      "id": "V02",
+      "name": "Serai Fresh Produce Sdn Bhd",
+      "registrationNo": "201701034521 (1239876-W)",
+      "country": "MY",
+      "currency": "MYR",
+      "address": "No. 4, Lorong Pasar Rekaan, Jalan Contoh 1, 81300 Skudai, Johor",
+      "bank": {
+        "bankName": "Bank Rekaan Berhad",
+        "accountName": "Serai Fresh Produce Sdn Bhd",
+        "accountNumber": "2207-114-50331"
+      }
+    },
+    {
+      "id": "V03",
+      "name": "Tanjung Ferro Hardware Sdn Bhd",
+      "registrationNo": "200801023987 (812233-T)",
+      "country": "MY",
+      "currency": "MYR",
+      "address": "23, Jalan Contoh Perindustrian 2, Kawasan Rekaan Tebing, 81700 Pasir Gudang, Johor",
+      "bank": {
+        "bankName": "Selatan Commercial Bank",
+        "accountName": "Tanjung Ferro Hardware Sdn Bhd",
+        "accountNumber": "5140-8820-1173"
+      }
+    },
+    {
+      "id": "V04",
+      "name": "Brightmoor Cleaning Supplies Sdn Bhd",
+      "registrationNo": "201301045566 (1056677-D)",
+      "country": "MY",
+      "currency": "MYR",
+      "address": "8, Jalan Contoh Niaga 5, Pusat Rekaan Komersial, 80200 Johor Bahru, Johor",
+      "bank": {
+        "bankName": "Teluk Mutual Bank",
+        "accountName": "Brightmoor Cleaning Supplies Sdn Bhd",
+        "accountNumber": "3381-0045-7720"
+      }
+    },
+    {
+      "id": "V05",
+      "name": "Jalinan Textile Works Sdn Bhd",
+      "registrationNo": "201601029911 (1188450-K)",
+      "country": "MY",
+      "currency": "MYR",
+      "address": "17, Jalan Contoh Tenun, Taman Rekaan Jaya, 81300 Skudai, Johor",
+      "bank": {
+        "bankName": "Bank Rekaan Berhad",
+        "accountName": "Jalinan Textile Works Sdn Bhd",
+        "accountNumber": "2207-305-88140"
+      }
+    },
+    {
+      "id": "V06",
+      "name": "Lumora Kitchenware Pte Ltd",
+      "registrationNo": "201812345K",
+      "country": "SG",
+      "currency": "SGD",
+      "address": "21 Rekaan Road, #04-12, Contoh Industrial Building, Singapore 629999",
+      "bank": {
+        "bankName": "Straits Harbour Bank",
+        "accountName": "Lumora Kitchenware Pte Ltd",
+        "accountNumber": "771-203344-1"
+      }
+    },
+    {
+      "id": "V07",
+      "name": "Quayline Office Supply Pte Ltd",
+      "registrationNo": "200912876M",
+      "country": "SG",
+      "currency": "SGD",
+      "address": "5 Contoh Quay, #02-30, Rekaan Business Park, Singapore 408999",
+      "bank": {
+        "bankName": "Straits Harbour Bank",
+        "accountName": "Quayline Office Supply Pte Ltd",
+        "accountNumber": "771-558120-3"
+      }
+    },
+    {
+      "id": "V08",
+      "name": "Sutera Bean Roasters Sdn Bhd",
+      "registrationNo": "201401038804 (1098812-P)",
+      "country": "MY",
+      "currency": "MYR",
+      "address": "2, Jalan Contoh Kopi, Taman Rekaan Sutera, 81300 Skudai, Johor",
+      "bank": {
+        "bankName": "Teluk Mutual Bank",
+        "accountName": "Sutera Bean Roasters Sdn Bhd",
+        "accountNumber": "3381-2290-0416"
+      }
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "number": "PO-264224",
+      "vendorId": "V03",
+      "date": "2026-10-05",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "EL-LED-18",
+          "description": "LED tube 18W cool white",
+          "quantity": 19,
+          "unit": "pcs",
+          "unitPrice": 14.9
+        },
+        {
+          "lineNo": 2,
+          "sku": "HW-BRK-30",
+          "description": "Stainless shelf bracket 30cm",
+          "quantity": 22,
+          "unit": "pcs",
+          "unitPrice": 18.4
+        }
+      ]
+    },
+    {
+      "number": "PO-264226",
+      "vendorId": "V04",
+      "date": "2026-10-24",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "CL-MFC-12",
+          "description": "Microfibre cloth, pack of 12",
+          "quantity": 20,
+          "unit": "pack",
+          "unitPrice": 18.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264227",
+      "vendorId": "V07",
+      "date": "2026-09-19",
+      "currency": "SGD",
+      "taxRate": 0.09,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "OF-RCP-80",
+          "description": "Thermal receipt roll 80mm, box of 50",
+          "quantity": 7,
+          "unit": "box",
+          "unitPrice": 39.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "OF-A4-500",
+          "description": "A4 copy paper 80gsm, ream of 500",
+          "quantity": 16,
+          "unit": "pack",
+          "unitPrice": 6.9
+        }
+      ]
+    },
+    {
+      "number": "PO-264235",
+      "vendorId": "V06",
+      "date": "2026-09-26",
+      "currency": "SGD",
+      "taxRate": 0.09,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "KW-TMP-58",
+          "description": "Coffee tamper 58mm",
+          "quantity": 15,
+          "unit": "pcs",
+          "unitPrice": 36.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "KW-PIT-600",
+          "description": "Milk pitcher 600ml, steel",
+          "quantity": 4,
+          "unit": "pcs",
+          "unitPrice": 18.9
+        },
+        {
+          "lineNo": 3,
+          "sku": "KW-KNB-L",
+          "description": "Knock box, large",
+          "quantity": 15,
+          "unit": "pcs",
+          "unitPrice": 29.9
+        }
+      ]
+    },
+    {
+      "number": "PO-264244",
+      "vendorId": "V02",
+      "date": "2026-10-05",
+      "currency": "MYR",
+      "taxRate": 0.0,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "FR-BAN",
+          "description": "Bananas, Cavendish",
+          "quantity": 7,
+          "unit": "kg",
+          "unitPrice": 4.2
+        },
+        {
+          "lineNo": 2,
+          "sku": "FR-CAL",
+          "description": "Calamansi limes",
+          "quantity": 18,
+          "unit": "kg",
+          "unitPrice": 9.6
+        },
+        {
+          "lineNo": 3,
+          "sku": "HB-PAN",
+          "description": "Pandan leaves, bundle of 20",
+          "quantity": 22,
+          "unit": "pack",
+          "unitPrice": 3.5
+        }
+      ]
+    },
+    {
+      "number": "PO-264251",
+      "vendorId": "V02",
+      "date": "2026-09-21",
+      "currency": "MYR",
+      "taxRate": 0.0,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "HB-PAN",
+          "description": "Pandan leaves, bundle of 20",
+          "quantity": 20,
+          "unit": "pack",
+          "unitPrice": 3.5
+        },
+        {
+          "lineNo": 2,
+          "sku": "FR-CAL",
+          "description": "Calamansi limes",
+          "quantity": 28,
+          "unit": "kg",
+          "unitPrice": 9.6
+        }
+      ]
+    },
+    {
+      "number": "PO-264257",
+      "vendorId": "V05",
+      "date": "2026-09-14",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "TX-TWL-6",
+          "description": "Kitchen towel set of 6",
+          "quantity": 8,
+          "unit": "set",
+          "unitPrice": 36.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "TX-OVM-PR",
+          "description": "Oven mitts, heat resistant pair",
+          "quantity": 19,
+          "unit": "set",
+          "unitPrice": 22.0
+        },
+        {
+          "lineNo": 3,
+          "sku": "TX-APR-OLV",
+          "description": "Barista apron, olive canvas",
+          "quantity": 21,
+          "unit": "pcs",
+          "unitPrice": 45.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264266",
+      "vendorId": "V02",
+      "date": "2026-10-22",
+      "currency": "MYR",
+      "taxRate": 0.0,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "FR-CAL",
+          "description": "Calamansi limes",
+          "quantity": 25,
+          "unit": "kg",
+          "unitPrice": 9.6
+        },
+        {
+          "lineNo": 2,
+          "sku": "FR-LEM",
+          "description": "Lemons, imported",
+          "quantity": 18,
+          "unit": "kg",
+          "unitPrice": 7.8
+        }
+      ]
+    },
+    {
+      "number": "PO-264268",
+      "vendorId": "V03",
+      "date": "2026-09-06",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "HW-ANC-M8",
+          "description": "Wall anchor M8, box of 100",
+          "quantity": 6,
+          "unit": "box",
+          "unitPrice": 26.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "EL-EXT-5",
+          "description": "Extension cord 5m, 4 sockets",
+          "quantity": 10,
+          "unit": "pcs",
+          "unitPrice": 32.5
+        },
+        {
+          "lineNo": 3,
+          "sku": "HW-BRK-30",
+          "description": "Stainless shelf bracket 30cm",
+          "quantity": 20,
+          "unit": "pcs",
+          "unitPrice": 18.4
+        }
+      ]
+    },
+    {
+      "number": "PO-264273",
+      "vendorId": "V07",
+      "date": "2026-09-09",
+      "currency": "SGD",
+      "taxRate": 0.09,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "OF-RCP-80",
+          "description": "Thermal receipt roll 80mm, box of 50",
+          "quantity": 7,
+          "unit": "box",
+          "unitPrice": 39.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264282",
+      "vendorId": "V06",
+      "date": "2026-10-25",
+      "currency": "SGD",
+      "taxRate": 0.09,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "KW-TMP-58",
+          "description": "Coffee tamper 58mm",
+          "quantity": 19,
+          "unit": "pcs",
+          "unitPrice": 36.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264284",
+      "vendorId": "V03",
+      "date": "2026-09-21",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "HW-ANC-M8",
+          "description": "Wall anchor M8, box of 100",
+          "quantity": 17,
+          "unit": "box",
+          "unitPrice": 26.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "HW-BRK-30",
+          "description": "Stainless shelf bracket 30cm",
+          "quantity": 21,
+          "unit": "pcs",
+          "unitPrice": 18.4
+        }
+      ]
+    },
+    {
+      "number": "PO-264287",
+      "vendorId": "V08",
+      "date": "2026-10-06",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "CF-DCF-1K",
+          "description": "Decaf coffee beans 1kg",
+          "quantity": 14,
+          "unit": "kg",
+          "unitPrice": 88.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "CF-HSE-1K",
+          "description": "House blend coffee beans 1kg",
+          "quantity": 17,
+          "unit": "kg",
+          "unitPrice": 78.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264292",
+      "vendorId": "V02",
+      "date": "2026-10-27",
+      "currency": "MYR",
+      "taxRate": 0.0,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "FR-LEM",
+          "description": "Lemons, imported",
+          "quantity": 14,
+          "unit": "kg",
+          "unitPrice": 7.8
+        }
+      ]
+    },
+    {
+      "number": "PO-264296",
+      "vendorId": "V07",
+      "date": "2026-09-27",
+      "currency": "SGD",
+      "taxRate": 0.09,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "OF-A4-500",
+          "description": "A4 copy paper 80gsm, ream of 500",
+          "quantity": 9,
+          "unit": "pack",
+          "unitPrice": 6.9
+        },
+        {
+          "lineNo": 2,
+          "sku": "OF-LBL-12",
+          "description": "Label printer tape 12mm",
+          "quantity": 3,
+          "unit": "roll",
+          "unitPrice": 12.4
+        }
+      ]
+    },
+    {
+      "number": "PO-264303",
+      "vendorId": "V07",
+      "date": "2026-10-04",
+      "currency": "SGD",
+      "taxRate": 0.09,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "OF-A4-500",
+          "description": "A4 copy paper 80gsm, ream of 500",
+          "quantity": 9,
+          "unit": "pack",
+          "unitPrice": 6.9
+        },
+        {
+          "lineNo": 2,
+          "sku": "OF-LBL-12",
+          "description": "Label printer tape 12mm",
+          "quantity": 3,
+          "unit": "roll",
+          "unitPrice": 12.4
+        }
+      ]
+    },
+    {
+      "number": "PO-264308",
+      "vendorId": "V08",
+      "date": "2026-09-05",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "CF-HSE-1K",
+          "description": "House blend coffee beans 1kg",
+          "quantity": 28,
+          "unit": "kg",
+          "unitPrice": 78.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "CF-DCF-1K",
+          "description": "Decaf coffee beans 1kg",
+          "quantity": 25,
+          "unit": "kg",
+          "unitPrice": 88.0
+        },
+        {
+          "lineNo": 3,
+          "sku": "CF-SGL-1K",
+          "description": "Single origin coffee beans 1kg",
+          "quantity": 25,
+          "unit": "kg",
+          "unitPrice": 96.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264311",
+      "vendorId": "V08",
+      "date": "2026-09-16",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "CF-HSE-1K",
+          "description": "House blend coffee beans 1kg",
+          "quantity": 28,
+          "unit": "kg",
+          "unitPrice": 78.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "CF-DCF-1K",
+          "description": "Decaf coffee beans 1kg",
+          "quantity": 25,
+          "unit": "kg",
+          "unitPrice": 88.0
+        },
+        {
+          "lineNo": 3,
+          "sku": "CF-SGL-1K",
+          "description": "Single origin coffee beans 1kg",
+          "quantity": 25,
+          "unit": "kg",
+          "unitPrice": 96.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264320",
+      "vendorId": "V08",
+      "date": "2026-10-08",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "CF-DCF-1K",
+          "description": "Decaf coffee beans 1kg",
+          "quantity": 26,
+          "unit": "kg",
+          "unitPrice": 88.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "CF-HSE-1K",
+          "description": "House blend coffee beans 1kg",
+          "quantity": 20,
+          "unit": "kg",
+          "unitPrice": 78.0
+        },
+        {
+          "lineNo": 3,
+          "sku": "CF-SGL-1K",
+          "description": "Single origin coffee beans 1kg",
+          "quantity": 24,
+          "unit": "kg",
+          "unitPrice": 96.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264321",
+      "vendorId": "V06",
+      "date": "2026-10-01",
+      "currency": "SGD",
+      "taxRate": 0.09,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "KW-KNB-L",
+          "description": "Knock box, large",
+          "quantity": 5,
+          "unit": "pcs",
+          "unitPrice": 29.9
+        },
+        {
+          "lineNo": 2,
+          "sku": "KW-PIT-600",
+          "description": "Milk pitcher 600ml, steel",
+          "quantity": 24,
+          "unit": "pcs",
+          "unitPrice": 18.9
+        },
+        {
+          "lineNo": 3,
+          "sku": "KW-TMP-58",
+          "description": "Coffee tamper 58mm",
+          "quantity": 8,
+          "unit": "pcs",
+          "unitPrice": 36.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264327",
+      "vendorId": "V02",
+      "date": "2026-10-11",
+      "currency": "MYR",
+      "taxRate": 0.0,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "FR-BAN",
+          "description": "Bananas, Cavendish",
+          "quantity": 10,
+          "unit": "kg",
+          "unitPrice": 4.2
+        },
+        {
+          "lineNo": 2,
+          "sku": "FR-LEM",
+          "description": "Lemons, imported",
+          "quantity": 11,
+          "unit": "kg",
+          "unitPrice": 7.8
+        }
+      ]
+    },
+    {
+      "number": "PO-264334",
+      "vendorId": "V08",
+      "date": "2026-09-21",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "CF-HSE-1K",
+          "description": "House blend coffee beans 1kg",
+          "quantity": 24,
+          "unit": "kg",
+          "unitPrice": 78.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "CF-SGL-1K",
+          "description": "Single origin coffee beans 1kg",
+          "quantity": 7,
+          "unit": "kg",
+          "unitPrice": 96.0
+        },
+        {
+          "lineNo": 3,
+          "sku": "CF-DCF-1K",
+          "description": "Decaf coffee beans 1kg",
+          "quantity": 16,
+          "unit": "kg",
+          "unitPrice": 88.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264335",
+      "vendorId": "V07",
+      "date": "2026-09-12",
+      "currency": "SGD",
+      "taxRate": 0.09,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "OF-RCP-80",
+          "description": "Thermal receipt roll 80mm, box of 50",
+          "quantity": 18,
+          "unit": "box",
+          "unitPrice": 39.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "OF-A4-500",
+          "description": "A4 copy paper 80gsm, ream of 500",
+          "quantity": 8,
+          "unit": "pack",
+          "unitPrice": 6.9
+        }
+      ]
+    },
+    {
+      "number": "PO-264337",
+      "vendorId": "V03",
+      "date": "2026-10-29",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "HW-ANC-M8",
+          "description": "Wall anchor M8, box of 100",
+          "quantity": 4,
+          "unit": "box",
+          "unitPrice": 26.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264345",
+      "vendorId": "V01",
+      "date": "2026-10-17",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "PKG-BAG-M",
+          "description": "Kraft takeaway bag medium, pack of 250",
+          "quantity": 7,
+          "unit": "pack",
+          "unitPrice": 64.5
+        },
+        {
+          "lineNo": 2,
+          "sku": "PKG-LID-12",
+          "description": "Cup lid 12oz, carton of 1000",
+          "quantity": 17,
+          "unit": "carton",
+          "unitPrice": 92.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264354",
+      "vendorId": "V05",
+      "date": "2026-09-08",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "TX-APR-OLV",
+          "description": "Barista apron, olive canvas",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 45.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "TX-OVM-PR",
+          "description": "Oven mitts, heat resistant pair",
+          "quantity": 22,
+          "unit": "set",
+          "unitPrice": 22.0
+        },
+        {
+          "lineNo": 3,
+          "sku": "TX-HAT-CHF",
+          "description": "Chef hat, white cotton",
+          "quantity": 24,
+          "unit": "pcs",
+          "unitPrice": 12.5
+        }
+      ]
+    },
+    {
+      "number": "PO-264361",
+      "vendorId": "V08",
+      "date": "2026-10-15",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "CF-DCF-1K",
+          "description": "Decaf coffee beans 1kg",
+          "quantity": 16,
+          "unit": "kg",
+          "unitPrice": 88.0
+        },
+        {
+          "lineNo": 2,
+          "sku": "CF-SGL-1K",
+          "description": "Single origin coffee beans 1kg",
+          "quantity": 26,
+          "unit": "kg",
+          "unitPrice": 96.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264369",
+      "vendorId": "V01",
+      "date": "2026-10-15",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "PKG-BAG-M",
+          "description": "Kraft takeaway bag medium, pack of 250",
+          "quantity": 9,
+          "unit": "pack",
+          "unitPrice": 64.5
+        }
+      ]
+    },
+    {
+      "number": "PO-264378",
+      "vendorId": "V04",
+      "date": "2026-10-20",
+      "currency": "MYR",
+      "taxRate": 0.1,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "CL-MFC-12",
+          "description": "Microfibre cloth, pack of 12",
+          "quantity": 24,
+          "unit": "pack",
+          "unitPrice": 18.0
+        }
+      ]
+    },
+    {
+      "number": "PO-264381",
+      "vendorId": "V02",
+      "date": "2026-09-07",
+      "currency": "MYR",
+      "taxRate": 0.0,
+      "lines": [
+        {
+          "lineNo": 1,
+          "sku": "HB-PAN",
+          "description": "Pandan leaves, bundle of 20",
+          "quantity": 14,
+          "unit": "pack",
+          "unitPrice": 3.5
+        },
+        {
+          "lineNo": 2,
+          "sku": "FR-CAL",
+          "description": "Calamansi limes",
+          "quantity": 14,
+          "unit": "kg",
+          "unitPrice": 9.6
+        }
+      ]
+    }
+  ],
+  "goodsReceipts": [
+    {
+      "number": "GRN-88468",
+      "poNumber": "PO-264224",
+      "date": "2026-10-12",
+      "lines": [
+        {
+          "sku": "EL-LED-18",
+          "quantity": 19,
+          "unit": "pcs"
+        },
+        {
+          "sku": "HW-BRK-30",
+          "quantity": 22,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88476",
+      "poNumber": "PO-264226",
+      "date": "2026-11-01",
+      "lines": [
+        {
+          "sku": "CL-MFC-12",
+          "quantity": 20,
+          "unit": "pack"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88482",
+      "poNumber": "PO-264227",
+      "date": "2026-09-24",
+      "lines": [
+        {
+          "sku": "OF-RCP-80",
+          "quantity": 7,
+          "unit": "box"
+        },
+        {
+          "sku": "OF-A4-500",
+          "quantity": 16,
+          "unit": "pack"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88499",
+      "poNumber": "PO-264235",
+      "date": "2026-10-04",
+      "lines": [
+        {
+          "sku": "KW-TMP-58",
+          "quantity": 15,
+          "unit": "pcs"
+        },
+        {
+          "sku": "KW-PIT-600",
+          "quantity": 4,
+          "unit": "pcs"
+        },
+        {
+          "sku": "KW-KNB-L",
+          "quantity": 15,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88508",
+      "poNumber": "PO-264244",
+      "date": "2026-10-14",
+      "lines": [
+        {
+          "sku": "FR-BAN",
+          "quantity": 7,
+          "unit": "kg"
+        },
+        {
+          "sku": "FR-CAL",
+          "quantity": 18,
+          "unit": "kg"
+        },
+        {
+          "sku": "HB-PAN",
+          "quantity": 22,
+          "unit": "pack"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88512",
+      "poNumber": "PO-264251",
+      "date": "2026-09-30",
+      "lines": [
+        {
+          "sku": "HB-PAN",
+          "quantity": 20,
+          "unit": "pack"
+        },
+        {
+          "sku": "FR-CAL",
+          "quantity": 28,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88519",
+      "poNumber": "PO-264257",
+      "date": "2026-09-21",
+      "lines": [
+        {
+          "sku": "TX-TWL-6",
+          "quantity": 8,
+          "unit": "set"
+        },
+        {
+          "sku": "TX-OVM-PR",
+          "quantity": 19,
+          "unit": "set"
+        },
+        {
+          "sku": "TX-APR-OLV",
+          "quantity": 21,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88523",
+      "poNumber": "PO-264266",
+      "date": "2026-10-27",
+      "lines": [
+        {
+          "sku": "FR-CAL",
+          "quantity": 25,
+          "unit": "kg"
+        },
+        {
+          "sku": "FR-LEM",
+          "quantity": 18,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88525",
+      "poNumber": "PO-264268",
+      "date": "2026-09-14",
+      "lines": [
+        {
+          "sku": "HW-ANC-M8",
+          "quantity": 5,
+          "unit": "box"
+        },
+        {
+          "sku": "EL-EXT-5",
+          "quantity": 10,
+          "unit": "pcs"
+        },
+        {
+          "sku": "HW-BRK-30",
+          "quantity": 20,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88541",
+      "poNumber": "PO-264273",
+      "date": "2026-09-12",
+      "lines": [
+        {
+          "sku": "OF-RCP-80",
+          "quantity": 6,
+          "unit": "box"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88556",
+      "poNumber": "PO-264282",
+      "date": "2026-10-28",
+      "lines": [
+        {
+          "sku": "KW-TMP-58",
+          "quantity": 11,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88568",
+      "poNumber": "PO-264282",
+      "date": "2026-11-06",
+      "lines": [
+        {
+          "sku": "KW-TMP-58",
+          "quantity": 8,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88578",
+      "poNumber": "PO-264284",
+      "date": "2026-09-24",
+      "lines": [
+        {
+          "sku": "HW-ANC-M8",
+          "quantity": 10,
+          "unit": "box"
+        },
+        {
+          "sku": "HW-BRK-30",
+          "quantity": 8,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88579",
+      "poNumber": "PO-264284",
+      "date": "2026-09-29",
+      "lines": [
+        {
+          "sku": "HW-ANC-M8",
+          "quantity": 7,
+          "unit": "box"
+        },
+        {
+          "sku": "HW-BRK-30",
+          "quantity": 13,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88594",
+      "poNumber": "PO-264287",
+      "date": "2026-10-14",
+      "lines": [
+        {
+          "sku": "CF-DCF-1K",
+          "quantity": 14,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-HSE-1K",
+          "quantity": 17,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88601",
+      "poNumber": "PO-264292",
+      "date": "2026-10-31",
+      "lines": [
+        {
+          "sku": "FR-LEM",
+          "quantity": 14,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88612",
+      "poNumber": "PO-264296",
+      "date": "2026-10-02",
+      "lines": [
+        {
+          "sku": "OF-A4-500",
+          "quantity": 9,
+          "unit": "pack"
+        },
+        {
+          "sku": "OF-LBL-12",
+          "quantity": 3,
+          "unit": "roll"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88626",
+      "poNumber": "PO-264303",
+      "date": "2026-10-07",
+      "lines": [
+        {
+          "sku": "OF-A4-500",
+          "quantity": 9,
+          "unit": "pack"
+        },
+        {
+          "sku": "OF-LBL-12",
+          "quantity": 3,
+          "unit": "roll"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88640",
+      "poNumber": "PO-264308",
+      "date": "2026-09-11",
+      "lines": [
+        {
+          "sku": "CF-HSE-1K",
+          "quantity": 28,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-DCF-1K",
+          "quantity": 25,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-SGL-1K",
+          "quantity": 25,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88655",
+      "poNumber": "PO-264311",
+      "date": "2026-09-20",
+      "lines": [
+        {
+          "sku": "CF-HSE-1K",
+          "quantity": 28,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-DCF-1K",
+          "quantity": 25,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-SGL-1K",
+          "quantity": 25,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88661",
+      "poNumber": "PO-264320",
+      "date": "2026-10-16",
+      "lines": [
+        {
+          "sku": "CF-DCF-1K",
+          "quantity": 26,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-HSE-1K",
+          "quantity": 20,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-SGL-1K",
+          "quantity": 24,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88671",
+      "poNumber": "PO-264321",
+      "date": "2026-10-05",
+      "lines": [
+        {
+          "sku": "KW-KNB-L",
+          "quantity": 5,
+          "unit": "pcs"
+        },
+        {
+          "sku": "KW-PIT-600",
+          "quantity": 24,
+          "unit": "pcs"
+        },
+        {
+          "sku": "KW-TMP-58",
+          "quantity": 8,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88680",
+      "poNumber": "PO-264327",
+      "date": "2026-10-19",
+      "lines": [
+        {
+          "sku": "FR-BAN",
+          "quantity": 10,
+          "unit": "kg"
+        },
+        {
+          "sku": "FR-LEM",
+          "quantity": 11,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88684",
+      "poNumber": "PO-264334",
+      "date": "2026-09-24",
+      "lines": [
+        {
+          "sku": "CF-HSE-1K",
+          "quantity": 24,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-SGL-1K",
+          "quantity": 7,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-DCF-1K",
+          "quantity": 16,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88691",
+      "poNumber": "PO-264335",
+      "date": "2026-09-20",
+      "lines": [
+        {
+          "sku": "OF-RCP-80",
+          "quantity": 18,
+          "unit": "box"
+        },
+        {
+          "sku": "OF-A4-500",
+          "quantity": 8,
+          "unit": "pack"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88708",
+      "poNumber": "PO-264337",
+      "date": "2026-11-04",
+      "lines": [
+        {
+          "sku": "HW-ANC-M8",
+          "quantity": 4,
+          "unit": "box"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88719",
+      "poNumber": "PO-264345",
+      "date": "2026-10-24",
+      "lines": [
+        {
+          "sku": "PKG-BAG-M",
+          "quantity": 7,
+          "unit": "pack"
+        },
+        {
+          "sku": "PKG-LID-12",
+          "quantity": 17,
+          "unit": "carton"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88721",
+      "poNumber": "PO-264354",
+      "date": "2026-09-16",
+      "lines": [
+        {
+          "sku": "TX-APR-OLV",
+          "quantity": 3,
+          "unit": "pcs"
+        },
+        {
+          "sku": "TX-OVM-PR",
+          "quantity": 22,
+          "unit": "set"
+        },
+        {
+          "sku": "TX-HAT-CHF",
+          "quantity": 24,
+          "unit": "pcs"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88737",
+      "poNumber": "PO-264361",
+      "date": "2026-10-23",
+      "lines": [
+        {
+          "sku": "CF-DCF-1K",
+          "quantity": 16,
+          "unit": "kg"
+        },
+        {
+          "sku": "CF-SGL-1K",
+          "quantity": 26,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88753",
+      "poNumber": "PO-264369",
+      "date": "2026-10-21",
+      "lines": [
+        {
+          "sku": "PKG-BAG-M",
+          "quantity": 9,
+          "unit": "pack"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88767",
+      "poNumber": "PO-264378",
+      "date": "2026-10-27",
+      "lines": [
+        {
+          "sku": "CL-MFC-12",
+          "quantity": 24,
+          "unit": "pack"
+        }
+      ]
+    },
+    {
+      "number": "GRN-88768",
+      "poNumber": "PO-264381",
+      "date": "2026-09-11",
+      "lines": [
+        {
+          "sku": "HB-PAN",
+          "quantity": 14,
+          "unit": "pack"
+        },
+        {
+          "sku": "FR-CAL",
+          "quantity": 14,
+          "unit": "kg"
+        }
+      ]
+    }
+  ],
+  "ledger": [
+    {
+      "vendorId": "V08",
+      "invoiceNumber": "SB-03688",
+      "invoiceDate": "2026-09-14",
+      "total": 7462.4,
+      "currency": "MYR",
+      "poNumber": "PO-264308",
+      "lines": [
+        {
+          "sku": "CF-HSE-1K",
+          "quantity": 28
+        },
+        {
+          "sku": "CF-DCF-1K",
+          "quantity": 25
+        },
+        {
+          "sku": "CF-SGL-1K",
+          "quantity": 25
+        }
+      ],
+      "postedOn": "2026-09-17"
+    },
+    {
+      "vendorId": "V03",
+      "invoiceNumber": "TFH-06569",
+      "invoiceDate": "2026-09-25",
+      "total": 447.92,
+      "currency": "MYR",
+      "poNumber": "PO-264284",
+      "lines": [
+        {
+          "sku": "HW-ANC-M8",
+          "quantity": 10
+        },
+        {
+          "sku": "HW-BRK-30",
+          "quantity": 8
+        }
+      ],
+      "postedOn": "2026-09-26"
+    },
+    {
+      "vendorId": "V07",
+      "invoiceNumber": "QOS03440",
+      "invoiceDate": "2026-10-05",
+      "total": 108.24,
+      "currency": "SGD",
+      "poNumber": "PO-264296",
+      "lines": [
+        {
+          "sku": "OF-A4-500",
+          "quantity": 9
+        },
+        {
+          "sku": "OF-LBL-12",
+          "quantity": 3
+        }
+      ],
+      "postedOn": "2026-10-08"
+    },
+    {
+      "vendorId": "V08",
+      "invoiceNumber": "SB-03675",
+      "invoiceDate": "2026-10-16",
+      "total": 2813.8,
+      "currency": "MYR",
+      "poNumber": "PO-264287",
+      "lines": [
+        {
+          "sku": "CF-DCF-1K",
+          "quantity": 14
+        },
+        {
+          "sku": "CF-HSE-1K",
+          "quantity": 17
+        }
+      ],
+      "postedOn": "2026-10-20"
+    },
+    {
+      "vendorId": "V06",
+      "invoiceNumber": "LK-08051",
+      "invoiceDate": "2026-10-29",
+      "total": 431.64,
+      "currency": "SGD",
+      "poNumber": "PO-264282",
+      "lines": [
+        {
+          "sku": "KW-TMP-58",
+          "quantity": 11
+        }
+      ],
+      "postedOn": "2026-10-31"
+    },
+    {
+      "vendorId": "V02",
+      "invoiceNumber": "SFP/06215",
+      "invoiceDate": "2026-11-04",
+      "total": 109.2,
+      "currency": "MYR",
+      "poNumber": "PO-264292",
+      "lines": [
+        {
+          "sku": "FR-LEM",
+          "quantity": 14
+        }
+      ],
+      "postedOn": "2026-11-09"
+    }
+  ]
+}

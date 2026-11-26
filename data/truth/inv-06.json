@@ -1,0 +1,51 @@
+{
+  "id": "inv-06",
+  "situation": "price_variance",
+  "invoice": {
+    "vendorName": "Jalinan Textile Works Sdn Bhd",
+    "vendorRegistrationNo": "201601029911 (1188450-K)",
+    "invoiceNumber": "JTW-01684",
+    "invoiceDate": "2026-09-24",
+    "poNumber": "PO-264257",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Kitchen towel set of 6",
+        "sku": null,
+        "quantity": 8.0,
+        "unit": "set",
+        "unitPrice": 40.32,
+        "amount": 322.56
+      },
+      {
+        "description": "Oven mitts, heat resistant pair",
+        "sku": null,
+        "quantity": 19.0,
+        "unit": "set",
+        "unitPrice": 22.0,
+        "amount": 418.0
+      },
+      {
+        "description": "Barista apron, olive canvas",
+        "sku": null,
+        "quantity": 21.0,
+        "unit": "pcs",
+        "unitPrice": 45.0,
+        "amount": 945.0
+      }
+    ],
+    "subtotal": 1685.56,
+    "taxRate": 0.1,
+    "tax": 168.56,
+    "total": 1854.12,
+    "bank": {
+      "bankName": "Bank Rekaan Berhad",
+      "accountName": "Jalinan Textile Works Sdn Bhd",
+      "accountNumber": "2207-305-88140"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "PRICE_VARIANCE"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "inv-20",
+  "situation": "duplicate_number",
+  "invoice": {
+    "vendorName": "Sutera Bean Roasters Sdn Bhd",
+    "vendorRegistrationNo": "201401038804 (1098812-P)",
+    "invoiceNumber": "SB-03675",
+    "invoiceDate": "2026-10-16",
+    "poNumber": "PO-264287",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Decaf coffee beans 1kg",
+        "sku": null,
+        "quantity": 14.0,
+        "unit": "kg",
+        "unitPrice": 88.0,
+        "amount": 1232.0
+      },
+      {
+        "description": "House blend coffee beans 1kg",
+        "sku": null,
+        "quantity": 17.0,
+        "unit": "kg",
+        "unitPrice": 78.0,
+        "amount": 1326.0
+      }
+    ],
+    "subtotal": 2558.0,
+    "taxRate": 0.1,
+    "tax": 255.8,
+    "total": 2813.8,
+    "bank": {
+      "bankName": "Teluk Mutual Bank",
+      "accountName": "Sutera Bean Roasters Sdn Bhd",
+      "accountNumber": "3381-2290-0416"
+    }
+  },
+  "decision": "reject",
+  "reasons": [
+    "DUPLICATE_INVOICE"
+  ]
+}

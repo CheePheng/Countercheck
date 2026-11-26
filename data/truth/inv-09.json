@@ -1,0 +1,43 @@
+{
+  "id": "inv-09",
+  "situation": "possible_duplicate",
+  "invoice": {
+    "vendorName": "Quayline Office Supply Pte Ltd",
+    "vendorRegistrationNo": "200912876M",
+    "invoiceNumber": "QOS03443",
+    "invoiceDate": "2026-10-07",
+    "poNumber": "PO-264303",
+    "currency": "SGD",
+    "lines": [
+      {
+        "description": "A4 copy paper 80gsm, ream of 500",
+        "sku": null,
+        "quantity": 9.0,
+        "unit": "pack",
+        "unitPrice": 6.9,
+        "amount": 62.1
+      },
+      {
+        "description": "Label printer tape 12mm",
+        "sku": null,
+        "quantity": 3.0,
+        "unit": "roll",
+        "unitPrice": 12.4,
+        "amount": 37.2
+      }
+    ],
+    "subtotal": 99.3,
+    "taxRate": 0.09,
+    "tax": 8.94,
+    "total": 108.24,
+    "bank": {
+      "bankName": "Straits Harbour Bank",
+      "accountName": "Quayline Office Supply Pte Ltd",
+      "accountNumber": "771-558120-3"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "POSSIBLE_DUPLICATE"
+  ]
+}

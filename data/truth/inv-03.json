@@ -1,0 +1,51 @@
+{
+  "id": "inv-03",
+  "situation": "not_ordered",
+  "invoice": {
+    "vendorName": "Serai Fresh Produce Sdn Bhd",
+    "vendorRegistrationNo": "201701034521 (1239876-W)",
+    "invoiceNumber": "SFP/06250",
+    "invoiceDate": "2026-09-14",
+    "poNumber": "PO-264381",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Pandan leaves, bundle of 20",
+        "sku": null,
+        "quantity": 14.0,
+        "unit": "pack",
+        "unitPrice": 3.5,
+        "amount": 49.0
+      },
+      {
+        "description": "Calamansi limes",
+        "sku": null,
+        "quantity": 14.0,
+        "unit": "kg",
+        "unitPrice": 9.6,
+        "amount": 134.4
+      },
+      {
+        "description": "Bananas, Cavendish",
+        "sku": null,
+        "quantity": 6.0,
+        "unit": "kg",
+        "unitPrice": 4.2,
+        "amount": 25.2
+      }
+    ],
+    "subtotal": 208.6,
+    "taxRate": 0.0,
+    "tax": 0.0,
+    "total": 208.6,
+    "bank": {
+      "bankName": "Bank Rekaan Berhad",
+      "accountName": "Serai Fresh Produce Sdn Bhd",
+      "accountNumber": "2207-114-50331"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "NOT_ORDERED"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "inv-01",
+  "situation": "partial_second",
+  "invoice": {
+    "vendorName": "Lumora Kitchenware Pte Ltd",
+    "vendorRegistrationNo": "201812345K",
+    "invoiceNumber": "LK-08060",
+    "invoiceDate": "2026-11-08",
+    "poNumber": "PO-264282",
+    "currency": "SGD",
+    "lines": [
+      {
+        "description": "Coffee tamper 58mm",
+        "sku": null,
+        "quantity": 8.0,
+        "unit": "pcs",
+        "unitPrice": 36.0,
+        "amount": 288.0
+      }
+    ],
+    "subtotal": 288.0,
+    "taxRate": 0.09,
+    "tax": 25.92,
+    "total": 313.92,
+    "bank": {
+      "bankName": "Straits Harbour Bank",
+      "accountName": "Lumora Kitchenware Pte Ltd",
+      "accountNumber": "771-203344-1"
+    }
+  },
+  "decision": "approve",
+  "reasons": []
+}

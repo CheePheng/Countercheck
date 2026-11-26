@@ -1,0 +1,41 @@
+{
+  "id": "inv-12",
+  "situation": "partial_second",
+  "invoice": {
+    "vendorName": "Tanjung Ferro Hardware Sdn Bhd",
+    "vendorRegistrationNo": "200801023987 (812233-T)",
+    "invoiceNumber": "TFH-06576",
+    "invoiceDate": "2026-10-02",
+    "poNumber": "PO-264284",
+    "currency": "MYR",
+    "lines": [
+      {
+        "description": "Wall anchor M8, box of 100",
+        "sku": "HW-ANC-M8",
+        "quantity": 7.0,
+        "unit": "box",
+        "unitPrice": 26.0,
+        "amount": 182.0
+      },
+      {
+        "description": "Stainless shelf bracket 30cm",
+        "sku": "HW-BRK-30",
+        "quantity": 13.0,
+        "unit": "pcs",
+        "unitPrice": 18.4,
+        "amount": 239.2
+      }
+    ],
+    "subtotal": 421.2,
+    "taxRate": 0.1,
+    "tax": 42.12,
+    "total": 463.32,
+    "bank": {
+      "bankName": "Selatan Commercial Bank",
+      "accountName": "Tanjung Ferro Hardware Sdn Bhd",
+      "accountNumber": "5140-8820-1173"
+    }
+  },
+  "decision": "approve",
+  "reasons": []
+}

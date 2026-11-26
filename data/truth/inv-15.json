@@ -1,0 +1,43 @@
+{
+  "id": "inv-15",
+  "situation": "not_ordered",
+  "invoice": {
+    "vendorName": "Brightmoor Cleaning Supplies Sdn Bhd",
+    "vendorRegistrationNo": "201301045566 (1056677-D)",
+    "invoiceNumber": "BM09024",
+    "invoiceDate": "2026-10-31",
+    "poNumber": "PO-264378",
+    "currency": "RM",
+    "lines": [
+      {
+        "description": "Microfibre cloth, pack of 12",
+        "sku": null,
+        "quantity": 24.0,
+        "unit": "pack",
+        "unitPrice": 18.0,
+        "amount": 432.0
+      },
+      {
+        "description": "Dishwashing liquid 5L",
+        "sku": null,
+        "quantity": 4.0,
+        "unit": "bottle",
+        "unitPrice": 28.0,
+        "amount": 112.0
+      }
+    ],
+    "subtotal": 544.0,
+    "taxRate": 0.1,
+    "tax": 54.4,
+    "total": 598.4,
+    "bank": {
+      "bankName": "Teluk Mutual Bank",
+      "accountName": "Brightmoor Cleaning Supplies Sdn Bhd",
+      "accountNumber": "3381-0045-7720"
+    }
+  },
+  "decision": "hold",
+  "reasons": [
+    "NOT_ORDERED"
+  ]
+}
