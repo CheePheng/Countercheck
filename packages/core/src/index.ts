@@ -10,6 +10,22 @@ export {
   reasonCodes,
 } from "./check.js";
 export {
+  type Attempt,
+  backoff,
+  DEFAULT_RETRY,
+  FakeLedger,
+  type Fault,
+  idempotencyKey,
+  type LedgerEntryPosted,
+  type LedgerResponse,
+  Outbox,
+  type OutboxItem,
+  type PostingRequest,
+  type Reconciliation,
+  type RetryPolicy,
+  reconcile,
+} from "./ledger.js";
+export {
   cents,
   daysBetween,
   descriptionSimilarity,

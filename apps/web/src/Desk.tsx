@@ -1,11 +1,33 @@
-import { checkInvoice, type Decision } from "@countercheck/core";
+import {
+  type CheckResult,
+  checkInvoice,
+  type Decision,
+  type Invoice,
+  idempotencyKey,
+  normalizeCurrency,
+  normalizeName,
+  type PostingRequest,
+} from "@countercheck/core";
 import { type Page, verifyExtraction } from "@countercheck/extract";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ApiErrorBody, Reading, ReadResponse, StatusResponse } from "./api-types";
 import { cases, hasRecording, loadPage, loadRecording, truths, world } from "./data";
 import { money, shortDate } from "./format";
+import { type LedgerApi, LedgerPanel } from "./Ledger";
 import { Paper } from "./Paper";
 import { Voucher } from "./Voucher";
+
+/** What an approval posts: keyed by vendor and invoice number, so a retry can't post it twice. */
+function postingFor(invoice: Invoice, result: CheckResult): PostingRequest {
+  const vendorId = result.vendor?.id ?? normalizeName(invoice.vendorName);
+  return {
+    key: idempotencyKey(vendorId, invoice.invoiceNumber),
+    vendorId,
+    invoiceNumber: invoice.invoiceNumber,
+    amount: invoice.total,
+    currency: result.po?.currency ?? normalizeCurrency(invoice.currency),
+  };
+}
 
 type Phase = "idle" | "reading" | "checked";
 type Live =
@@ -80,11 +102,13 @@ export function Desk({
   onSelect,
   decisions,
   onDecide,
+  ledger,
 }: {
   caseId: string;
   onSelect: (id: string) => void;
   decisions: Record<string, Decision>;
   onDecide: (id: string, d: Decision) => void;
+  ledger: LedgerApi;
 }) {
   const info = cases.find((c) => c.id === caseId) ?? cases[0]!;
   const truth = truths.get(info.id)!;
@@ -234,6 +258,7 @@ export function Desk({
               onDecide={(d) => {
                 setLanded(true);
                 onDecide(info.id, d);
+                if (d === "approve") ledger.post(postingFor(analysis.v.invoice, analysis.r));
               }}
               onFocus={setFocus}
               onNext={() => {
@@ -241,6 +266,14 @@ export function Desk({
                 onSelect(cases[(i + 1) % cases.length]!.id);
               }}
               live={liveControl}
+              ledger={
+                decided === "approve" ? (
+                  <LedgerPanel
+                    api={ledger}
+                    keyOf={postingFor(analysis.v.invoice, analysis.r).key}
+                  />
+                ) : null
+              }
             />
           </div>
         ) : (

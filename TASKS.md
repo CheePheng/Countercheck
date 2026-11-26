@@ -191,7 +191,18 @@ server for the read-only tools.
   (core, data contract, extract, meter, API) and 13 Python.
 - Local secrets (gitignored): recorder key in `apps/web/.dev.vars` and as
   `COUNTERCHECK_RECORDER_KEY` in the root `.env`.
+- Step 6 done (2026-11-27): `packages/core/src/ledger.ts` (idempotency keys, outbox with
+  exponential backoff and jitter, dead letters, `FakeLedger` with queued faults, `reconcile`);
+  a property test runs 500 failure schedules and requires exactly one posting per approval. In
+  the app, approving posts through a ledger simulated in the browser (by default the first
+  answer is lost, so the retry and "already posted" show), with fault switches one click away.
+- Step 10 mostly done: README (results with dates and limits, architecture, how to run),
+  LICENSE (Apache 2.0), CI (`.github/workflows/ci.yml`: lint, typecheck, tests, build, browser
+  smoke test; Python tests and a byte-for-byte regeneration check of the JSON and PDFs, not the
+  .webp pictures). `apps/web/scripts/smoke.mjs` passes locally (`PLAYWRIGHT_CHANNEL=msedge`).
+  CI has never run (nothing pushed).
+- In Git Bash, pass `MSYS_NO_PATHCONV=1` for arguments like `#/inv-01` (it rewrites them as
+  Windows paths).
 - Next, in order: ask the user before deploying (step 9) and setting the `RECORDER_KEY` secret;
-  the ledger integration (step 6, exactly-once posting with failure toggles); the exception agent
-  (step 5) for invoices without a usable PO; scans (vision vs OCR); README, LICENSE and CI
-  (step 10); a public repo once the user creates it.
+  then a public repo once the user creates it; the
+  exception agent (step 5) for invoices without a usable PO; scans (vision vs OCR).

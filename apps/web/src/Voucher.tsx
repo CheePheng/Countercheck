@@ -81,6 +81,7 @@ export function Voucher({
   onFocus,
   onNext,
   live,
+  ledger,
 }: {
   truth: Truth;
   reading: Reading;
@@ -92,6 +93,8 @@ export function Voucher({
   onFocus: (field: string | null) => void;
   onNext: () => void;
   live: ReactNode;
+  /** The posting's progress, once approved. */
+  ledger: ReactNode;
 }) {
   const verdict = VERDICT[result.decision];
   const cur = invoice.currency;
@@ -243,6 +246,7 @@ export function Voucher({
                 ? ", which is right."
                 : ", which is wrong for this invoice."}
             </p>
+            {ledger}
             <button
               type="button"
               onClick={onNext}

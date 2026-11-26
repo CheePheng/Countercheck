@@ -5,6 +5,7 @@ import { Desk } from "./Desk";
 import { cases, FIRST_CASE } from "./data";
 import { Evals } from "./Evals";
 import { How } from "./How";
+import { useLedger } from "./Ledger";
 import "./styles.css";
 
 type Route = { name: "desk"; id: string } | { name: "evals" } | { name: "how" };
@@ -57,6 +58,7 @@ function Wordmark() {
 function App() {
   const route = useRoute();
   const [decisions, setDecisions] = useState<Record<string, Decision>>({});
+  const ledger = useLedger();
   const tab = (name: Route["name"], href: string, label: string) => (
     <a
       href={href}
@@ -90,6 +92,7 @@ function App() {
             }}
             decisions={decisions}
             onDecide={(id, d) => setDecisions((all) => ({ ...all, [id]: d }))}
+            ledger={ledger}
           />
         </>
       )}

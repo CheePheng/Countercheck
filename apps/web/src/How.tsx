@@ -15,6 +15,10 @@ const STEPS: [string, string][] = [
     "A person decides",
     "Countercheck only recommends. Approving, holding or rejecting is a click by the reviewer, with the reasons in plain words and the evidence highlighted on the invoice.",
   ],
+  [
+    "The ledger posts it once",
+    "An approval goes out through an outbox. Each posting carries a key made from the vendor and the invoice number, so a retry after a lost answer, or the same request arriving twice, can't post it twice. Failed calls are retried with growing waits, and a reconciliation compares what was approved with what the ledger holds. Here the ledger is simulated in your browser, and you can make it fail.",
+  ],
 ];
 
 export function How() {

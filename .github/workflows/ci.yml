@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  web:
+    name: Lint, typecheck, test, build, smoke test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Unit, contract and property tests
+        run: npm test
+
+      - name: Build the app and the Worker
+        run: npm run build
+
+      # Runs the built app in workerd (vite preview) and drives it in Chromium.
+      # Only recorded readings are used: no Workers AI calls.
+      - name: Smoke test in a browser
+        run: |
+          npx playwright install --with-deps chromium
+          (cd apps/web && npx vite preview --port 4173 --strictPort > preview.log 2>&1 &)
+          for i in $(seq 1 60); do curl -sf -o /dev/null http://localhost:4173/ && break; sleep 1; done
+          npm run e2e -w @countercheck/web -- http://localhost:4173
+
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: smoke-screenshots
+          path: apps/web/test-results/smoke
+          if-no-files-found: ignore
+
+  pipeline:
+    name: Python pipeline
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: astral-sh/setup-uv@v6
+
+      - run: uv sync --locked
+
+      - name: Tests
+        run: uv run pytest -q
+
+      # The committed sample data must be exactly what the generator writes. The page pictures
+      # (.webp) are rasterised and may differ by platform, so they are left out.
+      - name: Regenerate the sample data and compare
+        run: |
+          uv run countercheck-data
+          cd .. && git diff --exit-code -- data/world.json data/cases.json data/truth 'data/cases/*.pdf' 'data/cases/*.page.json'
