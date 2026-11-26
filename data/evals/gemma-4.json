@@ -1,0 +1,762 @@
+{
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "promptVersion": "2026-11-26.1",
+ "runAt": "2026-11-26T14:17:01+00:00",
+ "invoices": [
+  "inv-01",
+  "inv-02",
+  "inv-03",
+  "inv-04",
+  "inv-05",
+  "inv-06",
+  "inv-07",
+  "inv-08",
+  "inv-09",
+  "inv-10",
+  "inv-11",
+  "inv-12",
+  "inv-13",
+  "inv-14",
+  "inv-15",
+  "inv-16",
+  "inv-17",
+  "inv-18",
+  "inv-19",
+  "inv-20",
+  "inv-21",
+  "inv-22",
+  "inv-23",
+  "inv-24",
+  "inv-25",
+  "inv-26",
+  "inv-27",
+  "inv-28"
+ ],
+ "summary": {
+  "all": {
+   "invoices": 28,
+   "read": 28,
+   "fieldAccuracy": 1.0,
+   "allFieldsRight": 28,
+   "decisionsRight": 28,
+   "reasonsRight": 28,
+   "falseApprovals": 0,
+   "falseHolds": 0,
+   "neurons": 816.7,
+   "neuronsPerInvoice": 29.2,
+   "secondsP50": 19.52,
+   "secondsP95": 26.109
+  },
+  "dev": {
+   "invoices": 14,
+   "read": 14,
+   "fieldAccuracy": 1.0,
+   "allFieldsRight": 14,
+   "decisionsRight": 14,
+   "reasonsRight": 14,
+   "falseApprovals": 0,
+   "falseHolds": 0,
+   "neurons": 408.7,
+   "neuronsPerInvoice": 29.2,
+   "secondsP50": 18.57,
+   "secondsP95": 21.863
+  },
+  "test": {
+   "invoices": 14,
+   "read": 14,
+   "fieldAccuracy": 1.0,
+   "allFieldsRight": 14,
+   "decisionsRight": 14,
+   "reasonsRight": 14,
+   "falseApprovals": 0,
+   "falseHolds": 0,
+   "neurons": 408.0,
+   "neuronsPerInvoice": 29.1,
+   "secondsP50": 19.964,
+   "secondsP95": 22.331
+  }
+ },
+ "failures": [
+  {
+   "id": "inv-26",
+   "status": 504,
+   "message": "The model didn't answer in time.",
+   "at": "2026-11-26T14:15:45+00:00"
+  }
+ ],
+ "cases": [
+  {
+   "id": "inv-01",
+   "split": "dev",
+   "situation": "partial_second",
+   "read": true,
+   "fieldsTotal": 17,
+   "fieldsRight": 17,
+   "wrong": [],
+   "unverified": [],
+   "decision": "approve",
+   "knownDecision": "approve",
+   "reasons": [],
+   "knownReasons": [],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 24.855,
+   "latencyMs": 13288,
+   "attempts": 1
+  },
+  {
+   "id": "inv-02",
+   "split": "test",
+   "situation": "currency_mismatch",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "CURRENCY_MISMATCH"
+   ],
+   "knownReasons": [
+    "CURRENCY_MISMATCH"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 31.909,
+   "latencyMs": 22331,
+   "attempts": 1
+  },
+  {
+   "id": "inv-03",
+   "split": "test",
+   "situation": "not_ordered",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "NOT_ORDERED"
+   ],
+   "knownReasons": [
+    "NOT_ORDERED"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 31.145,
+   "latencyMs": 20231,
+   "attempts": 1
+  },
+  {
+   "id": "inv-04",
+   "split": "dev",
+   "situation": "currency_mismatch",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "CURRENCY_MISMATCH"
+   ],
+   "knownReasons": [
+    "CURRENCY_MISMATCH"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 30.055,
+   "latencyMs": 16767,
+   "attempts": 1
+  },
+  {
+   "id": "inv-05",
+   "split": "dev",
+   "situation": "uom_mismatch",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "UOM_MISMATCH"
+   ],
+   "knownReasons": [
+    "UOM_MISMATCH"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 29.636,
+   "latencyMs": 14947,
+   "attempts": 1
+  },
+  {
+   "id": "inv-06",
+   "split": "dev",
+   "situation": "price_variance",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "PRICE_VARIANCE"
+   ],
+   "knownReasons": [
+    "PRICE_VARIANCE"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 29.527,
+   "latencyMs": 19033,
+   "attempts": 1
+  },
+  {
+   "id": "inv-07",
+   "split": "test",
+   "situation": "possible_duplicate",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "POSSIBLE_DUPLICATE"
+   ],
+   "knownReasons": [
+    "POSSIBLE_DUPLICATE"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 33.909,
+   "latencyMs": 20736,
+   "attempts": 1
+  },
+  {
+   "id": "inv-08",
+   "split": "test",
+   "situation": "no_po",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "NO_PO"
+   ],
+   "knownReasons": [
+    "NO_PO"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 33.182,
+   "latencyMs": 34356,
+   "attempts": 1
+  },
+  {
+   "id": "inv-09",
+   "split": "dev",
+   "situation": "possible_duplicate",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "POSSIBLE_DUPLICATE"
+   ],
+   "knownReasons": [
+    "POSSIBLE_DUPLICATE"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 28.2,
+   "latencyMs": 19558,
+   "attempts": 1
+  },
+  {
+   "id": "inv-10",
+   "split": "test",
+   "situation": "duplicate_number",
+   "read": true,
+   "fieldsTotal": 17,
+   "fieldsRight": 17,
+   "wrong": [],
+   "unverified": [],
+   "decision": "reject",
+   "knownDecision": "reject",
+   "reasons": [
+    "DUPLICATE_INVOICE"
+   ],
+   "knownReasons": [
+    "DUPLICATE_INVOICE"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 25.282,
+   "latencyMs": 12069,
+   "attempts": 1
+  },
+  {
+   "id": "inv-11",
+   "split": "test",
+   "situation": "clean_sg",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "approve",
+   "knownDecision": "approve",
+   "reasons": [],
+   "knownReasons": [],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 30.909,
+   "latencyMs": 20473,
+   "attempts": 1
+  },
+  {
+   "id": "inv-12",
+   "split": "test",
+   "situation": "partial_second",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "approve",
+   "knownDecision": "approve",
+   "reasons": [],
+   "knownReasons": [],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 30.091,
+   "latencyMs": 19520,
+   "attempts": 1
+  },
+  {
+   "id": "inv-13",
+   "split": "dev",
+   "situation": "tax_mismatch",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "TAX_MISMATCH"
+   ],
+   "knownReasons": [
+    "TAX_MISMATCH"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 32.809,
+   "latencyMs": 18570,
+   "attempts": 1
+  },
+  {
+   "id": "inv-14",
+   "split": "dev",
+   "situation": "clean",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "approve",
+   "knownDecision": "approve",
+   "reasons": [],
+   "knownReasons": [],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 29.127,
+   "latencyMs": 20391,
+   "attempts": 1
+  },
+  {
+   "id": "inv-15",
+   "split": "dev",
+   "situation": "not_ordered",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "NOT_ORDERED"
+   ],
+   "knownReasons": [
+    "NOT_ORDERED"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 26.055,
+   "latencyMs": 21759,
+   "attempts": 1
+  },
+  {
+   "id": "inv-16",
+   "split": "test",
+   "situation": "uom_mismatch",
+   "read": true,
+   "fieldsTotal": 17,
+   "fieldsRight": 17,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "UOM_MISMATCH"
+   ],
+   "knownReasons": [
+    "UOM_MISMATCH"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 26.3,
+   "latencyMs": 12999,
+   "attempts": 1
+  },
+  {
+   "id": "inv-17",
+   "split": "dev",
+   "situation": "clean_sg",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "approve",
+   "knownDecision": "approve",
+   "reasons": [],
+   "knownReasons": [],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 26.764,
+   "latencyMs": 18630,
+   "attempts": 1
+  },
+  {
+   "id": "inv-18",
+   "split": "test",
+   "situation": "bank_changed",
+   "read": true,
+   "fieldsTotal": 17,
+   "fieldsRight": 17,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "BANK_DETAILS_CHANGED"
+   ],
+   "knownReasons": [
+    "BANK_DETAILS_CHANGED"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 26.273,
+   "latencyMs": 15395,
+   "attempts": 1
+  },
+  {
+   "id": "inv-19",
+   "split": "test",
+   "situation": "price_variance",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "PRICE_VARIANCE"
+   ],
+   "knownReasons": [
+    "PRICE_VARIANCE"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 28.345,
+   "latencyMs": 17073,
+   "attempts": 1
+  },
+  {
+   "id": "inv-20",
+   "split": "dev",
+   "situation": "duplicate_number",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "reject",
+   "knownDecision": "reject",
+   "reasons": [
+    "DUPLICATE_INVOICE"
+   ],
+   "knownReasons": [
+    "DUPLICATE_INVOICE"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 29.7,
+   "latencyMs": 17435,
+   "attempts": 1
+  },
+  {
+   "id": "inv-21",
+   "split": "dev",
+   "situation": "bank_changed",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "BANK_DETAILS_CHANGED"
+   ],
+   "knownReasons": [
+    "BANK_DETAILS_CHANGED"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 30.6,
+   "latencyMs": 21863,
+   "attempts": 1
+  },
+  {
+   "id": "inv-22",
+   "split": "test",
+   "situation": "clean_zero_tax",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "approve",
+   "knownDecision": "approve",
+   "reasons": [],
+   "knownReasons": [],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 28.982,
+   "latencyMs": 22210,
+   "attempts": 1
+  },
+  {
+   "id": "inv-23",
+   "split": "dev",
+   "situation": "clean_zero_tax",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "approve",
+   "knownDecision": "approve",
+   "reasons": [],
+   "knownReasons": [],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 31.309,
+   "latencyMs": 17918,
+   "attempts": 1
+  },
+  {
+   "id": "inv-24",
+   "split": "test",
+   "situation": "tax_mismatch",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "TAX_MISMATCH"
+   ],
+   "knownReasons": [
+    "TAX_MISMATCH"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 30.727,
+   "latencyMs": 20347,
+   "attempts": 1
+  },
+  {
+   "id": "inv-25",
+   "split": "test",
+   "situation": "short_delivery",
+   "read": true,
+   "fieldsTotal": 17,
+   "fieldsRight": 17,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "SHORT_DELIVERY"
+   ],
+   "knownReasons": [
+    "SHORT_DELIVERY"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 25.173,
+   "latencyMs": 19964,
+   "attempts": 1
+  },
+  {
+   "id": "inv-26",
+   "split": "dev",
+   "situation": "short_delivery",
+   "read": true,
+   "fieldsTotal": 25,
+   "fieldsRight": 25,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "SHORT_DELIVERY"
+   ],
+   "knownReasons": [
+    "SHORT_DELIVERY"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 32.427,
+   "latencyMs": 26109,
+   "attempts": 1,
+   "runAt": "2026-11-26T14:17:01+00:00"
+  },
+  {
+   "id": "inv-27",
+   "split": "dev",
+   "situation": "no_po",
+   "read": true,
+   "fieldsTotal": 21,
+   "fieldsRight": 21,
+   "wrong": [],
+   "unverified": [],
+   "decision": "hold",
+   "knownDecision": "hold",
+   "reasons": [
+    "NO_PO"
+   ],
+   "knownReasons": [
+    "NO_PO"
+   ],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 27.645,
+   "latencyMs": 16362,
+   "attempts": 1
+  },
+  {
+   "id": "inv-28",
+   "split": "test",
+   "situation": "clean",
+   "read": true,
+   "fieldsTotal": 17,
+   "fieldsRight": 17,
+   "wrong": [],
+   "unverified": [],
+   "decision": "approve",
+   "knownDecision": "approve",
+   "reasons": [],
+   "knownReasons": [],
+   "decisionRight": true,
+   "reasonsRight": true,
+   "falseApproval": false,
+   "falseHold": false,
+   "neurons": 25.755,
+   "latencyMs": 13658,
+   "attempts": 1
+  }
+ ]
+}

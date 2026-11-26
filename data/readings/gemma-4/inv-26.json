@@ -1,0 +1,318 @@
+{
+ "case": "inv-26",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Tanjung Ferro Hardware Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "200801023987 (812233-T)",
+   "quote": "200801023987 (812233-T)"
+  },
+  "invoiceNumber": {
+   "value": "TFH-06556",
+   "quote": "TFH-06556"
+  },
+  "invoiceDate": {
+   "value": "2026-09-18",
+   "quote": "18 Sep 2026"
+  },
+  "poNumber": {
+   "value": "PO-264268",
+   "quote": "PO-264268"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "RM"
+  },
+  "lines": [
+   {
+    "description": "Wall anchor M8, box of 100",
+    "sku": null,
+    "quantity": 6,
+    "unit": "box",
+    "unitPrice": 26,
+    "amount": 156,
+    "quote": "1 Wall anchor M8, box of 100 6 box 26.00 156.00"
+   },
+   {
+    "description": "Extension cord 5m, 4 sockets",
+    "sku": null,
+    "quantity": 10,
+    "unit": "pcs",
+    "unitPrice": 32.5,
+    "amount": 325,
+    "quote": "2 Extension cord 5m, 4 sockets 10 pcs 32.50 325.00"
+   },
+   {
+    "description": "Stainless shelf bracket 30cm",
+    "sku": null,
+    "quantity": 20,
+    "unit": "pcs",
+    "unitPrice": 18.4,
+    "amount": 368,
+    "quote": "3 Stainless shelf bracket 30cm 20 pcs 18.40 368.00"
+   }
+  ],
+  "subtotal": {
+   "value": 849,
+   "quote": "849.00"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "10%"
+  },
+  "tax": {
+   "value": 84.9,
+   "quote": "84.90"
+  },
+  "total": {
+   "value": 933.9,
+   "quote": "933.90"
+  },
+  "bankName": {
+   "value": "Selatan Commercial Bank",
+   "quote": "Selatan Commercial Bank"
+  },
+  "accountName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Tanjung Ferro Hardware Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "5140-8820-1173",
+   "quote": "5140-8820-1173"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Tanjung Ferro Hardware Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "200801023987 (812233-T)",
+    "words": [
+     28,
+     29
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "TFH-06556",
+    "words": [
+     14
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "18 Sep 2026",
+    "words": [
+     19,
+     20,
+     21
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264268",
+    "words": [
+     34
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "RM",
+    "words": [
+     40
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "849.00",
+    "words": [
+     101
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "10%",
+    "words": [
+     103
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "84.90",
+    "words": [
+     104
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "933.90",
+    "words": [
+     108
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Selatan Commercial Bank",
+    "words": [
+     112,
+     113,
+     114
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Tanjung Ferro Hardware Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "5140-8820-1173",
+    "words": [
+     124
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "1 Wall anchor M8, box of 100 6 box 26.00 156.00",
+    "words": [
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "2 Extension cord 5m, 4 sockets 10 pcs 32.50 325.00",
+    "words": [
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89
+    ]
+   },
+   {
+    "field": "lines[2]",
+    "status": "verified",
+    "quote": "3 Stainless shelf bracket 30cm 20 pcs 18.40 368.00",
+    "words": [
+     90,
+     91,
+     92,
+     93,
+     94,
+     95,
+     96,
+     97,
+     98
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "SHORT_DELIVERY",
+    "severity": "hold",
+    "field": "lines[0].quantity",
+    "line": 0,
+    "message": "Line 1 bills 6, but only 5 were received.",
+    "expected": "5",
+    "actual": "6"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 6,
+    "received": 5,
+    "alreadyInvoiced": 0,
+    "poUnit": "box",
+    "poUnitPrice": 26
+   },
+   {
+    "line": 1,
+    "poLine": 2,
+    "ordered": 10,
+    "received": 10,
+    "alreadyInvoiced": 0,
+    "poUnit": "pcs",
+    "poUnitPrice": 32.5
+   },
+   {
+    "line": 2,
+    "poLine": 3,
+    "ordered": 20,
+    "received": 20,
+    "alreadyInvoiced": 0,
+    "poUnit": "pcs",
+    "poUnitPrice": 18.4
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:16:35.221Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 32.427,
+ "inputTokens": 1071,
+ "outputTokens": 832,
+ "latencyMs": 26109,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Tanjung Ferro Hardware Sdn Bhd\",\n    \"quote\": \"Tanjung Ferro Hardware Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"200801023987 (812233-T)\",\n    \"quote\": \"200801023987 (812233-T)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"TFH-06556\",\n    \"quote\": \"TFH-06556\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-09-18\",\n    \"quote\": \"18 Sep 2026\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264268\",\n    \"quote\": \"PO-264268\"\n  },\n  \"currency\": {\n    \"value\": \"RM\",\n    \"quote\": \"RM\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Wall anchor M8, box of 100\",\n      \"sku\": null,\n      \"quantity\": 6,\n      \"unit\": \"box\",\n      \"unitPrice\": 26.0,\n      \"amount\": 156.0,\n      \"quote\": \"1 Wall anchor M8, box of 100 6 box 26.00 156.00\"\n    },\n    {\n      \"description\": \"Extension cord 5m, 4 sockets\",\n      \"sku\": null,\n      \"quantity\": 10,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 32.5,\n      \"amount\": 325.0,\n      \"quote\": \"2 Extension cord 5m, 4 sockets 10 pcs 32.50 325.00\"\n    },\n    {\n      \"description\": \"Stainless shelf bracket 30cm\",\n      \"sku\": null,\n      \"quantity\": 20,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 18.4,\n      \"amount\": 368.0,\n      \"quote\": \"3 Stainless shelf bracket 30cm 20 pcs 18.40 368.00\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 849.0,\n    \"quote\": \"849.00\"\n  },\n  \"taxRate\": {\n    \"value\": 0.1,\n    \"quote\": \"10%\"\n  },\n  \"tax\": {\n    \"value\": 84.9,\n    \"quote\": \"84.90\"\n  },\n  \"total\": {\n    \"value\": 933.9,\n    \"quote\": \"933.90\"\n  },\n  \"bankName\": {\n    \"value\": \"Selatan Commercial Bank\",\n    \"quote\": \"Selatan Commercial Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Tanjung Ferro Hardware Sdn Bhd\",\n    \"quote\": \"Tanjung Ferro Hardware Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"5140-8820-1173\",\n    \"quote\": \"5140-8820-1173\"\n  }\n}\n```"
+ ]
+}

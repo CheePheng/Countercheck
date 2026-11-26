@@ -1,0 +1,279 @@
+{
+ "case": "inv-15",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Brightmoor Cleaning Supplies Sdn Bhd",
+   "quote": "Brightmoor Cleaning Supplies Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201301045566 (1056677-D)",
+   "quote": "201301045566 (1056677-D)"
+  },
+  "invoiceNumber": {
+   "value": "BM09024",
+   "quote": "BM09024"
+  },
+  "invoiceDate": {
+   "value": "2026-10-31",
+   "quote": "31 Okt 2026"
+  },
+  "poNumber": {
+   "value": "PO-264378",
+   "quote": "PO-264378"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "RM"
+  },
+  "lines": [
+   {
+    "description": "Microfibre cloth, pack of 12",
+    "sku": null,
+    "quantity": 24,
+    "unit": "pack",
+    "unitPrice": 18,
+    "amount": 432,
+    "quote": "1 Microfibre cloth, pack of 12 24 pack 18.00 432.00"
+   },
+   {
+    "description": "Dishwashing liquid 5L",
+    "sku": null,
+    "quantity": 4,
+    "unit": "bottle",
+    "unitPrice": 28,
+    "amount": 112,
+    "quote": "2 Dishwashing liquid 5L 4 bottle 28.00 112.00"
+   }
+  ],
+  "subtotal": {
+   "value": 544,
+   "quote": "544.00"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "10%"
+  },
+  "tax": {
+   "value": 54.4,
+   "quote": "54.40"
+  },
+  "total": {
+   "value": 598.4,
+   "quote": "598.40"
+  },
+  "bankName": {
+   "value": "Teluk Mutual Bank",
+   "quote": "Teluk Mutual Bank"
+  },
+  "accountName": {
+   "value": "Brightmoor Cleaning Supplies Sdn Bhd",
+   "quote": "Brightmoor Cleaning Supplies Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "3381-0045-7720",
+   "quote": "3381-0045-7720"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Brightmoor Cleaning Supplies Sdn Bhd",
+    "words": [
+     105,
+     106,
+     107,
+     108,
+     109
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201301045566 (1056677-D)",
+    "words": [
+     28,
+     29
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "BM09024",
+    "words": [
+     14
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "31 Okt 2026",
+    "words": [
+     19,
+     20,
+     21
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264378",
+    "words": [
+     34
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "RM",
+    "words": [
+     40
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "544.00",
+    "words": [
+     89
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "10%",
+    "words": [
+     91
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "54.40",
+    "words": [
+     92
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "598.40",
+    "words": [
+     96
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Teluk Mutual Bank",
+    "words": [
+     100,
+     101,
+     102
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Brightmoor Cleaning Supplies Sdn Bhd",
+    "words": [
+     105,
+     106,
+     107,
+     108,
+     109
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "3381-0045-7720",
+    "words": [
+     112
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "1 Microfibre cloth, pack of 12 24 pack 18.00 432.00",
+    "words": [
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "2 Dishwashing liquid 5L 4 bottle 28.00 112.00",
+    "words": [
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "NOT_ORDERED",
+    "severity": "hold",
+    "field": "lines[1].description",
+    "line": 1,
+    "message": "\"Dishwashing liquid 5L\" isn't on purchase order PO-264378."
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 24,
+    "received": 24,
+    "alreadyInvoiced": 0,
+    "poUnit": "pack",
+    "poUnitPrice": 18
+   },
+   {
+    "line": 1,
+    "poLine": null,
+    "ordered": null,
+    "received": null,
+    "alreadyInvoiced": null,
+    "poUnit": null,
+    "poUnitPrice": null
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:10:57.805Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 26.055,
+ "inputTokens": 1038,
+ "outputTokens": 716,
+ "latencyMs": 21759,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Brightmoor Cleaning Supplies Sdn Bhd\",\n    \"quote\": \"Brightmoor Cleaning Supplies Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201301045566 (1056677-D)\",\n    \"quote\": \"201301045566 (1056677-D)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"BM09024\",\n    \"quote\": \"BM09024\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-10-31\",\n    \"quote\": \"31 Okt 2026\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264378\",\n    \"quote\": \"PO-264378\"\n  },\n  \"currency\": {\n    \"value\": \"RM\",\n    \"quote\": \"RM\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Microfibre cloth, pack of 12\",\n      \"sku\": null,\n      \"quantity\": 24,\n      \"unit\": \"pack\",\n      \"unitPrice\": 18.0,\n      \"amount\": 432.0,\n      \"quote\": \"1 Microfibre cloth, pack of 12 24 pack 18.00 432.00\"\n    },\n    {\n      \"description\": \"Dishwashing liquid 5L\",\n      \"sku\": null,\n      \"quantity\": 4,\n      \"unit\": \"bottle\",\n      \"unitPrice\": 28.0,\n      \"amount\": 112.0,\n      \"quote\": \"2 Dishwashing liquid 5L 4 bottle 28.00 112.00\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 544.0,\n    \"quote\": \"544.00\"\n  },\n  \"taxRate\": {\n    \"value\": 0.1,\n    \"quote\": \"10%\"\n  },\n  \"tax\": {\n    \"value\": 54.4,\n    \"quote\": \"54.40\"\n  },\n  \"total\": {\n    \"value\": 598.4,\n    \"quote\": \"598.40\"\n  },\n  \"bankName\": {\n    \"value\": \"Teluk Mutual Bank\",\n    \"quote\": \"Teluk Mutual Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Brightmoor Cleaning Supplies Sdn Bhd\",\n    \"quote\": \"Brightmoor Cleaning Supplies Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"3381-0045-7720\",\n    \"quote\": \"3381-0045-7720\"\n  }\n}\n```"
+ ]
+}

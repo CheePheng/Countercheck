@@ -1,0 +1,251 @@
+{
+ "case": "inv-01",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Lumora Kitchenware Pte Ltd",
+   "quote": "Lumora Kitchenware Pte Ltd TAX INVOICE"
+  },
+  "vendorRegistrationNo": {
+   "value": "201812345K",
+   "quote": "Reg. No: 201812345K"
+  },
+  "invoiceNumber": {
+   "value": "LK-08060",
+   "quote": "Invoice No. LK-08060"
+  },
+  "invoiceDate": {
+   "value": "2026-11-08",
+   "quote": "Date 08/11/2026"
+  },
+  "poNumber": {
+   "value": "PO-264282",
+   "quote": "PO No. PO-264282"
+  },
+  "currency": {
+   "value": "SGD",
+   "quote": "Total (SGD)"
+  },
+  "lines": [
+   {
+    "description": "Coffee tamper 58mm",
+    "sku": null,
+    "quantity": 8,
+    "unit": "pcs",
+    "unitPrice": 36,
+    "amount": 288,
+    "quote": "1 Coffee tamper 58mm 8 pcs 36.00 288.00"
+   }
+  ],
+  "subtotal": {
+   "value": 288,
+   "quote": "Subtotal 288.00"
+  },
+  "taxRate": {
+   "value": 0.09,
+   "quote": "GST 9% 25.92"
+  },
+  "tax": {
+   "value": 25.92,
+   "quote": "GST 9% 25.92"
+  },
+  "total": {
+   "value": 313.92,
+   "quote": "Total (SGD) 313.92"
+  },
+  "bankName": {
+   "value": "Straits Harbour Bank",
+   "quote": "Bank: Straits Harbour Bank"
+  },
+  "accountName": {
+   "value": "Lumora Kitchenware Pte Ltd",
+   "quote": "Account name: Lumora Kitchenware Pte Ltd"
+  },
+  "accountNumber": {
+   "value": "771-203344-1",
+   "quote": "Account no.: 771-203344-1"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Lumora Kitchenware Pte Ltd TAX INVOICE",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "Reg. No: 201812345K",
+    "words": [
+     20,
+     21,
+     22
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "Invoice No. LK-08060",
+    "words": [
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "Date 08/11/2026",
+    "words": [
+     16,
+     17
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO No. PO-264282",
+    "words": [
+     23,
+     24,
+     25
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "Total (SGD)",
+    "words": [
+     74,
+     75
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 288.00",
+    "words": [
+     69,
+     70
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "GST 9% 25.92",
+    "words": [
+     71,
+     72,
+     73
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "GST 9% 25.92",
+    "words": [
+     71,
+     72,
+     73
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "Total (SGD) 313.92",
+    "words": [
+     74,
+     75,
+     76
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank: Straits Harbour Bank",
+    "words": [
+     79,
+     80,
+     81,
+     82
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Account name: Lumora Kitchenware Pte Ltd",
+    "words": [
+     83,
+     84,
+     85,
+     86,
+     87,
+     88
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "Account no.: 771-203344-1",
+    "words": [
+     89,
+     90,
+     91
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "1 Coffee tamper 58mm 8 pcs 36.00 288.00",
+    "words": [
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "approve",
+  "findings": [],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 19,
+    "received": 19,
+    "alreadyInvoiced": 11,
+    "poUnit": "pcs",
+    "poUnitPrice": 36
+   }
+  ]
+ },
+ "model": {
+  "key": "baseline",
+  "id": "baseline",
+  "label": "Template parser (no AI)"
+ },
+ "readAt": "2026-11-26T14:06:07.807Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 0,
+ "inputTokens": 0,
+ "outputTokens": 0,
+ "latencyMs": 2,
+ "replies": []
+}

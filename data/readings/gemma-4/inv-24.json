@@ -1,0 +1,316 @@
+{
+ "case": "inv-24",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Lumora Kitchenware Pte Ltd",
+   "quote": "Lumora Kitchenware Pte Ltd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201812345K",
+   "quote": "201812345K"
+  },
+  "invoiceNumber": {
+   "value": "LK-08067",
+   "quote": "LK-08067"
+  },
+  "invoiceDate": {
+   "value": "2026-10-08",
+   "quote": "2026-10-08"
+  },
+  "poNumber": {
+   "value": "PO-264321",
+   "quote": "PO-264321"
+  },
+  "currency": {
+   "value": "S$",
+   "quote": "S$"
+  },
+  "lines": [
+   {
+    "description": "Knock box, large",
+    "sku": null,
+    "quantity": 5,
+    "unit": "pcs",
+    "unitPrice": 29.9,
+    "amount": 149.5,
+    "quote": "5 pcs Knock box, large 149.50\n@ S$ 29.90 / pcs"
+   },
+   {
+    "description": "Milk pitcher 600ml, steel",
+    "sku": null,
+    "quantity": 24,
+    "unit": "pcs",
+    "unitPrice": 18.9,
+    "amount": 453.6,
+    "quote": "24 pcs Milk pitcher 600ml, steel 453.60\n@ S$ 18.90 / pcs"
+   },
+   {
+    "description": "Coffee tamper 58mm",
+    "sku": null,
+    "quantity": 8,
+    "unit": "pcs",
+    "unitPrice": 36,
+    "amount": 288,
+    "quote": "8 pcs Coffee tamper 58mm 288.00\n@ S$ 36.00 / pcs"
+   }
+  ],
+  "subtotal": {
+   "value": 891.1,
+   "quote": "891.10"
+  },
+  "taxRate": {
+   "value": 0.08,
+   "quote": "8%"
+  },
+  "tax": {
+   "value": 71.29,
+   "quote": "71.29"
+  },
+  "total": {
+   "value": 962.39,
+   "quote": "962.39"
+  },
+  "bankName": {
+   "value": "Straits Harbour Bank",
+   "quote": "Straits Harbour Bank"
+  },
+  "accountName": {
+   "value": "Lumora Kitchenware Pte Ltd",
+   "quote": "Lumora Kitchenware Pte Ltd"
+  },
+  "accountNumber": {
+   "value": "771-203344-1",
+   "quote": "771-203344-1"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Lumora Kitchenware Pte Ltd",
+    "words": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201812345K",
+    "words": [
+     15
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "LK-08067",
+    "words": [
+     23
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "2026-10-08",
+    "words": [
+     25
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264321",
+    "words": [
+     27
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "S$",
+    "words": [
+     41
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "891.10",
+    "words": [
+     69
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "8%",
+    "words": [
+     71
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "71.29",
+    "words": [
+     72
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "962.39",
+    "words": [
+     75
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Straits Harbour Bank",
+    "words": [
+     79,
+     80,
+     81
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Lumora Kitchenware Pte Ltd",
+    "words": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "771-203344-1",
+    "words": [
+     88
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "5 pcs Knock box, large 149.50\n@ S$ 29.90 / pcs",
+    "words": [
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "24 pcs Milk pitcher 600ml, steel 453.60\n@ S$ 18.90 / pcs",
+    "words": [
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56
+    ]
+   },
+   {
+    "field": "lines[2]",
+    "status": "verified",
+    "quote": "8 pcs Coffee tamper 58mm 288.00\n@ S$ 36.00 / pcs",
+    "words": [
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "TAX_MISMATCH",
+    "severity": "hold",
+    "field": "tax",
+    "message": "Tax at 9% of 891.10 is 80.20, not 71.29.",
+    "expected": "80.2",
+    "actual": "71.29"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 5,
+    "received": 5,
+    "alreadyInvoiced": 0,
+    "poUnit": "pcs",
+    "poUnitPrice": 29.9
+   },
+   {
+    "line": 1,
+    "poLine": 2,
+    "ordered": 24,
+    "received": 24,
+    "alreadyInvoiced": 0,
+    "poUnit": "pcs",
+    "poUnitPrice": 18.9
+   },
+   {
+    "line": 2,
+    "poLine": 3,
+    "ordered": 8,
+    "received": 8,
+    "alreadyInvoiced": 0,
+    "poUnit": "pcs",
+    "poUnitPrice": 36
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:13:47.817Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 30.727,
+ "inputTokens": 974,
+ "outputTokens": 802,
+ "latencyMs": 20347,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Lumora Kitchenware Pte Ltd\",\n    \"quote\": \"Lumora Kitchenware Pte Ltd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201812345K\",\n    \"quote\": \"201812345K\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"LK-08067\",\n    \"quote\": \"LK-08067\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-10-08\",\n    \"quote\": \"2026-10-08\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264321\",\n    \"quote\": \"PO-264321\"\n  },\n  \"currency\": {\n    \"value\": \"S$\",\n    \"quote\": \"S$\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Knock box, large\",\n      \"sku\": null,\n      \"quantity\": 5,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 29.9,\n      \"amount\": 149.5,\n      \"quote\": \"5 pcs Knock box, large 149.50\\n@ S$ 29.90 / pcs\"\n    },\n    {\n      \"description\": \"Milk pitcher 600ml, steel\",\n      \"sku\": null,\n      \"quantity\": 24,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 18.9,\n      \"amount\": 453.6,\n      \"quote\": \"24 pcs Milk pitcher 600ml, steel 453.60\\n@ S$ 18.90 / pcs\"\n    },\n    {\n      \"description\": \"Coffee tamper 58mm\",\n      \"sku\": null,\n      \"quantity\": 8,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 36.0,\n      \"amount\": 288.0,\n      \"quote\": \"8 pcs Coffee tamper 58mm 288.00\\n@ S$ 36.00 / pcs\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 891.1,\n    \"quote\": \"891.10\"\n  },\n  \"taxRate\": {\n    \"value\": 0.08,\n    \"quote\": \"8%\"\n  },\n  \"tax\": {\n    \"value\": 71.29,\n    \"quote\": \"71.29\"\n  },\n  \"total\": {\n    \"value\": 962.39,\n    \"quote\": \"962.39\"\n  },\n  \"bankName\": {\n    \"value\": \"Straits Harbour Bank\",\n    \"quote\": \"Straits Harbour Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Lumora Kitchenware Pte Ltd\",\n    \"quote\": \"Lumora Kitchenware Pte Ltd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"771-203344-1\",\n    \"quote\": \"771-203344-1\"\n  }\n}\n```"
+ ]
+}

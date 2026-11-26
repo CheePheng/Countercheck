@@ -1,0 +1,271 @@
+{
+ "case": "inv-22",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Serai Fresh Produce Sdn Bhd",
+   "quote": "Serai Fresh Produce Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201701034521 (1239876-W)",
+   "quote": "201701034521 (1239876-W)"
+  },
+  "invoiceNumber": {
+   "value": "SFP/06166",
+   "quote": "SFP/06166"
+  },
+  "invoiceDate": {
+   "value": "2026-10-02",
+   "quote": "2 Oct 2026"
+  },
+  "poNumber": {
+   "value": "PO-264251",
+   "quote": "PO-264251"
+  },
+  "currency": {
+   "value": "MYR",
+   "quote": "MYR"
+  },
+  "lines": [
+   {
+    "description": "Pandan leaves, bundle of 20",
+    "sku": "HB-PAN",
+    "quantity": 20,
+    "unit": "pack",
+    "unitPrice": 3.5,
+    "amount": 70,
+    "quote": "HB-PAN Pandan leaves, bundle of 20 20 pack 3.50 70.00"
+   },
+   {
+    "description": "Calamansi limes",
+    "sku": "FR-CAL",
+    "quantity": 28,
+    "unit": "kg",
+    "unitPrice": 9.6,
+    "amount": 268.8,
+    "quote": "FR-CAL Calamansi limes 28 kg 9.60 268.80"
+   }
+  ],
+  "subtotal": {
+   "value": 338.8,
+   "quote": "Subtotal 338.80"
+  },
+  "taxRate": {
+   "value": 0,
+   "quote": "0%"
+  },
+  "tax": {
+   "value": 0,
+   "quote": "0.00"
+  },
+  "total": {
+   "value": 338.8,
+   "quote": "338.80"
+  },
+  "bankName": {
+   "value": "Bank Rekaan Berhad",
+   "quote": "Bank Rekaan Berhad"
+  },
+  "accountName": {
+   "value": "Serai Fresh Produce Sdn Bhd",
+   "quote": "Serai Fresh Produce Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "2207-114-50331",
+   "quote": "2207-114-50331"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Serai Fresh Produce Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201701034521 (1239876-W)",
+    "words": [
+     50,
+     51
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "SFP/06166",
+    "words": [
+     16
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "2 Oct 2026",
+    "words": [
+     29,
+     30,
+     31
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264251",
+    "words": [
+     34
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "MYR",
+    "words": [
+     36
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 338.80",
+    "words": [
+     81,
+     82
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "0%",
+    "words": [
+     84
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "0.00",
+    "words": [
+     73
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "338.80",
+    "words": [
+     82
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank Rekaan Berhad",
+    "words": [
+     96,
+     97,
+     98
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Serai Fresh Produce Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "2207-114-50331",
+    "words": [
+     108
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "HB-PAN Pandan leaves, bundle of 20 20 pack 3.50 70.00",
+    "words": [
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "FR-CAL Calamansi limes 28 kg 9.60 268.80",
+    "words": [
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "approve",
+  "findings": [],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 20,
+    "received": 20,
+    "alreadyInvoiced": 0,
+    "poUnit": "pack",
+    "poUnitPrice": 3.5
+   },
+   {
+    "line": 1,
+    "poLine": 2,
+    "ordered": 28,
+    "received": 28,
+    "alreadyInvoiced": 0,
+    "poUnit": "kg",
+    "poUnitPrice": 9.6
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:13:06.647Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 28.982,
+ "inputTokens": 1019,
+ "outputTokens": 723,
+ "latencyMs": 22210,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Serai Fresh Produce Sdn Bhd\",\n    \"quote\": \"Serai Fresh Produce Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201701034521 (1239876-W)\",\n    \"quote\": \"201701034521 (1239876-W)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"SFP/06166\",\n    \"quote\": \"SFP/06166\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-10-02\",\n    \"quote\": \"2 Oct 2026\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264251\",\n    \"quote\": \"PO-264251\"\n  },\n  \"currency\": {\n    \"value\": \"MYR\",\n    \"quote\": \"MYR\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Pandan leaves, bundle of 20\",\n      \"sku\": \"HB-PAN\",\n      \"quantity\": 20,\n      \"unit\": \"pack\",\n      \"unitPrice\": 3.5,\n      \"amount\": 70.0,\n      \"quote\": \"HB-PAN Pandan leaves, bundle of 20 20 pack 3.50 70.00\"\n    },\n    {\n      \"description\": \"Calamansi limes\",\n      \"sku\": \"FR-CAL\",\n      \"quantity\": 28,\n      \"unit\": \"kg\",\n      \"unitPrice\": 9.6,\n      \"amount\": 268.8,\n      \"quote\": \"FR-CAL Calamansi limes 28 kg 9.60 268.80\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 338.8,\n    \"quote\": \"Subtotal 338.80\"\n  },\n  \"taxRate\": {\n    \"value\": 0,\n    \"quote\": \"0%\"\n  },\n  \"tax\": {\n    \"value\": 0.0,\n    \"quote\": \"0.00\"\n  },\n  \"total\": {\n    \"value\": 338.8,\n    \"quote\": \"338.80\"\n  },\n  \"bankName\": {\n    \"value\": \"Bank Rekaan Berhad\",\n    \"quote\": \"Bank Rekaan Berhad\"\n  },\n  \"accountName\": {\n    \"value\": \"Serai Fresh Produce Sdn Bhd\",\n    \"quote\": \"Serai Fresh Produce Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"2207-114-50331\",\n    \"quote\": \"2207-114-50331\"\n  }\n}\n```"
+ ]
+}

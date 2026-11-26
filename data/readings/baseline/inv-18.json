@@ -1,0 +1,265 @@
+{
+ "case": "inv-18",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Orchidfold Packaging Sdn Bhd",
+   "quote": "Orchidfold Packaging Sdn Bhd TAX INVOICE"
+  },
+  "vendorRegistrationNo": {
+   "value": "201901012345 (1312345-A)",
+   "quote": "Reg. No: 201901012345 (1312345-A)"
+  },
+  "invoiceNumber": {
+   "value": "OF-01278",
+   "quote": "Invoice No. OF-01278"
+  },
+  "invoiceDate": {
+   "value": "2026-10-24",
+   "quote": "Date 24/10/2026"
+  },
+  "poNumber": {
+   "value": "PO-264369",
+   "quote": "PO No. PO-264369"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "Total (RM)"
+  },
+  "lines": [
+   {
+    "description": "Kraft takeaway bag medium, pack of 250",
+    "sku": null,
+    "quantity": 9,
+    "unit": "pack",
+    "unitPrice": 64.5,
+    "amount": 580.5,
+    "quote": "1 Kraft takeaway bag medium, pack of 250 9 pack 64.50 580.50"
+   }
+  ],
+  "subtotal": {
+   "value": 580.5,
+   "quote": "Subtotal 580.50"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "SST 10% 58.05"
+  },
+  "tax": {
+   "value": 58.05,
+   "quote": "SST 10% 58.05"
+  },
+  "total": {
+   "value": 638.55,
+   "quote": "Total (RM) 638.55"
+  },
+  "bankName": {
+   "value": "Bank Rekaan Berhad",
+   "quote": "Bank: Bank Rekaan Berhad"
+  },
+  "accountName": {
+   "value": "Orchidfold Packaging Sdn Bhd",
+   "quote": "Account name: Orchidfold Packaging Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "3004-7145-8917",
+   "quote": "Account no.: 3004-7145-8917"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Orchidfold Packaging Sdn Bhd TAX INVOICE",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "Reg. No: 201901012345 (1312345-A)",
+    "words": [
+     23,
+     24,
+     25,
+     26
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "Invoice No. OF-01278",
+    "words": [
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "Date 24/10/2026",
+    "words": [
+     17,
+     18
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO No. PO-264369",
+    "words": [
+     27,
+     28,
+     29
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "Total (RM)",
+    "words": [
+     82,
+     83
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 580.50",
+    "words": [
+     77,
+     78
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "SST 10% 58.05",
+    "words": [
+     79,
+     80,
+     81
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "SST 10% 58.05",
+    "words": [
+     79,
+     80,
+     81
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "Total (RM) 638.55",
+    "words": [
+     82,
+     83,
+     84
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank: Bank Rekaan Berhad",
+    "words": [
+     96,
+     97,
+     98,
+     99
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Account name: Orchidfold Packaging Sdn Bhd",
+    "words": [
+     100,
+     101,
+     102,
+     103,
+     104,
+     105
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "Account no.: 3004-7145-8917",
+    "words": [
+     106,
+     107,
+     108
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "1 Kraft takeaway bag medium, pack of 250 9 pack 64.50 580.50",
+    "words": [
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "BANK_DETAILS_CHANGED",
+    "severity": "hold",
+    "field": "bank.accountNumber",
+    "message": "The bank account on this invoice isn't the one on file for Orchidfold Packaging Sdn Bhd. Confirm the change with the vendor by phone before paying.",
+    "expected": "5140-2231-0098",
+    "actual": "3004-7145-8917"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 9,
+    "received": 9,
+    "alreadyInvoiced": 0,
+    "poUnit": "pack",
+    "poUnitPrice": 64.5
+   }
+  ]
+ },
+ "model": {
+  "key": "baseline",
+  "id": "baseline",
+  "label": "Template parser (no AI)"
+ },
+ "readAt": "2026-11-26T14:06:08.148Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 0,
+ "inputTokens": 0,
+ "outputTokens": 0,
+ "latencyMs": 1,
+ "replies": []
+}

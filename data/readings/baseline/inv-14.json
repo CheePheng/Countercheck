@@ -1,0 +1,290 @@
+{
+ "case": "inv-14",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Tanjung Ferro Hardware Sdn Bhd TAX INVOICE"
+  },
+  "vendorRegistrationNo": {
+   "value": "200801023987 (812233-T)",
+   "quote": "Reg. No: 200801023987 (812233-T)"
+  },
+  "invoiceNumber": {
+   "value": "TFH-06524",
+   "quote": "Invoice No. TFH-06524"
+  },
+  "invoiceDate": {
+   "value": "2026-10-15",
+   "quote": "Date 15/10/2026"
+  },
+  "poNumber": {
+   "value": "PO-264224",
+   "quote": "PO No. PO-264224"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "Total (RM)"
+  },
+  "lines": [
+   {
+    "description": "LED tube 18W cool white",
+    "sku": null,
+    "quantity": 19,
+    "unit": "pcs",
+    "unitPrice": 14.9,
+    "amount": 283.1,
+    "quote": "1 LED tube 18W cool white 19 pcs 14.90 283.10"
+   },
+   {
+    "description": "Stainless shelf bracket 30cm",
+    "sku": null,
+    "quantity": 22,
+    "unit": "pcs",
+    "unitPrice": 18.4,
+    "amount": 404.8,
+    "quote": "2 Stainless shelf bracket 30cm 22 pcs 18.40 404.80"
+   }
+  ],
+  "subtotal": {
+   "value": 687.9,
+   "quote": "Subtotal 687.90"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "SST 10% 68.79"
+  },
+  "tax": {
+   "value": 68.79,
+   "quote": "SST 10% 68.79"
+  },
+  "total": {
+   "value": 756.69,
+   "quote": "Total (RM) 756.69"
+  },
+  "bankName": {
+   "value": "Selatan Commercial Bank",
+   "quote": "Bank: Selatan Commercial Bank"
+  },
+  "accountName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Account name: Tanjung Ferro Hardware Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "5140-8820-1173",
+   "quote": "Account no.: 5140-8820-1173"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Tanjung Ferro Hardware Sdn Bhd TAX INVOICE",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "Reg. No: 200801023987 (812233-T)",
+    "words": [
+     24,
+     25,
+     26,
+     27
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "Invoice No. TFH-06524",
+    "words": [
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "Date 15/10/2026",
+    "words": [
+     18,
+     19
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO No. PO-264224",
+    "words": [
+     28,
+     29,
+     30
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "Total (RM)",
+    "words": [
+     90,
+     91
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 687.90",
+    "words": [
+     85,
+     86
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "SST 10% 68.79",
+    "words": [
+     87,
+     88,
+     89
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "SST 10% 68.79",
+    "words": [
+     87,
+     88,
+     89
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "Total (RM) 756.69",
+    "words": [
+     90,
+     91,
+     92
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank: Selatan Commercial Bank",
+    "words": [
+     95,
+     96,
+     97,
+     98
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Account name: Tanjung Ferro Hardware Sdn Bhd",
+    "words": [
+     99,
+     100,
+     101,
+     102,
+     103,
+     104,
+     105
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "Account no.: 5140-8820-1173",
+    "words": [
+     106,
+     107,
+     108
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "1 LED tube 18W cool white 19 pcs 14.90 283.10",
+    "words": [
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "2 Stainless shelf bracket 30cm 22 pcs 18.40 404.80",
+    "words": [
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "approve",
+  "findings": [],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 19,
+    "received": 19,
+    "alreadyInvoiced": 0,
+    "poUnit": "pcs",
+    "poUnitPrice": 14.9
+   },
+   {
+    "line": 1,
+    "poLine": 2,
+    "ordered": 22,
+    "received": 22,
+    "alreadyInvoiced": 0,
+    "poUnit": "pcs",
+    "poUnitPrice": 18.4
+   }
+  ]
+ },
+ "model": {
+  "key": "baseline",
+  "id": "baseline",
+  "label": "Template parser (no AI)"
+ },
+ "readAt": "2026-11-26T14:06:08.080Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 0,
+ "inputTokens": 0,
+ "outputTokens": 0,
+ "latencyMs": 1,
+ "replies": []
+}

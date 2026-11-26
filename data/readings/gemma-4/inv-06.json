@@ -1,0 +1,317 @@
+{
+ "case": "inv-06",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Jalinan Textile Works Sdn Bhd",
+   "quote": "Jalinan Textile Works Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201601029911 (1188450-K)",
+   "quote": "201601029911 (1188450-K)"
+  },
+  "invoiceNumber": {
+   "value": "JTW-01684",
+   "quote": "JTW-01684"
+  },
+  "invoiceDate": {
+   "value": "2026-09-24",
+   "quote": "24 Sep 2026"
+  },
+  "poNumber": {
+   "value": "PO-264257",
+   "quote": "PO-264257"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "RM"
+  },
+  "lines": [
+   {
+    "description": "Kitchen towel set of 6",
+    "sku": null,
+    "quantity": 8,
+    "unit": "set",
+    "unitPrice": 40.32,
+    "amount": 322.56,
+    "quote": "1 Kitchen towel set of 6 8 set 40.32 322.56"
+   },
+   {
+    "description": "Oven mitts, heat resistant pair",
+    "sku": null,
+    "quantity": 19,
+    "unit": "set",
+    "unitPrice": 22,
+    "amount": 418,
+    "quote": "2 Oven mitts, heat resistant pair 19 set 22.00 418.00"
+   },
+   {
+    "description": "Barista apron, olive canvas",
+    "sku": null,
+    "quantity": 21,
+    "unit": "pcs",
+    "unitPrice": 45,
+    "amount": 945,
+    "quote": "3 Barista apron, olive canvas 21 pcs 45.00 945.00"
+   }
+  ],
+  "subtotal": {
+   "value": 1685.56,
+   "quote": "1,685.56"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "10%"
+  },
+  "tax": {
+   "value": 168.56,
+   "quote": "168.56"
+  },
+  "total": {
+   "value": 1854.12,
+   "quote": "1,854.12"
+  },
+  "bankName": {
+   "value": "Bank Rekaan Berhad",
+   "quote": "Bank Rekaan Berhad"
+  },
+  "accountName": {
+   "value": "Jalinan Textile Works Sdn Bhd",
+   "quote": "Jalinan Textile Works Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "2207-305-88140",
+   "quote": "2207-305-88140"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Jalinan Textile Works Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201601029911 (1188450-K)",
+    "words": [
+     26,
+     27
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "JTW-01684",
+    "words": [
+     13
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "24 Sep 2026",
+    "words": [
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264257",
+    "words": [
+     32
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "RM",
+    "words": [
+     38
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "1,685.56",
+    "words": [
+     98
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "10%",
+    "words": [
+     100
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "168.56",
+    "words": [
+     101
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "1,854.12",
+    "words": [
+     105
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank Rekaan Berhad",
+    "words": [
+     109,
+     110,
+     111
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Jalinan Textile Works Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "2207-305-88140",
+    "words": [
+     121
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "1 Kitchen towel set of 6 8 set 40.32 322.56",
+    "words": [
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "2 Oven mitts, heat resistant pair 19 set 22.00 418.00",
+    "words": [
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86
+    ]
+   },
+   {
+    "field": "lines[2]",
+    "status": "verified",
+    "quote": "3 Barista apron, olive canvas 21 pcs 45.00 945.00",
+    "words": [
+     87,
+     88,
+     89,
+     90,
+     91,
+     92,
+     93,
+     94,
+     95
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "PRICE_VARIANCE",
+    "severity": "hold",
+    "field": "lines[0].unitPrice",
+    "line": 0,
+    "message": "Line 1 costs MYR 40.32 a unit; the PO agreed MYR 36.00.",
+    "expected": "36",
+    "actual": "40.32"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 8,
+    "received": 8,
+    "alreadyInvoiced": 0,
+    "poUnit": "set",
+    "poUnitPrice": 36
+   },
+   {
+    "line": 1,
+    "poLine": 2,
+    "ordered": 19,
+    "received": 19,
+    "alreadyInvoiced": 0,
+    "poUnit": "set",
+    "poUnitPrice": 22
+   },
+   {
+    "line": 2,
+    "poLine": 3,
+    "ordered": 21,
+    "received": 21,
+    "alreadyInvoiced": 0,
+    "poUnit": "pcs",
+    "poUnitPrice": 45
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:07:48.362Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 29.527,
+ "inputTokens": 1066,
+ "outputTokens": 834,
+ "latencyMs": 19033,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Jalinan Textile Works Sdn Bhd\",\n    \"quote\": \"Jalinan Textile Works Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201601029911 (1188450-K)\",\n    \"quote\": \"201601029911 (1188450-K)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"JTW-01684\",\n    \"quote\": \"JTW-01684\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-09-24\",\n    \"quote\": \"24 Sep 2026\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264257\",\n    \"quote\": \"PO-264257\"\n  },\n  \"currency\": {\n    \"value\": \"RM\",\n    \"quote\": \"RM\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Kitchen towel set of 6\",\n      \"sku\": null,\n      \"quantity\": 8,\n      \"unit\": \"set\",\n      \"unitPrice\": 40.32,\n      \"amount\": 322.56,\n      \"quote\": \"1 Kitchen towel set of 6 8 set 40.32 322.56\"\n    },\n    {\n      \"description\": \"Oven mitts, heat resistant pair\",\n      \"sku\": null,\n      \"quantity\": 19,\n      \"unit\": \"set\",\n      \"unitPrice\": 22.0,\n      \"amount\": 418.0,\n      \"quote\": \"2 Oven mitts, heat resistant pair 19 set 22.00 418.00\"\n    },\n    {\n      \"description\": \"Barista apron, olive canvas\",\n      \"sku\": null,\n      \"quantity\": 21,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 45.0,\n      \"amount\": 945.0,\n      \"quote\": \"3 Barista apron, olive canvas 21 pcs 45.00 945.00\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 1685.56,\n    \"quote\": \"1,685.56\"\n  },\n  \"taxRate\": {\n    \"value\": 0.1,\n    \"quote\": \"10%\"\n  },\n  \"tax\": {\n    \"value\": 168.56,\n    \"quote\": \"168.56\"\n  },\n  \"total\": {\n    \"value\": 1854.12,\n    \"quote\": \"1,854.12\"\n  },\n  \"bankName\": {\n    \"value\": \"Bank Rekaan Berhad\",\n    \"quote\": \"Bank Rekaan Berhad\"\n  },\n  \"accountName\": {\n    \"value\": \"Jalinan Textile Works Sdn Bhd\",\n    \"quote\": \"Jalinan Textile Works Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"2207-305-88140\",\n    \"quote\": \"2207-305-88140\"\n  }\n}\n```"
+ ]
+}

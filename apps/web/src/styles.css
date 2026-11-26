@@ -1,0 +1,138 @@
+@import "tailwindcss";
+@import "@fontsource-variable/sofia-sans";
+@import "@fontsource-variable/sofia-sans-extra-condensed";
+
+/*
+ * An accounts-payable desk: a ledger-green blotter, white paper, green ledger rules where a
+ * form would have them, highlighter yellow for evidence, and two stamp inks (blue approves,
+ * red holds). One family, Sofia Sans; its extra-condensed cut is only for the rubber stamp.
+ */
+@theme {
+  --font-sans: "Sofia Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-stamp: "Sofia Sans Extra Condensed Variable", "Sofia Sans Variable", sans-serif;
+
+  --color-desk: #d6dfd3;
+  --color-desk-deep: #c3cfbf;
+  --color-paper: #ffffff;
+  --color-ink: #1d2a21;
+  --color-ink-soft: #4f5d53;
+  --color-rule: #8db398;
+  --color-rule-faint: #d5e3d4;
+  --color-hold: #b42f28;
+  --color-hold-wash: #fbeceb;
+  --color-approve: #2643a0;
+  --color-approve-wash: #e9edf9;
+  --color-mark: #ffe04a;
+
+  --shadow-paper: 0 1px 1px rgb(29 42 33 / 0.08), 0 8px 24px -12px rgb(29 42 33 / 0.35);
+}
+
+@layer base {
+  html {
+    background: var(--color-desk);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    min-height: 100dvh;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-approve);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* A sheet of paper on the desk. */
+.paper {
+  background: var(--color-paper);
+  box-shadow: var(--shadow-paper);
+}
+
+/* Ledger rules: a single green rule between rows, a double rule above totals. */
+.ruled > * + * {
+  border-top: 1px solid var(--color-rule-faint);
+}
+.double-rule {
+  border-top: 3px double var(--color-rule);
+}
+
+/* Highlighter marks over the picture of the invoice. */
+.mark {
+  position: absolute;
+  background: var(--color-mark);
+  mix-blend-mode: multiply;
+  border-radius: 2px 5px 3px 6px;
+  opacity: 0.75;
+  transition:
+    opacity 150ms,
+    box-shadow 150ms;
+}
+.mark[data-state="unconfirmed"] {
+  background: transparent;
+  box-shadow: inset 0 -3px 0 var(--color-hold);
+  opacity: 1;
+}
+.mark[data-issue="true"] {
+  opacity: 0.9;
+  box-shadow: 0 0 0 2px var(--color-hold);
+}
+.mark[data-focus="true"] {
+  opacity: 1;
+  box-shadow: 0 0 0 2px var(--color-ink);
+}
+.mark[data-sweep="true"] {
+  animation: sweep 260ms cubic-bezier(0.3, 0.7, 0.4, 1) both;
+}
+@keyframes sweep {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* The rubber stamp: the one bold moment, when the reviewer decides. */
+.stamp[data-land="true"] {
+  animation: stamp 240ms cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+@keyframes stamp {
+  0% {
+    transform: translate(-50%, -50%) scale(1.7) rotate(var(--tilt));
+    opacity: 0;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(0.97) rotate(var(--tilt));
+    opacity: 0.92;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(var(--tilt));
+    opacity: 0.9;
+  }
+}
+
+.reveal {
+  animation: reveal 220ms ease-out both;
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark[data-sweep="true"],
+  .stamp[data-land="true"],
+  .reveal {
+    animation: none;
+  }
+}

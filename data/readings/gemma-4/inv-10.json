@@ -1,0 +1,245 @@
+{
+ "case": "inv-10",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Serai Fresh Produce Sdn Bhd",
+   "quote": "Serai Fresh Produce Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201701034521 (1239876-W)",
+   "quote": "201701034521 (1239876-W)"
+  },
+  "invoiceNumber": {
+   "value": "SFP/06215",
+   "quote": "SFP/06215"
+  },
+  "invoiceDate": {
+   "value": "2026-11-04",
+   "quote": "2026-11-04"
+  },
+  "poNumber": {
+   "value": "PO-264292",
+   "quote": "PO-264292"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "RM"
+  },
+  "lines": [
+   {
+    "description": "Lemons, imported",
+    "sku": null,
+    "quantity": 14,
+    "unit": "kg",
+    "unitPrice": 7.8,
+    "amount": 109.2,
+    "quote": "14 kg Lemons, imported 109.20\n@ RM 7.80 / kg"
+   }
+  ],
+  "subtotal": {
+   "value": 109.2,
+   "quote": "Subtotal 109.20"
+  },
+  "taxRate": {
+   "value": 0,
+   "quote": "0%"
+  },
+  "tax": {
+   "value": 0,
+   "quote": "0.00"
+  },
+  "total": {
+   "value": 109.2,
+   "quote": "109.20"
+  },
+  "bankName": {
+   "value": "Bank Rekaan Berhad",
+   "quote": "Bank Rekaan Berhad"
+  },
+  "accountName": {
+   "value": "Serai Fresh Produce Sdn Bhd",
+   "quote": "Serai Fresh Produce Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "2207-114-50331",
+   "quote": "2207-114-50331"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Serai Fresh Produce Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201701034521 (1239876-W)",
+    "words": [
+     18,
+     19
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "SFP/06215",
+    "words": [
+     27
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "2026-11-04",
+    "words": [
+     29
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264292",
+    "words": [
+     31
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "RM",
+    "words": [
+     44
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 109.20",
+    "words": [
+     48,
+     49
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "0%",
+    "words": [
+     51
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "0.00",
+    "words": [
+     52
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "109.20",
+    "words": [
+     42
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank Rekaan Berhad",
+    "words": [
+     59,
+     60,
+     61
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Serai Fresh Produce Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "2207-114-50331",
+    "words": [
+     69
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "14 kg Lemons, imported 109.20\n@ RM 7.80 / kg",
+    "words": [
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "reject",
+  "findings": [
+   {
+    "code": "DUPLICATE_INVOICE",
+    "severity": "reject",
+    "field": "invoiceNumber",
+    "message": "Invoice SFP/06215 from Serai Fresh Produce Sdn Bhd was already posted on 2026-11-09.",
+    "actual": "SFP/06215"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 14,
+    "received": 14,
+    "alreadyInvoiced": 0,
+    "poUnit": "kg",
+    "poUnitPrice": 7.8
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:09:24.167Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 25.282,
+ "inputTokens": 933,
+ "outputTokens": 616,
+ "latencyMs": 12069,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Serai Fresh Produce Sdn Bhd\",\n    \"quote\": \"Serai Fresh Produce Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201701034521 (1239876-W)\",\n    \"quote\": \"201701034521 (1239876-W)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"SFP/06215\",\n    \"quote\": \"SFP/06215\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-11-04\",\n    \"quote\": \"2026-11-04\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264292\",\n    \"quote\": \"PO-264292\"\n  },\n  \"currency\": {\n    \"value\": \"RM\",\n    \"quote\": \"RM\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Lemons, imported\",\n      \"sku\": null,\n      \"quantity\": 14,\n      \"unit\": \"kg\",\n      \"unitPrice\": 7.8,\n      \"amount\": 109.2,\n      \"quote\": \"14 kg Lemons, imported 109.20\\n@ RM 7.80 / kg\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 109.2,\n    \"quote\": \"Subtotal 109.20\"\n  },\n  \"taxRate\": {\n    \"value\": 0,\n    \"quote\": \"0%\"\n  },\n  \"tax\": {\n    \"value\": 0,\n    \"quote\": \"0.00\"\n  },\n  \"total\": {\n    \"value\": 109.2,\n    \"quote\": \"109.20\"\n  },\n  \"bankName\": {\n    \"value\": \"Bank Rekaan Berhad\",\n    \"quote\": \"Bank Rekaan Berhad\"\n  },\n  \"accountName\": {\n    \"value\": \"Serai Fresh Produce Sdn Bhd\",\n    \"quote\": \"Serai Fresh Produce Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"2207-114-50331\",\n    \"quote\": \"2207-114-50331\"\n  }\n}\n```"
+ ]
+}

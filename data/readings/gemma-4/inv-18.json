@@ -1,0 +1,244 @@
+{
+ "case": "inv-18",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Orchidfold Packaging Sdn Bhd",
+   "quote": "Orchidfold Packaging Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201901012345 (1312345-A)",
+   "quote": "201901012345 (1312345-A)"
+  },
+  "invoiceNumber": {
+   "value": "OF-01278",
+   "quote": "OF-01278"
+  },
+  "invoiceDate": {
+   "value": "2026-10-24",
+   "quote": "24/10/2026"
+  },
+  "poNumber": {
+   "value": "PO-264369",
+   "quote": "PO-264369"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "RM"
+  },
+  "lines": [
+   {
+    "description": "Kraft takeaway bag medium, pack of 250",
+    "sku": null,
+    "quantity": 9,
+    "unit": "pack",
+    "unitPrice": 64.5,
+    "amount": 580.5,
+    "quote": "Kraft takeaway bag medium, pack of 250 9 pack 64.50 580.50"
+   }
+  ],
+  "subtotal": {
+   "value": 580.5,
+   "quote": "580.50"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "10%"
+  },
+  "tax": {
+   "value": 58.05,
+   "quote": "58.05"
+  },
+  "total": {
+   "value": 638.55,
+   "quote": "638.55"
+  },
+  "bankName": {
+   "value": "Bank Rekaan Berhad",
+   "quote": "Bank Rekaan Berhad"
+  },
+  "accountName": {
+   "value": "Orchidfold Packaging Sdn Bhd",
+   "quote": "Orchidfold Packaging Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "3004-7145-8917",
+   "quote": "3004-7145-8917"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Orchidfold Packaging Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201901012345 (1312345-A)",
+    "words": [
+     25,
+     26
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "OF-01278",
+    "words": [
+     13
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "24/10/2026",
+    "words": [
+     18
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264369",
+    "words": [
+     29
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "RM",
+    "words": [
+     35
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "580.50",
+    "words": [
+     76
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "10%",
+    "words": [
+     80
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "58.05",
+    "words": [
+     81
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "638.55",
+    "words": [
+     84
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank Rekaan Berhad",
+    "words": [
+     97,
+     98,
+     99
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Orchidfold Packaging Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "3004-7145-8917",
+    "words": [
+     108
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "Kraft takeaway bag medium, pack of 250 9 pack 64.50 580.50",
+    "words": [
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "BANK_DETAILS_CHANGED",
+    "severity": "hold",
+    "field": "bank.accountNumber",
+    "message": "The bank account on this invoice isn't the one on file for Orchidfold Packaging Sdn Bhd. Confirm the change with the vendor by phone before paying.",
+    "expected": "5140-2231-0098",
+    "actual": "3004-7145-8917"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 9,
+    "received": 9,
+    "alreadyInvoiced": 0,
+    "poUnit": "pack",
+    "poUnitPrice": 64.5
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:11:52.759Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 26.273,
+ "inputTokens": 1003,
+ "outputTokens": 629,
+ "latencyMs": 15395,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Orchidfold Packaging Sdn Bhd\",\n    \"quote\": \"Orchidfold Packaging Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201901012345 (1312345-A)\",\n    \"quote\": \"201901012345 (1312345-A)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"OF-01278\",\n    \"quote\": \"OF-01278\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-10-24\",\n    \"quote\": \"24/10/2026\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264369\",\n    \"quote\": \"PO-264369\"\n  },\n  \"currency\": {\n    \"value\": \"RM\",\n    \"quote\": \"RM\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Kraft takeaway bag medium, pack of 250\",\n      \"sku\": null,\n      \"quantity\": 9,\n      \"unit\": \"pack\",\n      \"unitPrice\": 64.5,\n      \"amount\": 580.5,\n      \"quote\": \"Kraft takeaway bag medium, pack of 250 9 pack 64.50 580.50\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 580.5,\n    \"quote\": \"580.50\"\n  },\n  \"taxRate\": {\n    \"value\": 0.1,\n    \"quote\": \"10%\"\n  },\n  \"tax\": {\n    \"value\": 58.05,\n    \"quote\": \"58.05\"\n  },\n  \"total\": {\n    \"value\": 638.55,\n    \"quote\": \"638.55\"\n  },\n  \"bankName\": {\n    \"value\": \"Bank Rekaan Berhad\",\n    \"quote\": \"Bank Rekaan Berhad\"\n  },\n  \"accountName\": {\n    \"value\": \"Orchidfold Packaging Sdn Bhd\",\n    \"quote\": \"Orchidfold Packaging Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"3004-7145-8917\",\n    \"quote\": \"3004-7145-8917\"\n  }\n}\n```"
+ ]
+}

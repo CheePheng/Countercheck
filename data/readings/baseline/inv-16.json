@@ -1,0 +1,267 @@
+{
+ "case": "inv-16",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Tanjung Ferro Hardware Sdn Bhd TAX INVOICE"
+  },
+  "vendorRegistrationNo": {
+   "value": "200801023987 (812233-T)",
+   "quote": "Reg. No: 200801023987 (812233-T)"
+  },
+  "invoiceNumber": {
+   "value": "TFH-06611",
+   "quote": "Invoice No. TFH-06611"
+  },
+  "invoiceDate": {
+   "value": "2026-11-08",
+   "quote": "Date 08/11/2026"
+  },
+  "poNumber": {
+   "value": "PO-264337",
+   "quote": "PO No. PO-264337"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "Total (RM)"
+  },
+  "lines": [
+   {
+    "description": "Wall anchor M8, box of 100",
+    "sku": null,
+    "quantity": 400,
+    "unit": "pcs",
+    "unitPrice": 0.26,
+    "amount": 104,
+    "quote": "1 Wall anchor M8, box of 100 400 pcs 0.26 104.00"
+   }
+  ],
+  "subtotal": {
+   "value": 104,
+   "quote": "Subtotal 104.00"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "SST 10% 10.40"
+  },
+  "tax": {
+   "value": 10.4,
+   "quote": "SST 10% 10.40"
+  },
+  "total": {
+   "value": 114.4,
+   "quote": "Total (RM) 114.40"
+  },
+  "bankName": {
+   "value": "Selatan Commercial Bank",
+   "quote": "Bank: Selatan Commercial Bank"
+  },
+  "accountName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Account name: Tanjung Ferro Hardware Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "5140-8820-1173",
+   "quote": "Account no.: 5140-8820-1173"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Tanjung Ferro Hardware Sdn Bhd TAX INVOICE",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "Reg. No: 200801023987 (812233-T)",
+    "words": [
+     24,
+     25,
+     26,
+     27
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "Invoice No. TFH-06611",
+    "words": [
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "Date 08/11/2026",
+    "words": [
+     18,
+     19
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO No. PO-264337",
+    "words": [
+     28,
+     29,
+     30
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "Total (RM)",
+    "words": [
+     82,
+     83
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 104.00",
+    "words": [
+     77,
+     78
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "SST 10% 10.40",
+    "words": [
+     79,
+     80,
+     81
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "SST 10% 10.40",
+    "words": [
+     79,
+     80,
+     81
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "Total (RM) 114.40",
+    "words": [
+     82,
+     83,
+     84
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank: Selatan Commercial Bank",
+    "words": [
+     87,
+     88,
+     89,
+     90
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Account name: Tanjung Ferro Hardware Sdn Bhd",
+    "words": [
+     91,
+     92,
+     93,
+     94,
+     95,
+     96,
+     97
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "Account no.: 5140-8820-1173",
+    "words": [
+     98,
+     99,
+     100
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "1 Wall anchor M8, box of 100 400 pcs 0.26 104.00",
+    "words": [
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "UOM_MISMATCH",
+    "severity": "hold",
+    "field": "lines[0].unit",
+    "line": 0,
+    "message": "Line 1 is billed per pcs, but the PO orders it per box.",
+    "expected": "box",
+    "actual": "pcs"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 4,
+    "received": 4,
+    "alreadyInvoiced": 0,
+    "poUnit": "box",
+    "poUnitPrice": 26
+   }
+  ]
+ },
+ "model": {
+  "key": "baseline",
+  "id": "baseline",
+  "label": "Template parser (no AI)"
+ },
+ "readAt": "2026-11-26T14:06:08.109Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 0,
+ "inputTokens": 0,
+ "outputTokens": 0,
+ "latencyMs": 0,
+ "replies": []
+}

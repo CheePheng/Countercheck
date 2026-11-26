@@ -1,0 +1,286 @@
+{
+ "case": "inv-05",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Quayline Office Supply Pte Ltd",
+   "quote": "Quayline Office Supply Pte Ltd"
+  },
+  "vendorRegistrationNo": {
+   "value": "200912876M",
+   "quote": "200912876M"
+  },
+  "invoiceNumber": {
+   "value": "QOS03476",
+   "quote": "QOS03476"
+  },
+  "invoiceDate": {
+   "value": "2026-09-22",
+   "quote": "22 Sep 2026"
+  },
+  "poNumber": {
+   "value": "PO-264335",
+   "quote": "PO-264335"
+  },
+  "currency": {
+   "value": "SGD",
+   "quote": "SGD"
+  },
+  "lines": [
+   {
+    "description": "Thermal receipt roll 80mm, box of 50",
+    "sku": "OF-RCP-80",
+    "quantity": 900,
+    "unit": "pcs",
+    "unitPrice": 0.78,
+    "amount": 702,
+    "quote": "OF-RCP-80 Thermal receipt roll 80mm, box of 50 900 pcs 0.78 702.00"
+   },
+   {
+    "description": "A4 copy paper 80gsm, ream of 500",
+    "sku": "OF-A4-500",
+    "quantity": 8,
+    "unit": "pack",
+    "unitPrice": 6.9,
+    "amount": 55.2,
+    "quote": "OF-A4-500 A4 copy paper 80gsm, ream of 500 8 pack 6.90 55.20"
+   }
+  ],
+  "subtotal": {
+   "value": 757.2,
+   "quote": "757.20"
+  },
+  "taxRate": {
+   "value": 0.09,
+   "quote": "9%"
+  },
+  "tax": {
+   "value": 68.15,
+   "quote": "68.15"
+  },
+  "total": {
+   "value": 825.35,
+   "quote": "825.35"
+  },
+  "bankName": {
+   "value": "Straits Harbour Bank",
+   "quote": "Straits Harbour Bank"
+  },
+  "accountName": {
+   "value": "Quayline Office Supply Pte Ltd",
+   "quote": "Quayline Office Supply Pte Ltd"
+  },
+  "accountNumber": {
+   "value": "771-558120-3",
+   "quote": "771-558120-3"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Quayline Office Supply Pte Ltd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "200912876M",
+    "words": [
+     48
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "QOS03476",
+    "words": [
+     16
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "22 Sep 2026",
+    "words": [
+     29,
+     30,
+     31
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264335",
+    "words": [
+     34
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "SGD",
+    "words": [
+     36
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "757.20",
+    "words": [
+     86
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "9%",
+    "words": [
+     88
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "68.15",
+    "words": [
+     89
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "825.35",
+    "words": [
+     92
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Straits Harbour Bank",
+    "words": [
+     100,
+     101,
+     102
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Quayline Office Supply Pte Ltd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "771-558120-3",
+    "words": [
+     112
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "OF-RCP-80 Thermal receipt roll 80mm, box of 50 900 pcs 0.78 702.00",
+    "words": [
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "OF-A4-500 A4 copy paper 80gsm, ream of 500 8 pack 6.90 55.20",
+    "words": [
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "UOM_MISMATCH",
+    "severity": "hold",
+    "field": "lines[0].unit",
+    "line": 0,
+    "message": "Line 1 is billed per pcs, but the PO orders it per box.",
+    "expected": "box",
+    "actual": "pcs"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 18,
+    "received": 18,
+    "alreadyInvoiced": 0,
+    "poUnit": "box",
+    "poUnitPrice": 39
+   },
+   {
+    "line": 1,
+    "poLine": 2,
+    "ordered": 8,
+    "received": 8,
+    "alreadyInvoiced": 0,
+    "poUnit": "pack",
+    "poUnitPrice": 6.9
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:07:32.878Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 29.636,
+ "inputTokens": 1019,
+ "outputTokens": 747,
+ "latencyMs": 14947,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Quayline Office Supply Pte Ltd\",\n    \"quote\": \"Quayline Office Supply Pte Ltd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"200912876M\",\n    \"quote\": \"200912876M\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"QOS03476\",\n    \"quote\": \"QOS03476\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-09-22\",\n    \"quote\": \"22 Sep 2026\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264335\",\n    \"quote\": \"PO-264335\"\n  },\n  \"currency\": {\n    \"value\": \"SGD\",\n    \"quote\": \"SGD\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Thermal receipt roll 80mm, box of 50\",\n      \"sku\": \"OF-RCP-80\",\n      \"quantity\": 900,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 0.78,\n      \"amount\": 702.0,\n      \"quote\": \"OF-RCP-80 Thermal receipt roll 80mm, box of 50 900 pcs 0.78 702.00\"\n    },\n    {\n      \"description\": \"A4 copy paper 80gsm, ream of 500\",\n      \"sku\": \"OF-A4-500\",\n      \"quantity\": 8,\n      \"unit\": \"pack\",\n      \"unitPrice\": 6.9,\n      \"amount\": 55.2,\n      \"quote\": \"OF-A4-500 A4 copy paper 80gsm, ream of 500 8 pack 6.90 55.20\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 757.2,\n    \"quote\": \"757.20\"\n  },\n  \"taxRate\": {\n    \"value\": 0.09,\n    \"quote\": \"9%\"\n  },\n  \"tax\": {\n    \"value\": 68.15,\n    \"quote\": \"68.15\"\n  },\n  \"total\": {\n    \"value\": 825.35,\n    \"quote\": \"825.35\"\n  },\n  \"bankName\": {\n    \"value\": \"Straits Harbour Bank\",\n    \"quote\": \"Straits Harbour Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Quayline Office Supply Pte Ltd\",\n    \"quote\": \"Quayline Office Supply Pte Ltd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"771-558120-3\",\n    \"quote\": \"771-558120-3\"\n  }\n}\n```"
+ ]
+}

@@ -1,0 +1,300 @@
+{
+ "case": "inv-09",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Quayline Office Supply Pte Ltd",
+   "quote": "Quayline Office Supply Pte Ltd TAX INVOICE"
+  },
+  "vendorRegistrationNo": {
+   "value": "200912876M",
+   "quote": "Reg. No: 200912876M"
+  },
+  "invoiceNumber": {
+   "value": "QOS03443",
+   "quote": "Invoice No. QOS03443"
+  },
+  "invoiceDate": {
+   "value": "2026-10-07",
+   "quote": "Date 07/10/2026"
+  },
+  "poNumber": {
+   "value": "PO-264303",
+   "quote": "PO No. PO-264303"
+  },
+  "currency": {
+   "value": "SGD",
+   "quote": "Total (SGD)"
+  },
+  "lines": [
+   {
+    "description": "A4 copy paper 80gsm, ream of 500",
+    "sku": null,
+    "quantity": 9,
+    "unit": "pack",
+    "unitPrice": 6.9,
+    "amount": 62.1,
+    "quote": "1 A4 copy paper 80gsm, ream of 500 9 pack 6.90 62.10"
+   },
+   {
+    "description": "Label printer tape 12mm",
+    "sku": null,
+    "quantity": 3,
+    "unit": "roll",
+    "unitPrice": 12.4,
+    "amount": 37.2,
+    "quote": "2 Label printer tape 12mm 3 roll 12.40 37.20"
+   }
+  ],
+  "subtotal": {
+   "value": 99.3,
+   "quote": "Subtotal 99.30"
+  },
+  "taxRate": {
+   "value": 0.09,
+   "quote": "GST 9% 8.94"
+  },
+  "tax": {
+   "value": 8.94,
+   "quote": "GST 9% 8.94"
+  },
+  "total": {
+   "value": 108.24,
+   "quote": "Total (SGD) 108.24"
+  },
+  "bankName": {
+   "value": "Straits Harbour Bank",
+   "quote": "Bank: Straits Harbour Bank"
+  },
+  "accountName": {
+   "value": "Quayline Office Supply Pte Ltd",
+   "quote": "Account name: Quayline Office Supply Pte Ltd"
+  },
+  "accountNumber": {
+   "value": "771-558120-3",
+   "quote": "Account no.: 771-558120-3"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Quayline Office Supply Pte Ltd TAX INVOICE",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "Reg. No: 200912876M",
+    "words": [
+     21,
+     22,
+     23
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "Invoice No. QOS03443",
+    "words": [
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "Date 07/10/2026",
+    "words": [
+     17,
+     18
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO No. PO-264303",
+    "words": [
+     24,
+     25,
+     26
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "Total (SGD)",
+    "words": [
+     88,
+     89
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 99.30",
+    "words": [
+     83,
+     84
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "GST 9% 8.94",
+    "words": [
+     85,
+     86,
+     87
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "GST 9% 8.94",
+    "words": [
+     85,
+     86,
+     87
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "Total (SGD) 108.24",
+    "words": [
+     88,
+     89,
+     90
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank: Straits Harbour Bank",
+    "words": [
+     93,
+     94,
+     95,
+     96
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Account name: Quayline Office Supply Pte Ltd",
+    "words": [
+     97,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "Account no.: 771-558120-3",
+    "words": [
+     104,
+     105,
+     106
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "1 A4 copy paper 80gsm, ream of 500 9 pack 6.90 62.10",
+    "words": [
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "2 Label printer tape 12mm 3 roll 12.40 37.20",
+    "words": [
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "POSSIBLE_DUPLICATE",
+    "severity": "hold",
+    "field": "total",
+    "message": "Quayline Office Supply Pte Ltd billed the same amount, SGD 108.24, on invoice QOS03440 2 days earlier.",
+    "expected": "QOS03440",
+    "actual": "QOS03443"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 9,
+    "received": 9,
+    "alreadyInvoiced": 0,
+    "poUnit": "pack",
+    "poUnitPrice": 6.9
+   },
+   {
+    "line": 1,
+    "poLine": 2,
+    "ordered": 3,
+    "received": 3,
+    "alreadyInvoiced": 0,
+    "poUnit": "roll",
+    "poUnitPrice": 12.4
+   }
+  ]
+ },
+ "model": {
+  "key": "baseline",
+  "id": "baseline",
+  "label": "Template parser (no AI)"
+ },
+ "readAt": "2026-11-26T14:06:07.993Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 0,
+ "inputTokens": 0,
+ "outputTokens": 0,
+ "latencyMs": 8,
+ "replies": []
+}

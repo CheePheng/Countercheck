@@ -1,0 +1,318 @@
+{
+ "case": "inv-03",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Serai Fresh Produce Sdn Bhd",
+   "quote": "Serai Fresh Produce Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201701034521 (1239876-W)",
+   "quote": "201701034521 (1239876-W)"
+  },
+  "invoiceNumber": {
+   "value": "SFP/06250",
+   "quote": "SFP/06250"
+  },
+  "invoiceDate": {
+   "value": "2026-09-14",
+   "quote": "2026-09-14"
+  },
+  "poNumber": {
+   "value": "PO-264381",
+   "quote": "PO-264381"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "RM"
+  },
+  "lines": [
+   {
+    "description": "Pandan leaves, bundle of 20",
+    "sku": null,
+    "quantity": 14,
+    "unit": "pack",
+    "unitPrice": 3.5,
+    "amount": 49,
+    "quote": "14 pack Pandan leaves, bundle of 20 49.00\n@ RM 3.50 / pack"
+   },
+   {
+    "description": "Calamansi limes",
+    "sku": null,
+    "quantity": 14,
+    "unit": "kg",
+    "unitPrice": 9.6,
+    "amount": 134.4,
+    "quote": "14 kg Calamansi limes 134.40\n@ RM 9.60 / kg"
+   },
+   {
+    "description": "Bananas, Cavendish",
+    "sku": null,
+    "quantity": 6,
+    "unit": "kg",
+    "unitPrice": 4.2,
+    "amount": 25.2,
+    "quote": "6 kg Bananas, Cavendish 25.20\n@ RM 4.20 / kg"
+   }
+  ],
+  "subtotal": {
+   "value": 208.6,
+   "quote": "Subtotal 208.60"
+  },
+  "taxRate": {
+   "value": 0,
+   "quote": "0%"
+  },
+  "tax": {
+   "value": 0,
+   "quote": "0.00"
+  },
+  "total": {
+   "value": 208.6,
+   "quote": "208.60"
+  },
+  "bankName": {
+   "value": "Bank Rekaan Berhad",
+   "quote": "Bank Rekaan Berhad"
+  },
+  "accountName": {
+   "value": "Serai Fresh Produce Sdn Bhd",
+   "quote": "Serai Fresh Produce Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "2207-114-50331",
+   "quote": "2207-114-50331"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Serai Fresh Produce Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201701034521 (1239876-W)",
+    "words": [
+     18,
+     19
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "SFP/06250",
+    "words": [
+     27
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "2026-09-14",
+    "words": [
+     29
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264381",
+    "words": [
+     31
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "RM",
+    "words": [
+     47
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 208.60",
+    "words": [
+     71,
+     72
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "0%",
+    "words": [
+     74
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "0.00",
+    "words": [
+     75
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "208.60",
+    "words": [
+     72
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank Rekaan Berhad",
+    "words": [
+     82,
+     83,
+     84
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Serai Fresh Produce Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "2207-114-50331",
+    "words": [
+     92
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "14 pack Pandan leaves, bundle of 20 49.00\n@ RM 3.50 / pack",
+    "words": [
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "14 kg Calamansi limes 134.40\n@ RM 9.60 / kg",
+    "words": [
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60
+    ]
+   },
+   {
+    "field": "lines[2]",
+    "status": "verified",
+    "quote": "6 kg Bananas, Cavendish 25.20\n@ RM 4.20 / kg",
+    "words": [
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "NOT_ORDERED",
+    "severity": "hold",
+    "field": "lines[2].description",
+    "line": 2,
+    "message": "\"Bananas, Cavendish\" isn't on purchase order PO-264381."
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 14,
+    "received": 14,
+    "alreadyInvoiced": 0,
+    "poUnit": "pack",
+    "poUnitPrice": 3.5
+   },
+   {
+    "line": 1,
+    "poLine": 2,
+    "ordered": 14,
+    "received": 14,
+    "alreadyInvoiced": 0,
+    "poUnit": "kg",
+    "poUnitPrice": 9.6
+   },
+   {
+    "line": 2,
+    "poLine": null,
+    "ordered": null,
+    "received": null,
+    "alreadyInvoiced": null,
+    "poUnit": null,
+    "poUnitPrice": null
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:06:54.850Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 31.145,
+ "inputTokens": 984,
+ "outputTokens": 814,
+ "latencyMs": 20231,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Serai Fresh Produce Sdn Bhd\",\n    \"quote\": \"Serai Fresh Produce Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201701034521 (1239876-W)\",\n    \"quote\": \"201701034521 (1239876-W)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"SFP/06250\",\n    \"quote\": \"SFP/06250\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-09-14\",\n    \"quote\": \"2026-09-14\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264381\",\n    \"quote\": \"PO-264381\"\n  },\n  \"currency\": {\n    \"value\": \"RM\",\n    \"quote\": \"RM\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Pandan leaves, bundle of 20\",\n      \"sku\": null,\n      \"quantity\": 14,\n      \"unit\": \"pack\",\n      \"unitPrice\": 3.5,\n      \"amount\": 49.0,\n      \"quote\": \"14 pack Pandan leaves, bundle of 20 49.00\\n@ RM 3.50 / pack\"\n    },\n    {\n      \"description\": \"Calamansi limes\",\n      \"sku\": null,\n      \"quantity\": 14,\n      \"unit\": \"kg\",\n      \"unitPrice\": 9.6,\n      \"amount\": 134.4,\n      \"quote\": \"14 kg Calamansi limes 134.40\\n@ RM 9.60 / kg\"\n    },\n    {\n      \"description\": \"Bananas, Cavendish\",\n      \"sku\": null,\n      \"quantity\": 6,\n      \"unit\": \"kg\",\n      \"unitPrice\": 4.2,\n      \"amount\": 25.2,\n      \"quote\": \"6 kg Bananas, Cavendish 25.20\\n@ RM 4.20 / kg\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 208.6,\n    \"quote\": \"Subtotal 208.60\"\n  },\n  \"taxRate\": {\n    \"value\": 0,\n    \"quote\": \"0%\"\n  },\n  \"tax\": {\n    \"value\": 0.0,\n    \"quote\": \"0.00\"\n  },\n  \"total\": {\n    \"value\": 208.6,\n    \"quote\": \"208.60\"\n  },\n  \"bankName\": {\n    \"value\": \"Bank Rekaan Berhad\",\n    \"quote\": \"Bank Rekaan Berhad\"\n  },\n  \"accountName\": {\n    \"value\": \"Serai Fresh Produce Sdn Bhd\",\n    \"quote\": \"Serai Fresh Produce Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"2207-114-50331\",\n    \"quote\": \"2207-114-50331\"\n  }\n}\n```"
+ ]
+}

@@ -1,0 +1,274 @@
+{
+ "case": "inv-12",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Tanjung Ferro Hardware Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "200801023987 (812233-T)",
+   "quote": "200801023987 (812233-T)"
+  },
+  "invoiceNumber": {
+   "value": "TFH-06576",
+   "quote": "TFH-06576"
+  },
+  "invoiceDate": {
+   "value": "2026-10-02",
+   "quote": "2 Oct 2026"
+  },
+  "poNumber": {
+   "value": "PO-264284",
+   "quote": "PO-264284"
+  },
+  "currency": {
+   "value": "MYR",
+   "quote": "MYR"
+  },
+  "lines": [
+   {
+    "description": "Wall anchor M8, box of 100",
+    "sku": "HW-ANC-M8",
+    "quantity": 7,
+    "unit": "box",
+    "unitPrice": 26,
+    "amount": 182,
+    "quote": "HW-ANC-M8 Wall anchor M8, box of 100 7 box 26.00 182.00"
+   },
+   {
+    "description": "Stainless shelf bracket 30cm",
+    "sku": "HW-BRK-30",
+    "quantity": 13,
+    "unit": "pcs",
+    "unitPrice": 18.4,
+    "amount": 239.2,
+    "quote": "HW-BRK-30 Stainless shelf bracket 30cm 13 pcs 18.40 239.20"
+   }
+  ],
+  "subtotal": {
+   "value": 421.2,
+   "quote": "Subtotal 421.20"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "10%"
+  },
+  "tax": {
+   "value": 42.12,
+   "quote": "42.12"
+  },
+  "total": {
+   "value": 463.32,
+   "quote": "463.32"
+  },
+  "bankName": {
+   "value": "Selatan Commercial Bank",
+   "quote": "Selatan Commercial Bank"
+  },
+  "accountName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Tanjung Ferro Hardware Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "5140-8820-1173",
+   "quote": "5140-8820-1173"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Tanjung Ferro Hardware Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "200801023987 (812233-T)",
+    "words": [
+     51,
+     52
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "TFH-06576",
+    "words": [
+     16
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "2 Oct 2026",
+    "words": [
+     29,
+     30,
+     31
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264284",
+    "words": [
+     34
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "MYR",
+    "words": [
+     36
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 421.20",
+    "words": [
+     85,
+     86
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "10%",
+    "words": [
+     88
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "42.12",
+    "words": [
+     89
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "463.32",
+    "words": [
+     92
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Selatan Commercial Bank",
+    "words": [
+     100,
+     101,
+     102
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Tanjung Ferro Hardware Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "5140-8820-1173",
+    "words": [
+     112
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "HW-ANC-M8 Wall anchor M8, box of 100 7 box 26.00 182.00",
+    "words": [
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "HW-BRK-30 Stainless shelf bracket 30cm 13 pcs 18.40 239.20",
+    "words": [
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "approve",
+  "findings": [],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 17,
+    "received": 17,
+    "alreadyInvoiced": 10,
+    "poUnit": "box",
+    "poUnitPrice": 26
+   },
+   {
+    "line": 1,
+    "poLine": 2,
+    "ordered": 21,
+    "received": 21,
+    "alreadyInvoiced": 8,
+    "poUnit": "pcs",
+    "poUnitPrice": 18.4
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:09:57.738Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 30.091,
+ "inputTokens": 1036,
+ "outputTokens": 758,
+ "latencyMs": 19520,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Tanjung Ferro Hardware Sdn Bhd\",\n    \"quote\": \"Tanjung Ferro Hardware Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"200801023987 (812233-T)\",\n    \"quote\": \"200801023987 (812233-T)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"TFH-06576\",\n    \"quote\": \"TFH-06576\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-10-02\",\n    \"quote\": \"2 Oct 2026\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264284\",\n    \"quote\": \"PO-264284\"\n  },\n  \"currency\": {\n    \"value\": \"MYR\",\n    \"quote\": \"MYR\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Wall anchor M8, box of 100\",\n      \"sku\": \"HW-ANC-M8\",\n      \"quantity\": 7,\n      \"unit\": \"box\",\n      \"unitPrice\": 26.0,\n      \"amount\": 182.0,\n      \"quote\": \"HW-ANC-M8 Wall anchor M8, box of 100 7 box 26.00 182.00\"\n    },\n    {\n      \"description\": \"Stainless shelf bracket 30cm\",\n      \"sku\": \"HW-BRK-30\",\n      \"quantity\": 13,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 18.4,\n      \"amount\": 239.2,\n      \"quote\": \"HW-BRK-30 Stainless shelf bracket 30cm 13 pcs 18.40 239.20\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 421.2,\n    \"quote\": \"Subtotal 421.20\"\n  },\n  \"taxRate\": {\n    \"value\": 0.1,\n    \"quote\": \"10%\"\n  },\n  \"tax\": {\n    \"value\": 42.12,\n    \"quote\": \"42.12\"\n  },\n  \"total\": {\n    \"value\": 463.32,\n    \"quote\": \"463.32\"\n  },\n  \"bankName\": {\n    \"value\": \"Selatan Commercial Bank\",\n    \"quote\": \"Selatan Commercial Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Tanjung Ferro Hardware Sdn Bhd\",\n    \"quote\": \"Tanjung Ferro Hardware Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"5140-8820-1173\",\n    \"quote\": \"5140-8820-1173\"\n  }\n}\n```"
+ ]
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "types": ["node"] },
+  "include": ["test", "worker/api.ts", "worker/http.ts", "worker/meter-store.ts"]
+}

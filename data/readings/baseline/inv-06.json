@@ -1,0 +1,20 @@
+{
+ "case": "inv-06",
+ "promptVersion": "2026-11-26.1",
+ "extraction": null,
+ "verification": null,
+ "result": null,
+ "model": {
+  "key": "baseline",
+  "id": "baseline",
+  "label": "Template parser (no AI)"
+ },
+ "readAt": "2026-11-26T14:06:07.957Z",
+ "error": "Couldn't find: vendor, invoiceNumber, date, currency, total, subtotal.",
+ "attempts": 1,
+ "neurons": 0,
+ "inputTokens": 0,
+ "outputTokens": 0,
+ "latencyMs": 0,
+ "replies": []
+}

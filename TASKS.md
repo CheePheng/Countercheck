@@ -165,4 +165,33 @@ server for the read-only tools.
 - npm: run tools from `node_modules/.bin` (or `npx --no-install`). With nothing installed,
   `npx biome` fetched an unrelated npm package called `biome` and ran it (2026-11-26; it wrote
   nothing here). Vite is pinned to 8.3.8 in `overrides` (rolldown 1.3.4's tarball 404s).
-- Next: step 4 (extraction).
+- Step 4 done (`packages/extract`, commit 75efdba): one call per invoice, quotes checked by code,
+  one retry on a malformed reply, and the template baseline.
+- Calibration 2026-11-26 (local `vite dev` with `COUNTERCHECK_REMOTE_AI=1`, real Workers AI):
+  Gemma 4 read three invoices (English, banner and Malay layouts) perfectly, 26–30 neurons and
+  12–32 s each. So recorded readings are the default view and a live reading says it takes ~20 s.
+- Step 7 done: `uv run countercheck-evals` (pipeline/src/countercheck_pipeline/evals.py) reads
+  through `/api/read` with the recorder key, saves every reading unedited to
+  `data/readings/<model>/` (the app replays them) and scores to `data/evals/<model>.json`
+  (a partial run merges; failed calls stay listed under `failures`). Results, prompt
+  2026-11-26.1, all 28 invoices:
+  - Gemma 4 26B: 28 read, all fields right, 28/28 decisions and reasons, 0 bad invoices
+    approved, 0 good ones held, 817 neurons (29.2 each), median 19.5 s, p95 26.1 s. One call
+    timed out (inv-26, 504 after 45 s) and was read again in a second run.
+  - Template parser (no model): 7 of 28 read (its one layout), 23% of fields, 21/28 decisions
+    (only because unread invoices are held), 0 bad approved, 5 good held.
+  - The page says plainly that these are clean PDFs; scans and new layouts aren't tested yet.
+- Step 8, first version (not deployed): in-tray, the invoice with highlighter marks from the
+  checked quotes (red outline on what caused a hold), a payment voucher (what was read, against
+  the PO and deliveries, the recommendation, your decision), the stamp, the known answer after
+  you decide, evals and how-it-works pages, live readings through the meter. Worker: `/api/status`
+  and `/api/read` (model or `baseline`), a Meter Durable Object (daily cap 1,500, 5 live readings
+  per visitor a day, no IP stored), CSP `frame-ancestors` for the portfolio in `public/_headers`.
+  Checked at 1440 and 390 px (no horizontal overflow, no console errors). Tests: 101 TypeScript
+  (core, data contract, extract, meter, API) and 13 Python.
+- Local secrets (gitignored): recorder key in `apps/web/.dev.vars` and as
+  `COUNTERCHECK_RECORDER_KEY` in the root `.env`.
+- Next, in order: ask the user before deploying (step 9) and setting the `RECORDER_KEY` secret;
+  the ledger integration (step 6, exactly-once posting with failure toggles); the exception agent
+  (step 5) for invoices without a usable PO; scans (vision vs OCR); README, LICENSE and CI
+  (step 10); a public repo once the user creates it.

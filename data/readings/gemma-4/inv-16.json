@@ -1,0 +1,246 @@
+{
+ "case": "inv-16",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Tanjung Ferro Hardware Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "200801023987 (812233-T)",
+   "quote": "200801023987 (812233-T)"
+  },
+  "invoiceNumber": {
+   "value": "TFH-06611",
+   "quote": "TFH-06611"
+  },
+  "invoiceDate": {
+   "value": "2026-11-08",
+   "quote": "08/11/2026"
+  },
+  "poNumber": {
+   "value": "PO-264337",
+   "quote": "PO-264337"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "RM"
+  },
+  "lines": [
+   {
+    "description": "Wall anchor M8, box of 100",
+    "sku": null,
+    "quantity": 400,
+    "unit": "pcs",
+    "unitPrice": 0.26,
+    "amount": 104,
+    "quote": "Wall anchor M8, box of 100 400 pcs 0.26 104.00"
+   }
+  ],
+  "subtotal": {
+   "value": 104,
+   "quote": "104.00"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "10%"
+  },
+  "tax": {
+   "value": 10.4,
+   "quote": "10.40"
+  },
+  "total": {
+   "value": 114.4,
+   "quote": "114.40"
+  },
+  "bankName": {
+   "value": "Selatan Commercial Bank",
+   "quote": "Selatan Commercial Bank"
+  },
+  "accountName": {
+   "value": "Tanjung Ferro Hardware Sdn Bhd",
+   "quote": "Tanjung Ferro Hardware Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "5140-8820-1173",
+   "quote": "5140-8820-1173"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Tanjung Ferro Hardware Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "200801023987 (812233-T)",
+    "words": [
+     26,
+     27
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "TFH-06611",
+    "words": [
+     14
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "08/11/2026",
+    "words": [
+     19
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264337",
+    "words": [
+     30
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "RM",
+    "words": [
+     36
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "104.00",
+    "words": [
+     76
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "10%",
+    "words": [
+     80
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "10.40",
+    "words": [
+     81
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "114.40",
+    "words": [
+     84
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Selatan Commercial Bank",
+    "words": [
+     88,
+     89,
+     90
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Tanjung Ferro Hardware Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "5140-8820-1173",
+    "words": [
+     100
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "Wall anchor M8, box of 100 400 pcs 0.26 104.00",
+    "words": [
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "UOM_MISMATCH",
+    "severity": "hold",
+    "field": "lines[0].unit",
+    "line": 0,
+    "message": "Line 1 is billed per pcs, but the PO orders it per box.",
+    "expected": "box",
+    "actual": "pcs"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 4,
+    "received": 4,
+    "alreadyInvoiced": 0,
+    "poUnit": "box",
+    "poUnitPrice": 26
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:11:20.079Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 26.3,
+ "inputTokens": 997,
+ "outputTokens": 632,
+ "latencyMs": 12999,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Tanjung Ferro Hardware Sdn Bhd\",\n    \"quote\": \"Tanjung Ferro Hardware Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"200801023987 (812233-T)\",\n    \"quote\": \"200801023987 (812233-T)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"TFH-06611\",\n    \"quote\": \"TFH-06611\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-11-08\",\n    \"quote\": \"08/11/2026\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264337\",\n    \"quote\": \"PO-264337\"\n  },\n  \"currency\": {\n    \"value\": \"RM\",\n    \"quote\": \"RM\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Wall anchor M8, box of 100\",\n      \"sku\": null,\n      \"quantity\": 400,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 0.26,\n      \"amount\": 104.0,\n      \"quote\": \"Wall anchor M8, box of 100 400 pcs 0.26 104.00\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 104.0,\n    \"quote\": \"104.00\"\n  },\n  \"taxRate\": {\n    \"value\": 0.1,\n    \"quote\": \"10%\"\n  },\n  \"tax\": {\n    \"value\": 10.4,\n    \"quote\": \"10.40\"\n  },\n  \"total\": {\n    \"value\": 114.4,\n    \"quote\": \"114.40\"\n  },\n  \"bankName\": {\n    \"value\": \"Selatan Commercial Bank\",\n    \"quote\": \"Selatan Commercial Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Tanjung Ferro Hardware Sdn Bhd\",\n    \"quote\": \"Tanjung Ferro Hardware Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"5140-8820-1173\",\n    \"quote\": \"5140-8820-1173\"\n  }\n}\n```"
+ ]
+}

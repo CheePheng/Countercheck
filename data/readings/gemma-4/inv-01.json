@@ -1,0 +1,230 @@
+{
+ "case": "inv-01",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Lumora Kitchenware Pte Ltd",
+   "quote": "Lumora Kitchenware Pte Ltd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201812345K",
+   "quote": "201812345K"
+  },
+  "invoiceNumber": {
+   "value": "LK-08060",
+   "quote": "LK-08060"
+  },
+  "invoiceDate": {
+   "value": "2026-11-08",
+   "quote": "08/11/2026"
+  },
+  "poNumber": {
+   "value": "PO-264282",
+   "quote": "PO-264282"
+  },
+  "currency": {
+   "value": "SGD",
+   "quote": "SGD"
+  },
+  "lines": [
+   {
+    "description": "Coffee tamper 58mm",
+    "sku": null,
+    "quantity": 8,
+    "unit": "pcs",
+    "unitPrice": 36,
+    "amount": 288,
+    "quote": "Coffee tamper 58mm 8 pcs 36.00 288.00"
+   }
+  ],
+  "subtotal": {
+   "value": 288,
+   "quote": "288.00"
+  },
+  "taxRate": {
+   "value": 0.09,
+   "quote": "9%"
+  },
+  "tax": {
+   "value": 25.92,
+   "quote": "25.92"
+  },
+  "total": {
+   "value": 313.92,
+   "quote": "313.92"
+  },
+  "bankName": {
+   "value": "Straits Harbour Bank",
+   "quote": "Straits Harbour Bank"
+  },
+  "accountName": {
+   "value": "Lumora Kitchenware Pte Ltd",
+   "quote": "Lumora Kitchenware Pte Ltd"
+  },
+  "accountNumber": {
+   "value": "771-203344-1",
+   "quote": "771-203344-1"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Lumora Kitchenware Pte Ltd",
+    "words": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201812345K",
+    "words": [
+     22
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "LK-08060",
+    "words": [
+     12
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "08/11/2026",
+    "words": [
+     17
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264282",
+    "words": [
+     25
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "SGD",
+    "words": [
+     58
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "288.00",
+    "words": [
+     68
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "9%",
+    "words": [
+     72
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "25.92",
+    "words": [
+     73
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "313.92",
+    "words": [
+     76
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Straits Harbour Bank",
+    "words": [
+     80,
+     81,
+     82
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Lumora Kitchenware Pte Ltd",
+    "words": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "771-203344-1",
+    "words": [
+     91
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "Coffee tamper 58mm 8 pcs 36.00 288.00",
+    "words": [
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "approve",
+  "findings": [],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 19,
+    "received": 19,
+    "alreadyInvoiced": 11,
+    "poUnit": "pcs",
+    "poUnitPrice": 36
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:06:18.185Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 24.855,
+ "inputTokens": 967,
+ "outputTokens": 589,
+ "latencyMs": 13288,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Lumora Kitchenware Pte Ltd\",\n    \"quote\": \"Lumora Kitchenware Pte Ltd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201812345K\",\n    \"quote\": \"201812345K\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"LK-08060\",\n    \"quote\": \"LK-08060\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-11-08\",\n    \"quote\": \"08/11/2026\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264282\",\n    \"quote\": \"PO-264282\"\n  },\n  \"currency\": {\n    \"value\": \"SGD\",\n    \"quote\": \"SGD\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Coffee tamper 58mm\",\n      \"sku\": null,\n      \"quantity\": 8,\n      \"unit\": \"pcs\",\n      \"unitPrice\": 36.0,\n      \"amount\": 288.0,\n      \"quote\": \"Coffee tamper 58mm 8 pcs 36.00 288.00\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 288.0,\n    \"quote\": \"288.00\"\n  },\n  \"taxRate\": {\n    \"value\": 0.09,\n    \"quote\": \"9%\"\n  },\n  \"tax\": {\n    \"value\": 25.92,\n    \"quote\": \"25.92\"\n  },\n  \"total\": {\n    \"value\": 313.92,\n    \"quote\": \"313.92\"\n  },\n  \"bankName\": {\n    \"value\": \"Straits Harbour Bank\",\n    \"quote\": \"Straits Harbour Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Lumora Kitchenware Pte Ltd\",\n    \"quote\": \"Lumora Kitchenware Pte Ltd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"771-203344-1\",\n    \"quote\": \"771-203344-1\"\n  }\n}\n```"
+ ]
+}

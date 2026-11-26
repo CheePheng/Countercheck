@@ -1,0 +1,240 @@
+{
+ "case": "inv-28",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Brightmoor Cleaning Supplies Sdn Bhd",
+   "quote": "Brightmoor Cleaning Supplies Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201301045566 (1056677-D)",
+   "quote": "201301045566 (1056677-D)"
+  },
+  "invoiceNumber": {
+   "value": "BM09000",
+   "quote": "BM09000"
+  },
+  "invoiceDate": {
+   "value": "2026-11-01",
+   "quote": "2026-11-01"
+  },
+  "poNumber": {
+   "value": "PO-264226",
+   "quote": "PO-264226"
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "RM"
+  },
+  "lines": [
+   {
+    "description": "20 pack Microfibre cloth, pack of 12",
+    "sku": null,
+    "quantity": 20,
+    "unit": "pack",
+    "unitPrice": 18,
+    "amount": 360,
+    "quote": "20 pack Microfibre cloth, pack of 12 360.00\n@ RM 18.00 / pack"
+   }
+  ],
+  "subtotal": {
+   "value": 360,
+   "quote": "Subtotal 360.00"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "10%"
+  },
+  "tax": {
+   "value": 36,
+   "quote": "36.00"
+  },
+  "total": {
+   "value": 396,
+   "quote": "396.00"
+  },
+  "bankName": {
+   "value": "Teluk Mutual Bank",
+   "quote": "Teluk Mutual Bank"
+  },
+  "accountName": {
+   "value": "Brightmoor Cleaning Supplies Sdn Bhd",
+   "quote": "Brightmoor Cleaning Supplies Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "3381-0045-7720",
+   "quote": "3381-0045-7720"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Brightmoor Cleaning Supplies Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201301045566 (1056677-D)",
+    "words": [
+     19,
+     20
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "BM09000",
+    "words": [
+     28
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "2026-11-01",
+    "words": [
+     30
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264226",
+    "words": [
+     32
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "RM",
+    "words": [
+     48
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 360.00",
+    "words": [
+     52,
+     53
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "10%",
+    "words": [
+     55
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "36.00",
+    "words": [
+     56
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "396.00",
+    "words": [
+     59
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Teluk Mutual Bank",
+    "words": [
+     63,
+     64,
+     65
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Brightmoor Cleaning Supplies Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "3381-0045-7720",
+    "words": [
+     73
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "20 pack Microfibre cloth, pack of 12 360.00\n@ RM 18.00 / pack",
+    "words": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "approve",
+  "findings": [],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 20,
+    "received": 20,
+    "alreadyInvoiced": 0,
+    "poUnit": "pack",
+    "poUnitPrice": 18
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:15:31.122Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 25.755,
+ "inputTokens": 937,
+ "outputTokens": 632,
+ "latencyMs": 13658,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Brightmoor Cleaning Supplies Sdn Bhd\",\n    \"quote\": \"Brightmoor Cleaning Supplies Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201301045566 (1056677-D)\",\n    \"quote\": \"201301045566 (1056677-D)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"BM09000\",\n    \"quote\": \"BM09000\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-11-01\",\n    \"quote\": \"2026-11-01\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264226\",\n    \"quote\": \"PO-264226\"\n  },\n  \"currency\": {\n    \"value\": \"RM\",\n    \"quote\": \"RM\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"20 pack Microfibre cloth, pack of 12\",\n      \"sku\": null,\n      \"quantity\": 20,\n      \"unit\": \"pack\",\n      \"unitPrice\": 18.0,\n      \"amount\": 360.0,\n      \"quote\": \"20 pack Microfibre cloth, pack of 12 360.00\\n@ RM 18.00 / pack\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 360.0,\n    \"quote\": \"Subtotal 360.00\"\n  },\n  \"taxRate\": {\n    \"value\": 0.1,\n    \"quote\": \"10%\"\n  },\n  \"tax\": {\n    \"value\": 36.0,\n    \"quote\": \"36.00\"\n  },\n  \"total\": {\n    \"value\": 396.0,\n    \"quote\": \"396.00\"\n  },\n  \"bankName\": {\n    \"value\": \"Teluk Mutual Bank\",\n    \"quote\": \"Teluk Mutual Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Brightmoor Cleaning Supplies Sdn Bhd\",\n    \"quote\": \"Brightmoor Cleaning Supplies Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"3381-0045-7720\",\n    \"quote\": \"3381-0045-7720\"\n  }\n}\n```"
+ ]
+}

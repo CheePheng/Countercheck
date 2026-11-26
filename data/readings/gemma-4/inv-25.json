@@ -1,0 +1,251 @@
+{
+ "case": "inv-25",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Quayline Office Supply Pte Ltd",
+   "quote": "Quayline Office Supply Pte Ltd"
+  },
+  "vendorRegistrationNo": {
+   "value": "200912876M",
+   "quote": "200912876M"
+  },
+  "invoiceNumber": {
+   "value": "QOS03416",
+   "quote": "QOS03416"
+  },
+  "invoiceDate": {
+   "value": "2026-09-15",
+   "quote": "2026-09-15"
+  },
+  "poNumber": {
+   "value": "PO-264273",
+   "quote": "PO-264273"
+  },
+  "currency": {
+   "value": "S$",
+   "quote": "S$"
+  },
+  "lines": [
+   {
+    "description": "Thermal receipt roll 80mm, box of 50",
+    "sku": null,
+    "quantity": 7,
+    "unit": "box",
+    "unitPrice": 39,
+    "amount": 273,
+    "quote": "7 box Thermal receipt roll 80mm, box of 50 273.00\n@ S$ 39.00 / box"
+   }
+  ],
+  "subtotal": {
+   "value": 273,
+   "quote": "Subtotal 273.00"
+  },
+  "taxRate": {
+   "value": 0.09,
+   "quote": "9%"
+  },
+  "tax": {
+   "value": 24.57,
+   "quote": "24.57"
+  },
+  "total": {
+   "value": 297.57,
+   "quote": "297.57"
+  },
+  "bankName": {
+   "value": "Straits Harbour Bank",
+   "quote": "Straits Harbour Bank"
+  },
+  "accountName": {
+   "value": "Quayline Office Supply Pte Ltd",
+   "quote": "Quayline Office Supply Pte Ltd"
+  },
+  "accountNumber": {
+   "value": "771-558120-3",
+   "quote": "771-558120-3"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Quayline Office Supply Pte Ltd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "200912876M",
+    "words": [
+     16
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "QOS03416",
+    "words": [
+     24
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "2026-09-15",
+    "words": [
+     26
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "verified",
+    "quote": "PO-264273",
+    "words": [
+     28
+    ]
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "S$",
+    "words": [
+     46
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "Subtotal 273.00",
+    "words": [
+     50,
+     51
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "9%",
+    "words": [
+     53
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "24.57",
+    "words": [
+     54
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "297.57",
+    "words": [
+     57
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Straits Harbour Bank",
+    "words": [
+     61,
+     62,
+     63
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Quayline Office Supply Pte Ltd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "771-558120-3",
+    "words": [
+     71
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "7 box Thermal receipt roll 80mm, box of 50 273.00\n@ S$ 39.00 / box",
+    "words": [
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "SHORT_DELIVERY",
+    "severity": "hold",
+    "field": "lines[0].quantity",
+    "line": 0,
+    "message": "Line 1 bills 7, but only 6 were received.",
+    "expected": "6",
+    "actual": "7"
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": 1,
+    "ordered": 7,
+    "received": 6,
+    "alreadyInvoiced": 0,
+    "poUnit": "box",
+    "poUnitPrice": 39
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:14:08.679Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 25.173,
+ "inputTokens": 921,
+ "outputTokens": 616,
+ "latencyMs": 19964,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Quayline Office Supply Pte Ltd\",\n    \"quote\": \"Quayline Office Supply Pte Ltd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"200912876M\",\n    \"quote\": \"200912876M\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"QOS03416\",\n    \"quote\": \"QOS03416\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-09-15\",\n    \"quote\": \"2026-09-15\"\n  },\n  \"poNumber\": {\n    \"value\": \"PO-264273\",\n    \"quote\": \"PO-264273\"\n  },\n  \"currency\": {\n    \"value\": \"S$\",\n    \"quote\": \"S$\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Thermal receipt roll 80mm, box of 50\",\n      \"sku\": null,\n      \"quantity\": 7,\n      \"unit\": \"box\",\n      \"unitPrice\": 39.0,\n      \"amount\": 273.0,\n      \"quote\": \"7 box Thermal receipt roll 80mm, box of 50 273.00\\n@ S$ 39.00 / box\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 273.0,\n    \"quote\": \"Subtotal 273.00\"\n  },\n  \"taxRate\": {\n    \"value\": 0.09,\n    \"quote\": \"9%\"\n  },\n  \"tax\": {\n    \"value\": 24.57,\n    \"quote\": \"24.57\"\n  },\n  \"total\": {\n    \"value\": 297.57,\n    \"quote\": \"297.57\"\n  },\n  \"bankName\": {\n    \"value\": \"Straits Harbour Bank\",\n    \"quote\": \"Straits Harbour Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Quayline Office Supply Pte Ltd\",\n    \"quote\": \"Quayline Office Supply Pte Ltd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"771-558120-3\",\n    \"quote\": \"771-558120-3\"\n  }\n}\n```"
+ ]
+}

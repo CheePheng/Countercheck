@@ -13,6 +13,7 @@ dependencies = [
 
 [project.scripts]
 countercheck-data = "countercheck_pipeline.cli:main"
+countercheck-evals = "countercheck_pipeline.evals:main"
 
 [dependency-groups]
 dev = ["pytest>=8"]

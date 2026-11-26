@@ -1,0 +1,312 @@
+{
+ "case": "inv-08",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Sutera Bean Roasters Sdn Bhd",
+   "quote": "Sutera Bean Roasters Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201401038804 (1098812-P)",
+   "quote": "201401038804 (1098812-P)"
+  },
+  "invoiceNumber": {
+   "value": "SB-03760",
+   "quote": "SB-03760"
+  },
+  "invoiceDate": {
+   "value": "2026-09-26",
+   "quote": "26 Sep 2026"
+  },
+  "poNumber": {
+   "value": null,
+   "quote": null
+  },
+  "currency": {
+   "value": "MYR",
+   "quote": "MYR"
+  },
+  "lines": [
+   {
+    "description": "House blend coffee beans 1kg",
+    "sku": "CF-HSE-1K",
+    "quantity": 24,
+    "unit": "kg",
+    "unitPrice": 78,
+    "amount": 1872,
+    "quote": "CF-HSE-1K House blend coffee beans 1kg 24 kg 78.00 1,872.00"
+   },
+   {
+    "description": "Single origin coffee beans 1kg",
+    "sku": "CF-SGL-1K",
+    "quantity": 7,
+    "unit": "kg",
+    "unitPrice": 96,
+    "amount": 672,
+    "quote": "CF-SGL-1K Single origin coffee beans 1kg 7 kg 96.00 672.00"
+   },
+   {
+    "description": "Decaf coffee beans 1kg",
+    "sku": "CF-DCF-1K",
+    "quantity": 16,
+    "unit": "kg",
+    "unitPrice": 88,
+    "amount": 1408,
+    "quote": "CF-DCF-1K Decaf coffee beans 1kg 16 kg 88.00 1,408.00"
+   }
+  ],
+  "subtotal": {
+   "value": 3952,
+   "quote": "3,952.00"
+  },
+  "taxRate": {
+   "value": 0.1,
+   "quote": "10%"
+  },
+  "tax": {
+   "value": 395.2,
+   "quote": "395.20"
+  },
+  "total": {
+   "value": 4347.2,
+   "quote": "4,347.20"
+  },
+  "bankName": {
+   "value": "Teluk Mutual Bank",
+   "quote": "Teluk Mutual Bank"
+  },
+  "accountName": {
+   "value": "Sutera Bean Roasters Sdn Bhd",
+   "quote": "Sutera Bean Roasters Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "3381-2290-0416",
+   "quote": "3381-2290-0416"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Sutera Bean Roasters Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201401038804 (1098812-P)",
+    "words": [
+     46,
+     47
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "SB-03760",
+    "words": [
+     16
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "26 Sep 2026",
+    "words": [
+     29,
+     30,
+     31
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "missing",
+    "quote": null,
+    "words": []
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "MYR",
+    "words": [
+     33
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "3,952.00",
+    "words": [
+     90
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "10%",
+    "words": [
+     92
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "395.20",
+    "words": [
+     93
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "4,347.20",
+    "words": [
+     96
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Teluk Mutual Bank",
+    "words": [
+     104,
+     105,
+     106
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Sutera Bean Roasters Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "3381-2290-0416",
+    "words": [
+     116
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "CF-HSE-1K House blend coffee beans 1kg 24 kg 78.00 1,872.00",
+    "words": [
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "CF-SGL-1K Single origin coffee beans 1kg 7 kg 96.00 672.00",
+    "words": [
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79
+    ]
+   },
+   {
+    "field": "lines[2]",
+    "status": "verified",
+    "quote": "CF-DCF-1K Decaf coffee beans 1kg 16 kg 88.00 1,408.00",
+    "words": [
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "NO_PO",
+    "severity": "hold",
+    "field": "poNumber",
+    "message": "The invoice doesn't quote a purchase order number."
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": null,
+    "ordered": null,
+    "received": null,
+    "alreadyInvoiced": null,
+    "poUnit": null,
+    "poUnitPrice": null
+   },
+   {
+    "line": 1,
+    "poLine": null,
+    "ordered": null,
+    "received": null,
+    "alreadyInvoiced": null,
+    "poUnit": null,
+    "poUnitPrice": null
+   },
+   {
+    "line": 2,
+    "poLine": null,
+    "ordered": null,
+    "received": null,
+    "alreadyInvoiced": null,
+    "poUnit": null,
+    "poUnitPrice": null
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:08:29.186Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 33.182,
+ "inputTokens": 1064,
+ "outputTokens": 862,
+ "latencyMs": 34356,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Sutera Bean Roasters Sdn Bhd\",\n    \"quote\": \"Sutera Bean Roasters Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201401038804 (1098812-P)\",\n    \"quote\": \"201401038804 (1098812-P)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"SB-03760\",\n    \"quote\": \"SB-03760\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-09-26\",\n    \"quote\": \"26 Sep 2026\"\n  },\n  \"poNumber\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"currency\": {\n    \"value\": \"MYR\",\n    \"quote\": \"MYR\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"House blend coffee beans 1kg\",\n      \"sku\": \"CF-HSE-1K\",\n      \"quantity\": 24,\n      \"unit\": \"kg\",\n      \"unitPrice\": 78.0,\n      \"amount\": 1872.0,\n      \"quote\": \"CF-HSE-1K House blend coffee beans 1kg 24 kg 78.00 1,872.00\"\n    },\n    {\n      \"description\": \"Single origin coffee beans 1kg\",\n      \"sku\": \"CF-SGL-1K\",\n      \"quantity\": 7,\n      \"unit\": \"kg\",\n      \"unitPrice\": 96.0,\n      \"amount\": 672.0,\n      \"quote\": \"CF-SGL-1K Single origin coffee beans 1kg 7 kg 96.00 672.00\"\n    },\n    {\n      \"description\": \"Decaf coffee beans 1kg\",\n      \"sku\": \"CF-DCF-1K\",\n      \"quantity\": 16,\n      \"unit\": \"kg\",\n      \"unitPrice\": 88.0,\n      \"amount\": 1408.0,\n      \"quote\": \"CF-DCF-1K Decaf coffee beans 1kg 16 kg 88.00 1,408.00\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 3952.0,\n    \"quote\": \"3,952.00\"\n  },\n  \"taxRate\": {\n    \"value\": 0.1,\n    \"quote\": \"10%\"\n  },\n  \"tax\": {\n    \"value\": 395.2,\n    \"quote\": \"395.20\"\n  },\n  \"total\": {\n    \"value\": 4347.2,\n    \"quote\": \"4,347.20\"\n  },\n  \"bankName\": {\n    \"value\": \"Teluk Mutual Bank\",\n    \"quote\": \"Teluk Mutual Bank\"\n  },\n  \"accountName\": {\n    \"value\": \"Sutera Bean Roasters Sdn Bhd\",\n    \"quote\": \"Sutera Bean Roasters Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"3381-2290-0416\",\n    \"quote\": \"3381-2290-0416\"\n  }\n}\n```"
+ ]
+}

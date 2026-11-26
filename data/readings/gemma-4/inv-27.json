@@ -1,0 +1,270 @@
+{
+ "case": "inv-27",
+ "promptVersion": "2026-11-26.1",
+ "extraction": {
+  "vendorName": {
+   "value": "Serai Fresh Produce Sdn Bhd",
+   "quote": "Serai Fresh Produce Sdn Bhd"
+  },
+  "vendorRegistrationNo": {
+   "value": "201701034521 (1239876-W)",
+   "quote": "201701034521 (1239876-W)"
+  },
+  "invoiceNumber": {
+   "value": "SFP/06237",
+   "quote": "SFP/06237"
+  },
+  "invoiceDate": {
+   "value": "2026-10-22",
+   "quote": "22/10/2026"
+  },
+  "poNumber": {
+   "value": null,
+   "quote": null
+  },
+  "currency": {
+   "value": "RM",
+   "quote": "RM"
+  },
+  "lines": [
+   {
+    "description": "Bananas, Cavendish",
+    "sku": null,
+    "quantity": 10,
+    "unit": "kg",
+    "unitPrice": 4.2,
+    "amount": 42,
+    "quote": "1 Bananas, Cavendish 10 kg 4.20 42.00"
+   },
+   {
+    "description": "Lemons, imported",
+    "sku": null,
+    "quantity": 11,
+    "unit": "kg",
+    "unitPrice": 7.8,
+    "amount": 85.8,
+    "quote": "2 Lemons, imported 11 kg 7.80 85.80"
+   }
+  ],
+  "subtotal": {
+   "value": 127.8,
+   "quote": "127.80"
+  },
+  "taxRate": {
+   "value": 0,
+   "quote": "0%"
+  },
+  "tax": {
+   "value": 0,
+   "quote": "0.00"
+  },
+  "total": {
+   "value": 127.8,
+   "quote": "127.80"
+  },
+  "bankName": {
+   "value": "Bank Rekaan Berhad",
+   "quote": "Bank Rekaan Berhad"
+  },
+  "accountName": {
+   "value": "Serai Fresh Produce Sdn Bhd",
+   "quote": "Serai Fresh Produce Sdn Bhd"
+  },
+  "accountNumber": {
+   "value": "2207-114-50331",
+   "quote": "2207-114-50331"
+  }
+ },
+ "verification": {
+  "checks": [
+   {
+    "field": "vendorName",
+    "status": "verified",
+    "quote": "Serai Fresh Produce Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "vendorRegistrationNo",
+    "status": "verified",
+    "quote": "201701034521 (1239876-W)",
+    "words": [
+     25,
+     26
+    ]
+   },
+   {
+    "field": "invoiceNumber",
+    "status": "verified",
+    "quote": "SFP/06237",
+    "words": [
+     14
+    ]
+   },
+   {
+    "field": "invoiceDate",
+    "status": "verified",
+    "quote": "22/10/2026",
+    "words": [
+     19
+    ]
+   },
+   {
+    "field": "poNumber",
+    "status": "missing",
+    "quote": null,
+    "words": []
+   },
+   {
+    "field": "currency",
+    "status": "verified",
+    "quote": "RM",
+    "words": [
+     27
+    ]
+   },
+   {
+    "field": "subtotal",
+    "status": "verified",
+    "quote": "127.80",
+    "words": [
+     77
+    ]
+   },
+   {
+    "field": "taxRate",
+    "status": "verified",
+    "quote": "0%",
+    "words": [
+     79
+    ]
+   },
+   {
+    "field": "tax",
+    "status": "verified",
+    "quote": "0.00",
+    "words": [
+     80
+    ]
+   },
+   {
+    "field": "total",
+    "status": "verified",
+    "quote": "127.80",
+    "words": [
+     77
+    ]
+   },
+   {
+    "field": "bank.bankName",
+    "status": "verified",
+    "quote": "Bank Rekaan Berhad",
+    "words": [
+     87,
+     88,
+     89
+    ]
+   },
+   {
+    "field": "bank.accountName",
+    "status": "verified",
+    "quote": "Serai Fresh Produce Sdn Bhd",
+    "words": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "field": "bank.accountNumber",
+    "status": "verified",
+    "quote": "2207-114-50331",
+    "words": [
+     99
+    ]
+   },
+   {
+    "field": "lines[0]",
+    "status": "verified",
+    "quote": "1 Bananas, Cavendish 10 kg 4.20 42.00",
+    "words": [
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68
+    ]
+   },
+   {
+    "field": "lines[1]",
+    "status": "verified",
+    "quote": "2 Lemons, imported 11 kg 7.80 85.80",
+    "words": [
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ]
+   }
+  ],
+  "unverified": []
+ },
+ "result": {
+  "decision": "hold",
+  "findings": [
+   {
+    "code": "NO_PO",
+    "severity": "hold",
+    "field": "poNumber",
+    "message": "The invoice doesn't quote a purchase order number."
+   }
+  ],
+  "lines": [
+   {
+    "line": 0,
+    "poLine": null,
+    "ordered": null,
+    "received": null,
+    "alreadyInvoiced": null,
+    "poUnit": null,
+    "poUnitPrice": null
+   },
+   {
+    "line": 1,
+    "poLine": null,
+    "ordered": null,
+    "received": null,
+    "alreadyInvoiced": null,
+    "poUnit": null,
+    "poUnitPrice": null
+   }
+  ]
+ },
+ "model": {
+  "key": "gemma-4",
+  "id": "@cf/google/gemma-4-26b-a4b-it",
+  "label": "Gemma 4 26B"
+ },
+ "readAt": "2026-11-26T14:15:14.222Z",
+ "error": null,
+ "attempts": 1,
+ "neurons": 27.645,
+ "inputTokens": 995,
+ "outputTokens": 682,
+ "latencyMs": 16362,
+ "replies": [
+  "```json\n{\n  \"vendorName\": {\n    \"value\": \"Serai Fresh Produce Sdn Bhd\",\n    \"quote\": \"Serai Fresh Produce Sdn Bhd\"\n  },\n  \"vendorRegistrationNo\": {\n    \"value\": \"201701034521 (1239876-W)\",\n    \"quote\": \"201701034521 (1239876-W)\"\n  },\n  \"invoiceNumber\": {\n    \"value\": \"SFP/06237\",\n    \"quote\": \"SFP/06237\"\n  },\n  \"invoiceDate\": {\n    \"value\": \"2026-10-22\",\n    \"quote\": \"22/10/2026\"\n  },\n  \"poNumber\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"currency\": {\n    \"value\": \"RM\",\n    \"quote\": \"RM\"\n  },\n  \"lines\": [\n    {\n      \"description\": \"Bananas, Cavendish\",\n      \"sku\": null,\n      \"quantity\": 10,\n      \"unit\": \"kg\",\n      \"unitPrice\": 4.2,\n      \"amount\": 42.0,\n      \"quote\": \"1 Bananas, Cavendish 10 kg 4.20 42.00\"\n    },\n    {\n      \"description\": \"Lemons, imported\",\n      \"sku\": null,\n      \"quantity\": 11,\n      \"unit\": \"kg\",\n      \"unitPrice\": 7.8,\n      \"amount\": 85.8,\n      \"quote\": \"2 Lemons, imported 11 kg 7.80 85.80\"\n    }\n  ],\n  \"subtotal\": {\n    \"value\": 127.8,\n    \"quote\": \"127.80\"\n  },\n  \"taxRate\": {\n    \"value\": 0,\n    \"quote\": \"0%\"\n  },\n  \"tax\": {\n    \"value\": 0.0,\n    \"quote\": \"0.00\"\n  },\n  \"total\": {\n    \"value\": 127.8,\n    \"quote\": \"127.80\"\n  },\n  \"bankName\": {\n    \"value\": \"Bank Rekaan Berhad\",\n    \"quote\": \"Bank Rekaan Berhad\"\n  },\n  \"accountName\": {\n    \"value\": \"Serai Fresh Produce Sdn Bhd\",\n    \"quote\": \"Serai Fresh Produce Sdn Bhd\"\n  },\n  \"accountNumber\": {\n    \"value\": \"2207-114-50331\",\n    \"quote\": \"2207-114-50331\"\n  }\n}\n```"
+ ]
+}
