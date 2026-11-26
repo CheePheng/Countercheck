@@ -203,6 +203,15 @@ server for the read-only tools.
   CI has never run (nothing pushed).
 - In Git Bash, pass `MSYS_NO_PATHCONV=1` for arguments like `#/inv-01` (it rewrites them as
   Windows paths).
-- Next, in order: ask the user before deploying (step 9) and setting the `RECORDER_KEY` secret;
-  then a public repo once the user creates it; the
-  exception agent (step 5) for invoices without a usable PO; scans (vision vs OCR).
+- **Deployed 2026-11-27** (user approved) to https://countercheck.doctorwilddoctorwild.workers.dev
+  (version 2ec083ad; redeploy with `npm run deploy -w @countercheck/web`, WRANGLER_SEND_METRICS=false).
+  `RECORDER_KEY` secret set (the same key as in the root `.env`). Checked: security headers (CSP
+  `frame-ancestors` allows the portfolio), `/api/status`, the smoke test against production, one
+  live recorder reading (inv-14: 1 attempt, 29 neurons, 16 s, approve, all quotes verified),
+  and it loads inside the portfolio's viewer.
+- GitHub: the user approved publishing. The local history was rewritten before any push so it
+  never held the local-only notes; `origin` points at https://github.com/CheePheng/Countercheck,
+  which doesn't exist yet. Creating it through the API was refused by the permission check, so
+  the user creates the empty public repo, then `GCM_INTERACTIVE=never git push -u origin main`.
+- Next: the push once the repo exists (then check CI); the exception agent (step 5) for invoices
+  without a usable PO; scans (vision vs OCR); review passes (step 11).
