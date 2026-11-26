@@ -154,4 +154,15 @@ server for the read-only tools.
 
 ## Status
 
-Step 0 done (facts above). Next: step 1.
+- Steps 0–3 done 2026-11-26 (local commits 5692b15, c094ab3):
+  - `packages/core`: the checks (`checkInvoice`), unit and property-based tests.
+  - `pipeline/` (uv): 28 sample invoices from seed 20261126 (14 situations × dev/held-out, four
+    layouts, one in Malay) in `data/` (committed, so the web build doesn't need Python). pytest
+    covers determinism, sums, that the page shows what the answer says, and that model inputs
+    hold no answers. Regenerate with `npm run data`.
+  - `packages/core/test/data.test.ts`: every known answer, read perfectly, gets exactly its
+    decision and reasons from the TypeScript checks.
+- npm: run tools from `node_modules/.bin` (or `npx --no-install`). With nothing installed,
+  `npx biome` fetched an unrelated npm package called `biome` and ran it (2026-11-26; it wrote
+  nothing here). Vite is pinned to 8.3.8 in `overrides` (rolldown 1.3.4's tarball 404s).
+- Next: step 4 (extraction).
