@@ -82,8 +82,9 @@ function App() {
       {route.name === "desk" && (
         <>
           <p className="mb-4 max-w-[52rem] text-[1.05rem] text-ink">
-            Supplier invoices, checked against the order and the delivery before anyone pays them.
-            Pick one from the tray, check it, and make the call.
+            You're the accounts clerk at a café chain. Before a supplier gets paid, Countercheck
+            reads the invoice and checks it against the order and the delivery. Pick one from the
+            tray, check it, and make the call.
           </p>
           <Desk
             caseId={route.id}
