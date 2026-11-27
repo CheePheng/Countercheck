@@ -74,8 +74,14 @@ jobs:
         run: uv run pytest -q
 
       # The committed sample data must be exactly what the generator writes. The page pictures
-      # (.webp) are rasterised and may differ by platform, so they are left out.
+      # (.webp) are rasterised and may differ by platform, so they are left out. Files that
+      # differ are reported as annotations, which show on the run page.
       - name: Regenerate the sample data and compare
         run: |
           uv run countercheck-data
-          cd .. && git diff --exit-code -- data/world.json data/cases.json data/truth 'data/cases/*.pdf' 'data/cases/*.page.json'
+          cd ..
+          paths=(data/world.json data/cases.json data/truth 'data/cases/*.pdf' 'data/cases/*.page.json')
+          if ! git diff --stat --exit-code -- "${paths[@]}"; then
+            git diff --name-only -- "${paths[@]}" | sed 's/.*/::error file=&::Differs from what the generator writes/'
+            exit 1
+          fi

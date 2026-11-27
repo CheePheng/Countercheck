@@ -1,6 +1,8 @@
 """Prints a draft invoice to PDF in one of four layouts (one with Malay labels).
 
-`invariant=1` keeps reportlab's output byte-identical for the same input.
+`invariant=1` keeps reportlab's output byte-identical for the same input, and the page
+streams are left uncompressed because zlib builds differ between platforms (CPython
+on Windows uses zlib-ng), which would change the bytes but not the page.
 """
 
 from __future__ import annotations
@@ -332,6 +334,7 @@ def render(path: Path, draft: Draft, buyer: Buyer) -> None:
         topMargin=16 * mm,
         bottomMargin=16 * mm,
         invariant=1,
+        pageCompression=0,
         title=f"Invoice {draft.number}",
         author=draft.vendor.name,
         creator="Countercheck sample data",
