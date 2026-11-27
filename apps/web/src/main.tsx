@@ -75,7 +75,7 @@ function App() {
         <Wordmark />
         <nav aria-label="Main" className="flex gap-1 text-[0.95rem]">
           {tab("desk", "#/", "Invoices")}
-          {tab("evals", "#/evals", "Evals")}
+          {tab("evals", "#/evals", "Test results")}
           {tab("how", "#/how", "How it works")}
         </nav>
       </header>

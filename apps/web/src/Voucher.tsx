@@ -149,8 +149,7 @@ export function Voucher({
           ))}
         </dl>
         <p className="mt-2 text-[0.85rem] text-ink-soft">
-          ✓ means the value is in a quote the model copied from the page, and code found that quote
-          on the page.
+          ✓ means Countercheck found this value written on the invoice itself, not guessed.
         </p>
       </Section>
 
